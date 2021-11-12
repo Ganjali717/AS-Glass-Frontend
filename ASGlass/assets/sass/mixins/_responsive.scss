@@ -1,0 +1,87 @@
+@media only screen and (max-width:992px){
+  
+    header .menu ul{
+        display: none!important;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    h2{
+        font-size: 1rem;
+    }
+    h3{
+        font-size: 0.5rem;
+    }
+    h4{
+        font-size: 1rem;
+    }
+    h5{
+        font-size: 1rem;
+    }
+    h6{
+        font-size: 1rem;
+    }
+    p,
+    li,
+    a{
+        font-size: 1rem;
+    }
+
+    
+}
+
+
+
+// @media only screen and (max-width:992px){
+//    //For tablets
+  
+// //    #payroll{
+// //        .row{
+// //            flex-direction: column !important;
+// //            .payroll-text{
+// //                width: 100% !important;
+// //            }
+// //            .payroll-logo-image{
+// //                width: 100% !important;
+// //            }
+// //            .payroll-image{
+// //                width: 500px !important;
+// //            }
+// //        }
+// //    }
+   
+// //    #global-section{
+// //        .global-card{
+// //            flex-direction: column !important;
+// //            .global-card-item{
+// //                padding-top: 25px;
+// //            }
+// //        }
+// //    }
+   
+// //    #glbl-payroll-header{
+// //        .row{
+// //            flex-direction: column !important;
+// //            img{
+// //             width: 250px !important;
+// //             height: 250px !important;
+// //            }
+// //        }
+// //    }
+  
+    
+// }
+
+// @media only screen and (max-width:768px){
+//     /* For phones */
+//     #call-to-action{
+//         .call-platform{
+//             justify-content: center !important;
+//             flex-direction: column !important;
+//             img{
+//                 width: 250px !important;
+//                 height: 250px !important;
+//             }
+//         }
+//      }
+// }
