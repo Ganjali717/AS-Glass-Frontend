@@ -1,11 +1,10 @@
 // This is scss file of header part
 
 header{
-    position: fixed;
-    z-index: 5;
     width: 100%;
+    background-color: #0f0d1e;
     #header-page{
-          background-color: rgb(255, 166, 0);
+        background-color: #5b35d5;
           padding: 5px;
           .row{
               @include flexbox; 
@@ -36,8 +35,6 @@ header{
         flex-direction: column;
         width: 100%;
         height: max-content;
-        position: sticky;
-        overflow: visible;
         .row{
             width: 100%;
             flex-direction: row !important;
@@ -47,7 +44,7 @@ header{
                 display: none;
                 .bi-list{
                     font-size: 30px;
-                    color: black !important;
+                    color: white;
                 }
             }
             .logo{
@@ -57,7 +54,7 @@ header{
                         height: 80px;
                     }
                     i{
-                        color: #035894;
+                        color: white;
                         font-size: 22px;
                     }
                 }
@@ -165,11 +162,11 @@ header{
         
     }
     #menu{
+        width: 100%;
         border-top: 1px solid rgba(0, 0, 0, 0.185);
         border-bottom: 1px solid rgba(0, 0, 0, 0.185);
         &>ul{
             @include flexbox; 
-            width: 90%;
             margin-left: 20px;
             flex-direction: row;
             align-items: center;
@@ -179,7 +176,7 @@ header{
                 list-style: none;
                 padding: 25px 50px;
                 &>a{
-                   color: #0f0d1e;
+                   color: white;
                    text-decoration: none !important;
                    font-size: 14px;
                    font-weight: 600;
@@ -220,7 +217,7 @@ header{
                 }
                 &>.menu-detail{
                     width: 1540px;
-                    height: 340px;
+                    height: 380px;
                     position: absolute;
                     visibility: hidden;
                     opacity: 0;
@@ -228,6 +225,8 @@ header{
                     padding: 18px 35px;
                     top: 75px;
                     left: -135px;
+                    z-index: 9;
+                    background-color: white;
                    .row{
                        @include flexbox; 
                        width: 100%;
@@ -336,6 +335,8 @@ header{
                     padding: 18px 35px;
                     top: 75px;
                     left: -283px;
+                    z-index: 9;
+                    background-color: white;
                    .row{
                        @include flexbox; 
                        width: 100%;
@@ -435,7 +436,7 @@ header{
                 }
                 &>.third-menu-detail{
                     width: 1540px;
-                    height: 380px;
+                    height: 400px;
                     position: absolute;
                     visibility: hidden;
                     opacity: 0;
@@ -443,6 +444,8 @@ header{
                     padding: 18px 35px;
                     top: 75px;
                     left: -465px;
+                    z-index: 9;
+                    background-color: white;
                    .row{
                        @include flexbox; 
                        width: 100%;
@@ -551,6 +554,8 @@ header{
                     padding: 18px 35px;
                     top: 75px;
                     left: -625px;
+                    z-index: 9;
+                    background-color: white;
                    .row{
                        @include flexbox; 
                        width: 100%;

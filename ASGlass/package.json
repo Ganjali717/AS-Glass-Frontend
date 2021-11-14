@@ -4,6 +4,7 @@
   "description": "vss",
   "main": "index.js",
   "dependencies": {
+    "@splidejs/splide": "^3.3.1",
     "node-sass": "^6.0.1"
   },
   "devDependencies": {},

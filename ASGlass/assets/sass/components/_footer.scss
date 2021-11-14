@@ -6,141 +6,69 @@ footer{
         @include flexbox; 
         flex-direction: column;
         justify-content: space-between !important;
-        .footer-up{
-         @include flexbox; 
-         flex-direction: row;
-         justify-content: space-evenly;
-         img{
-             width: 50px;
-             height: 50px;
-             margin-right: 35px;
-         }
-         .footer-menu{
-             @include flexbox; 
-             flex-direction: row;
-             align-items: flex-start;
-             .footer-company{
-                @include flexbox; 
-                flex-direction: column;
-                justify-content: space-between !important;
-                align-items: flex-start;
-                 h5{
-                    color: #adaabf;
-                    font-size: 18px;
-                    line-height: 1.5;
-                    font-weight: 500;
-                    text-align: center;
-                    letter-spacing: 1.5px;
-                 }
-                 ul{
-                     
-                    li{
-                        list-style: none;
-                        padding: 10px;
-                        a{
-                            text-decoration: none;
-                            color: whitesmoke;
-                        }
-                    }
-                 }
-             }
-             .footer-resources{
-                @include flexbox; 
-                flex-direction: column;
-                justify-content: space-between !important;
-                align-items: flex-start;
-                 h5{
-                    color: #adaabf;
-                    font-size: 18px;
-                    line-height: 1.5;
-                    font-weight: 500;
-                    letter-spacing: 1.5px;
-                    text-align: center;
-                 }
-                 p{
-                     color: whitesmoke;
-                 }
-                 ul{
-                     @include flexbox; 
-                     flex-direction: column;
-                     align-items: flex-start;
-                     li{
-                         list-style: none;
-                         padding: 10px;
-                         a{
-                             color: whitesmoke;
-                             text-decoration: none;
-
-                         }
-                     }
-                 }
-             }
-             .footer-legal{
-                @include flexbox; 
-                flex-direction: column;
-                align-items: flex-start;
-                 h5{
-                    color: #adaabf;
-                    font-size: 18px;
-                    line-height: 1.5;
-                    font-weight: 500;
-                    letter-spacing: 1.5px;
-                    text-align: center;
-                 }
-                 ul{
-                     @include flexbox; 
-                     flex-direction: column;
-                     align-items: flex-start;
-                     li{
-                         padding: 15px;
-                         list-style: none;
-                         a{
-                             text-decoration: none;
-                             color: whitesmoke;
-                         }
-                     }
-                 }
-             }
-         }
-         .subscribe{
-             form{
-                 input[type="submit"]{
-                     background-color: rgb(77, 77, 185);
-                     color: white;
-                     width: 100px;
-                 }
-                .d-none {
-                    display: none;
-                }
-                .error {
-                    color: rgb(204, 66, 66);
-                    font-size: 1rem;
-                }
-             }
-             h5{
-                color: #adaabf;
-             }
-             p{
-                color: #adaabf;
-             }
-             input{
-                 width: 100%;
-                 padding: 10px;
-                 border-radius: 5px;
-             }
-             a{
-                background-color: #075eaa;
-                padding: 15px 35px;
-                border-radius: 5px;
-                color: whitesmoke;
-                text-decoration: none;
-             }
-         }
+        position: relative;
+        .foot-head{
+            @include flexbox; 
+            flex-direction: row;
+            position: absolute; 
+            padding: 35px 15px;
+            top: -200px;
+            .foot-head-left{
+              background-color: #5b35d5;
+              background-repeat: no-repeat;
+              padding: 42px;
+              color: white;
+            }
+            .foot-head-right{
+                background-color: white;
+                padding: 25px;
+               button{
+                   background-color: #0f0d1e;
+                   border: none;
+                   color: white;
+                   padding: 15px;
+               }
+            }
         }
-        .footer-down{
-            p{
-                color: #adaabf;
-                text-align: center;
+        .foot-body{
+            @include flexbox; 
+            flex-direction: row;
+            align-items: flex-start;
+            color: white;
+            border-bottom: 1px solid #5b35d5;
+            padding: 55px 0;
+            ul{
+                @include flexbox;
+                flex-direction: column;
+                align-items: flex-start;
+                margin: 0;
+                padding: 0;
+                li{
+                    list-style: none;
+                    padding: 15px 0;
+                    a{
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        .foot-foot{
+            @include flexbox;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding: 25px 0;
+            .foot-ft-left{
+                p{
+                    color: white;
+                }
+            }
+            .foot-ft-right{
+                a{
+                    color: white;
+                    text-decoration: none;
+                }
             }
         }
     }
