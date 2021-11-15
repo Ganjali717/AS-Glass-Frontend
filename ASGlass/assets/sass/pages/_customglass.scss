@@ -1,0 +1,117 @@
+main{
+    @include flexbox;
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+    #cs-select-glass{
+        width: 100%;
+        background-color: #271d74;
+        color: white;
+        padding: 35px 15px;
+        .column{
+            @include flexbox; 
+            flex-direction: column;
+            align-items: center;
+            .select-shape{
+                @include flexbox; 
+                flex-direction: column;
+               .shape-head{
+                   background-color: #1e1a3d;
+                   text-align: center;
+                   padding: 15px;
+                   border-top-left-radius: 10px;
+                   border-top-right-radius: 10px;
+               }
+                .shapes{
+                    @include flexbox; 
+                    flex-direction: row;
+                    justify-content: space-around;
+                    padding: 25px 0;
+                    .shapes-item{
+                        background-color: #1e1a3d;
+                        text-align: center;
+                        border-radius: 10px;
+                        padding: 25px 10px;
+                        img{
+                            width: 100px;
+                            height: 100px;
+                        }
+                        a{
+                            text-decoration: none;
+                            color: white;
+                            padding: 15px 25px;
+                            border: 1px solid white;
+                            border-radius: 10px;
+                        }
+                    }
+                }
+                a{
+                   font-size: 20px;
+                   text-decoration: none;
+                   color: orange;
+                }
+            }
+        }
+    }
+    #about-us{
+        width: 100%;
+        padding: 65px 25px;
+        background-color: #1e1a3d;
+        .row{
+            @include flexbox; 
+            flex-direction: row;
+            .about-us-left{
+               color: white;
+            }
+            .about-us-right{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    #where-use{
+        width: 100%;
+        background-color: #271d74;
+        padding: 45px 25px;
+        .row{
+            @include flexbox; 
+            flex-direction: row;
+            justify-content: space-between;
+            .where-use-left{
+                img{
+                    width: 100%;
+                }
+            }
+            .where-use-right{
+                color: white;
+            }
+        }
+    }
+    #ordering{
+        width: 100%;
+        padding: 45px 25px;
+        background-color: #1e1a3d;
+        .container{
+            color: white;
+        }
+    }
+    #safety{
+        width: 100%;
+        padding: 45px 25px;
+        background-color: #271d74;
+        .row{
+            @include flexbox; 
+            flex-direction: row;
+            justify-content: space-between;
+            .sft-left{
+                img{
+                    width: 100%;
+                }
+            }
+            .sft-right{
+                color:white;
+            }
+        }
+    }
+}

@@ -11737,6 +11737,8 @@ header {
               border-radius: 15px;
               width: 320px;
               height: 250px; }
+  header .glass-breadcrumb .container .row p {
+    color: white; }
 
 @media only screen and (max-width: 768px) {
   header #header-page .row {
@@ -11777,7 +11779,7 @@ footer {
       flex-direction: row;
       position: absolute;
       padding: 35px 15px;
-      top: -200px; }
+      top: -230px; }
       footer .column .foot-head .foot-head-left {
         background-color: #5b35d5;
         background-repeat: no-repeat;
@@ -12302,3 +12304,105 @@ main {
     opacity: .4; }
   to {
     opacity: 1; } }
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: max-content; }
+  main #cs-select-glass {
+    width: 100%;
+    background-color: #271d74;
+    color: white;
+    padding: 35px 15px; }
+    main #cs-select-glass .column {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      align-items: center; }
+      main #cs-select-glass .column .select-shape {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; }
+        main #cs-select-glass .column .select-shape .shape-head {
+          background-color: #1e1a3d;
+          text-align: center;
+          padding: 15px;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px; }
+        main #cs-select-glass .column .select-shape .shapes {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: row;
+          justify-content: space-around;
+          padding: 25px 0; }
+          main #cs-select-glass .column .select-shape .shapes .shapes-item {
+            background-color: #1e1a3d;
+            text-align: center;
+            border-radius: 10px;
+            padding: 25px 10px; }
+            main #cs-select-glass .column .select-shape .shapes .shapes-item img {
+              width: 100px;
+              height: 100px; }
+            main #cs-select-glass .column .select-shape .shapes .shapes-item a {
+              text-decoration: none;
+              color: white;
+              padding: 15px 25px;
+              border: 1px solid white;
+              border-radius: 10px; }
+        main #cs-select-glass .column .select-shape a {
+          font-size: 20px;
+          text-decoration: none;
+          color: orange; }
+  main #about-us {
+    width: 100%;
+    padding: 65px 25px;
+    background-color: #1e1a3d; }
+    main #about-us .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row; }
+      main #about-us .row .about-us-left {
+        color: white; }
+      main #about-us .row .about-us-right img {
+        width: 100%; }
+  main #where-use {
+    width: 100%;
+    background-color: #271d74;
+    padding: 45px 25px; }
+    main #where-use .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between; }
+      main #where-use .row .where-use-left img {
+        width: 100%; }
+      main #where-use .row .where-use-right {
+        color: white; }
+  main #ordering {
+    width: 100%;
+    padding: 45px 25px;
+    background-color: #1e1a3d; }
+    main #ordering .container {
+      color: white; }
+  main #safety {
+    width: 100%;
+    padding: 45px 25px;
+    background-color: #271d74; }
+    main #safety .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between; }
+      main #safety .row .sft-left img {
+        width: 100%; }
+      main #safety .row .sft-right {
+        color: white; }
