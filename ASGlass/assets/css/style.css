@@ -11779,7 +11779,7 @@ footer {
       flex-direction: row;
       position: absolute;
       padding: 35px 15px;
-      top: -230px; }
+      top: -200px; }
       footer .column .foot-head .foot-head-left {
         background-color: #5b35d5;
         background-repeat: no-repeat;
@@ -11856,53 +11856,53 @@ footer {
     footer .column .footer-up .subscribe {
       width: 100%; } }
 
-main {
+#home {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 100%;
   height: max-content; }
-  main #slider {
+  #home #slider {
     width: 100%;
     height: max-content;
     background-color: #0f0d1e;
     border-bottom: 1px solid rgba(0, 0, 0, 0.158); }
-    main #slider .container {
+    #home #slider .container {
       height: max-content; }
-      main #slider .container .row {
+      #home #slider .container .row {
         max-width: 100%;
         height: max-content !important;
         position: relative;
         margin: 0;
         padding: 0; }
-        main #slider .container .row .myslides {
+        #home #slider .container .row .myslides {
           display: none;
           flex-direction: row;
           height: max-content;
           margin: 0;
           padding: 0; }
-          main #slider .container .row .myslides .slider-left-side {
+          #home #slider .container .row .myslides .slider-left-side {
             padding: 85px;
             color: white; }
-            main #slider .container .row .myslides .slider-left-side a {
+            #home #slider .container .row .myslides .slider-left-side a {
               text-decoration: none;
               color: white;
               padding: 15px 20px;
               border: 1px solid white;
               border-radius: 5px; }
-              main #slider .container .row .myslides .slider-left-side a:hover {
+              #home #slider .container .row .myslides .slider-left-side a:hover {
                 background-color: #5a35d5b9;
                 transition: background-color 0.5s linear; }
-          main #slider .container .row .myslides .slider-right-side img {
+          #home #slider .container .row .myslides .slider-right-side img {
             width: 100%;
             height: max-content; }
-        main #slider .container .row .faded {
+        #home #slider .container .row .faded {
           -webkit-animation-name: faded;
           -webkit-animation-duration: 2s;
           animation-name: faded;
           animation-duration: 2s; }
-        main #slider .container .row .prev {
+        #home #slider .container .row .prev {
           cursor: pointer;
           position: absolute;
           top: 50%;
@@ -11915,7 +11915,7 @@ main {
           border-radius: 0 3px 3px 0;
           background-color: #5b35d5;
           user-select: none; }
-        main #slider .container .row .next {
+        #home #slider .container .row .next {
           cursor: pointer;
           position: absolute;
           top: 50%;
@@ -11929,11 +11929,11 @@ main {
           border-radius: 3px 0 0 3px;
           background-color: #5b35d5;
           user-select: none; }
-        main #slider .container .row .dots-sec {
+        #home #slider .container .row .dots-sec {
           text-align: center;
           position: absolute;
           bottom: 0; }
-          main #slider .container .row .dots-sec .dot {
+          #home #slider .container .row .dots-sec .dot {
             cursor: pointer;
             bottom: 25px;
             height: 15px;
@@ -11943,21 +11943,21 @@ main {
             border-radius: 50%;
             display: inline-block;
             transition: background-color 0.6s ease; }
-            main #slider .container .row .dots-sec .dot .active, main #slider .container .row .dots-sec .dot:hover {
+            #home #slider .container .row .dots-sec .dot .active, #home #slider .container .row .dots-sec .dot:hover {
               background-color: #717171; }
-  main #cards {
+  #home #cards {
     width: 100%;
     border-bottom: 1px solid rgba(0, 0, 0, 0.158);
     padding: 55px 25px;
     background-color: #1b1734; }
-    main #cards .row {
+    #home #cards .row {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: row;
       justify-content: space-around;
       align-items: center; }
-      main #cards .row .card-item {
+      #home #cards .row .card-item {
         border: 1px rgba(0, 0, 0, 0.295) solid;
         border-radius: 5px;
         background-color: #0f0d1e;
@@ -11966,10 +11966,10 @@ main {
         padding: 15px;
         height: 395px;
         color: white; }
-        main #cards .row .card-item > img {
+        #home #cards .row .card-item > img {
           width: 250px;
           height: 150px; }
-        main #cards .row .card-item .card-btn {
+        #home #cards .row .card-item .card-btn {
           position: absolute;
           width: 100%;
           left: 0;
@@ -11980,38 +11980,38 @@ main {
           border-bottom-left-radius: 2px;
           color: white;
           padding: 15px; }
-          main #cards .row .card-item .card-btn:hover {
+          #home #cards .row .card-item .card-btn:hover {
             background-color: rgba(255, 145, 0, 0.678); }
-  main #department {
+  #home #department {
     width: 100%;
     border-bottom: 1px solid rgba(0, 0, 0, 0.158);
     padding: 35px 15px;
     background-color: #0f0d1e; }
-    main #department .row {
+    #home #department .row {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between; }
-      main #department .row .department-item {
+      #home #department .row .department-item {
         cursor: pointer; }
-        main #department .row .department-item img {
+        #home #department .row .department-item img {
           width: 150px;
           height: 150px; }
-  main #feature {
+  #home #feature {
     width: 100%;
     padding: 25px 15px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.158);
     background-color: #1b1734; }
-    main #feature .column {
+    #home #feature .column {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
       justify-content: space-between;
       align-items: center; }
-      main #feature .column .feature-item {
+      #home #feature .column .feature-item {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -12020,78 +12020,78 @@ main {
         padding: 25px 35px;
         border-radius: 15px;
         background-image: url(https://assets-global.website-files.com/5fe9c5e…/6012e83…_pattern-logo.png), linear-gradient(100deg, #1b1734, #0f0d1e); }
-        main #feature .column .feature-item .ft-left {
+        #home #feature .column .feature-item .ft-left {
           text-align: left;
           padding: 35px 25px;
           border-radius: 10px; }
-          main #feature .column .feature-item .ft-left h4, main #feature .column .feature-item .ft-left .h4 {
+          #home #feature .column .feature-item .ft-left h4, #home #feature .column .feature-item .ft-left .h4 {
             color: white; }
-          main #feature .column .feature-item .ft-left p {
+          #home #feature .column .feature-item .ft-left p {
             color: white; }
-          main #feature .column .feature-item .ft-left a {
+          #home #feature .column .feature-item .ft-left a {
             text-align: center;
             color: black;
             text-decoration: none;
             padding: 10px;
             background-color: white;
             border-radius: 5px; }
-        main #feature .column .feature-item .ft-right {
+        #home #feature .column .feature-item .ft-right {
           padding: 35px 25px; }
-          main #feature .column .feature-item .ft-right img {
+          #home #feature .column .feature-item .ft-right img {
             margin: 0;
             width: 580px;
             height: 320px;
             border-radius: 5px; }
-  main #accessories {
+  #home #accessories {
     width: 100%;
     height: max-content;
     padding: 25px;
     background-color: #0f0d1e; }
-    main #accessories .row {
+    #home #accessories .row {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: row;
       justify-content: space-around;
       align-items: center; }
-      main #accessories .row .acs-items {
+      #home #accessories .row .acs-items {
         height: max-content;
         border: 1px solid rgba(0, 0, 0, 0.233);
         border-radius: 5px;
         padding: 25px 35px;
         text-align: center;
         color: white; }
-        main #accessories .row .acs-items img {
+        #home #accessories .row .acs-items img {
           width: 250px;
           height: 130px; }
-        main #accessories .row .acs-items .acs-btn {
+        #home #accessories .row .acs-items .acs-btn {
           width: 100%;
           padding: 10px;
           background-color: #5b35d5;
           text-decoration: none;
           color: white; }
-  main #scnd-card {
+  #home #scnd-card {
     width: 100%;
     padding: 25px 35px;
     border-bottom: 1px solid black;
     background-color: #0f0d1e; }
-    main #scnd-card .row {
+    #home #scnd-card .row {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: row;
       justify-content: space-around; }
-      main #scnd-card .row .scnd-card-item {
+      #home #scnd-card .row .scnd-card-item {
         position: relative; }
-        main #scnd-card .row .scnd-card-item h2, main #scnd-card .row .scnd-card-item .h2 {
+        #home #scnd-card .row .scnd-card-item h2, #home #scnd-card .row .scnd-card-item .h2 {
           background-color: #076CB4;
           padding: 25px;
           color: white;
           background-image: url(https://assets-global.website-files.com/5fe9c5e…/6012e83…_pattern-logo.png), linear-gradient(100deg, #1b1734, #0f0d1e); }
-        main #scnd-card .row .scnd-card-item img {
+        #home #scnd-card .row .scnd-card-item img {
           width: 100%;
           height: 250px; }
-        main #scnd-card .row .scnd-card-item .scnd-card-btn-left {
+        #home #scnd-card .row .scnd-card-item .scnd-card-btn-left {
           position: absolute;
           text-decoration: none;
           color: white;
@@ -12099,7 +12099,7 @@ main {
           padding: 15px 25px;
           bottom: 0;
           left: 11px; }
-        main #scnd-card .row .scnd-card-item .scnd-card-btn-right {
+        #home #scnd-card .row .scnd-card-item .scnd-card-btn-right {
           position: absolute;
           text-decoration: none;
           color: white;
@@ -12107,28 +12107,28 @@ main {
           padding: 15px 25px;
           bottom: 0;
           right: 11px; }
-  main #categories {
+  #home #categories {
     width: 100%;
     padding: 55px 25px;
     height: max-content;
     text-align: center;
     background-color: #1b1734;
     color: white; }
-    main #categories h3, main #categories .h3 {
+    #home #categories h3, #home #categories .h3 {
       font-weight: 100; }
-    main #categories .row {
+    #home #categories .row {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: row;
       justify-content: space-around;
       align-items: flex-start; }
-      main #categories .row .ctg-item {
+      #home #categories .row .ctg-item {
         padding: 25px;
         border: 1px solid black;
         border-radius: 5px;
         background-color: #0f0d1e; }
-        main #categories .row .ctg-item ul {
+        #home #categories .row .ctg-item ul {
           display: flex;
           justify-content: center;
           align-items: center;
@@ -12137,28 +12137,28 @@ main {
           align-items: flex-start;
           margin: 0;
           padding: 0; }
-          main #categories .row .ctg-item ul li {
+          #home #categories .row .ctg-item ul li {
             list-style: none;
             padding: 5px 0; }
-            main #categories .row .ctg-item ul li::before {
+            #home #categories .row .ctg-item ul li::before {
               content: "\00BB"; }
-            main #categories .row .ctg-item ul li a {
+            #home #categories .row .ctg-item ul li a {
               text-decoration: none;
               color: white;
               padding: 0 5px; }
-              main #categories .row .ctg-item ul li a:hover {
+              #home #categories .row .ctg-item ul li a:hover {
                 border-bottom: 1px solid black; }
-  main #reviews {
+  #home #reviews {
     width: 100%;
     padding: 55px 25px;
     background-color: #0f0d1e; }
-    main #reviews .column {
+    #home #reviews .column {
       display: flex;
       justify-content: center;
       align-items: center;
       width: 100%;
       flex-direction: column; }
-      main #reviews .column .rvw-head {
+      #home #reviews .column .rvw-head {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -12166,36 +12166,36 @@ main {
         align-items: baseline;
         color: white;
         border-bottom: 1px solid rgba(209, 209, 209, 0.651); }
-        main #reviews .column .rvw-head .rvw-head-right {
+        #home #reviews .column .rvw-head .rvw-head-right {
           display: flex;
           justify-content: center;
           align-items: center;
           text-align: right;
           flex-direction: row; }
-          main #reviews .column .rvw-head .rvw-head-right i {
+          #home #reviews .column .rvw-head .rvw-head-right i {
             font-size: 25px;
             cursor: pointer; }
-          main #reviews .column .rvw-head .rvw-head-right p {
+          #home #reviews .column .rvw-head .rvw-head-right p {
             margin: 0;
             padding: 0; }
-      main #reviews .column .rvw-items-sec {
+      #home #reviews .column .rvw-items-sec {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row;
         flex-wrap: nowrap;
         padding: 55px 25px; }
-        main #reviews .column .rvw-items-sec .rvw-item {
+        #home #reviews .column .rvw-items-sec .rvw-item {
           border: 1px solid white;
           padding: 25px;
           color: white; }
-          main #reviews .column .rvw-items-sec .rvw-item .bi-star-fill {
+          #home #reviews .column .rvw-items-sec .rvw-item .bi-star-fill {
             color: gold; }
-  main #instock {
+  #home #instock {
     width: 100%;
     padding: 65px 0;
     background-color: #1b1734; }
-    main #instock .row {
+    #home #instock .row {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -12203,12 +12203,12 @@ main {
       justify-content: center;
       align-items: center;
       padding: 25px; }
-      main #instock .row .instock-left {
+      #home #instock .row .instock-left {
         position: relative; }
-        main #instock .row .instock-left img {
+        #home #instock .row .instock-left img {
           width: 100%;
           height: 550px; }
-        main #instock .row .instock-left a {
+        #home #instock .row .instock-left a {
           position: absolute;
           bottom: 15px;
           right: 10px;
@@ -12217,16 +12217,16 @@ main {
           color: white;
           font-size: 15px;
           padding: 25px 15px; }
-          main #instock .row .instock-left a:hover {
+          #home #instock .row .instock-left a:hover {
             background-color: #4922c7; }
-      main #instock .row .instock-right img {
+      #home #instock .row .instock-right img {
         width: 100%;
         height: 550px; }
-  main #advertising {
+  #home #advertising {
     width: 100%;
     padding: 55px 25px;
     background-color: #0f0d1e; }
-    main #advertising .adv-item {
+    #home #advertising .adv-item {
       width: 100%;
       display: flex;
       justify-content: center;
@@ -12235,62 +12235,62 @@ main {
       background-color: #5b35d5;
       padding: 35px 25px;
       color: white; }
-      main #advertising .adv-item h1, main #advertising .adv-item .h1 {
+      #home #advertising .adv-item h1, #home #advertising .adv-item .h1 {
         font-size: 65px; }
-      main #advertising .adv-item .adv-txt {
+      #home #advertising .adv-item .adv-txt {
         color: #0f0d1e; }
-  main #blog {
+  #home #blog {
     width: 100%;
     padding: 55px 25px;
     background-color: #1b1734; }
-    main #blog h1, main #blog .h1 {
+    #home #blog h1, #home #blog .h1 {
       color: white;
       text-align: center;
       font-weight: 200; }
-    main #blog .column {
+    #home #blog .column {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column; }
-      main #blog .column .blog-head {
+      #home #blog .column .blog-head {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row;
         justify-content: space-between;
         padding: 35px; }
-        main #blog .column .blog-head .blog-head-item {
+        #home #blog .column .blog-head .blog-head-item {
           color: white; }
-          main #blog .column .blog-head .blog-head-item img {
+          #home #blog .column .blog-head .blog-head-item img {
             width: 100%; }
-          main #blog .column .blog-head .blog-head-item a {
+          #home #blog .column .blog-head .blog-head-item a {
             color: white;
             font-size: 25px; }
-          main #blog .column .blog-head .blog-head-item p {
+          #home #blog .column .blog-head .blog-head-item p {
             font-size: 18px; }
-      main #blog .column .blog-body {
+      #home #blog .column .blog-body {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row;
         justify-content: space-around;
         padding: 45px 35px; }
-        main #blog .column .blog-body .blog-body-item {
+        #home #blog .column .blog-body .blog-body-item {
           text-align: center;
           color: white;
           padding: 45px 25px;
           background-color: #0f0d1ec5;
           border: 1px solid black; }
-          main #blog .column .blog-body .blog-body-item i {
+          #home #blog .column .blog-body .blog-body-item i {
             font-size: 55px;
             color: #3400e0; }
-          main #blog .column .blog-body .blog-body-item h4, main #blog .column .blog-body .blog-body-item .h4 {
+          #home #blog .column .blog-body .blog-body-item h4, #home #blog .column .blog-body .blog-body-item .h4 {
             font-size: 35px; }
-          main #blog .column .blog-body .blog-body-item span {
+          #home #blog .column .blog-body .blog-body-item span {
             width: 35px;
             height: 20px;
             background-color: brown; }
-          main #blog .column .blog-body .blog-body-item p {
+          #home #blog .column .blog-body .blog-body-item p {
             font-size: 20px; }
 
 @-webkit-keyframes faded {
@@ -12305,259 +12305,259 @@ main {
   to {
     opacity: 1; } }
 
-main {
+#glass {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 100%;
   height: max-content; }
-  main #cs-select-glass {
+  #glass #cs-select-glass {
     width: 100%;
     background-color: #271d74;
     color: white;
     padding: 35px 15px; }
-    main #cs-select-glass .column {
+    #glass #cs-select-glass .column {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
       align-items: center; }
-      main #cs-select-glass .column .select-shape {
+      #glass #cs-select-glass .column .select-shape {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column; }
-        main #cs-select-glass .column .select-shape .shape-head {
+        #glass #cs-select-glass .column .select-shape .shape-head {
           background-color: #1e1a3d;
           text-align: center;
           padding: 15px;
           border-top-left-radius: 10px;
           border-top-right-radius: 10px; }
-        main #cs-select-glass .column .select-shape .shapes {
+        #glass #cs-select-glass .column .select-shape .shapes {
           display: flex;
           justify-content: center;
           align-items: center;
           flex-direction: row;
           justify-content: space-around;
           padding: 25px 0; }
-          main #cs-select-glass .column .select-shape .shapes .shapes-item {
+          #glass #cs-select-glass .column .select-shape .shapes .shapes-item {
             background-color: #1e1a3d;
             text-align: center;
             border-radius: 10px;
             padding: 25px 10px; }
-            main #cs-select-glass .column .select-shape .shapes .shapes-item img {
+            #glass #cs-select-glass .column .select-shape .shapes .shapes-item img {
               width: 100px;
               height: 100px; }
-            main #cs-select-glass .column .select-shape .shapes .shapes-item a {
+            #glass #cs-select-glass .column .select-shape .shapes .shapes-item a {
               text-decoration: none;
               color: white;
               padding: 15px 25px;
               border: 1px solid white;
               border-radius: 10px; }
-        main #cs-select-glass .column .select-shape a {
+        #glass #cs-select-glass .column .select-shape a {
           font-size: 20px;
           text-decoration: none;
           color: orange; }
-  main #about-us {
+  #glass #about-us {
     width: 100%;
     padding: 65px 25px;
     background-color: #1e1a3d; }
-    main #about-us .row {
+    #glass #about-us .row {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: row; }
-      main #about-us .row .about-us-left {
+      #glass #about-us .row .about-us-left {
         color: white; }
-      main #about-us .row .about-us-right img {
+      #glass #about-us .row .about-us-right img {
         width: 100%; }
-  main #where-use {
+  #glass #where-use {
     width: 100%;
     background-color: #271d74;
     padding: 45px 25px; }
-    main #where-use .row {
+    #glass #where-use .row {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: row;
       justify-content: space-between; }
-      main #where-use .row .where-use-left img {
+      #glass #where-use .row .where-use-left img {
         width: 100%; }
-      main #where-use .row .where-use-right {
+      #glass #where-use .row .where-use-right {
         color: white; }
-  main #ordering {
+  #glass #ordering {
     width: 100%;
     padding: 45px 25px;
     background-color: #1e1a3d; }
-    main #ordering .container {
+    #glass #ordering .container {
       color: white; }
-  main #safety {
+  #glass #safety {
     width: 100%;
     padding: 45px 25px;
     background-color: #271d74; }
-    main #safety .row {
+    #glass #safety .row {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: row;
       justify-content: space-between; }
-      main #safety .row .sft-left img {
+      #glass #safety .row .sft-left img {
         width: 100%; }
-      main #safety .row .sft-right {
+      #glass #safety .row .sft-right {
         color: white; }
-  main #faq {
+  #glass #faq {
     width: 100%;
     background-color: #1e1a3d;
     padding: 45px 25px; }
-    main #faq .container {
+    #glass #faq .container {
       color: white; }
-      main #faq .container h4, main #faq .container .h4 {
+      #glass #faq .container h4, #glass #faq .container .h4 {
         text-align: center; }
-      main #faq .container .column {
+      #glass #faq .container .column {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start; }
-        main #faq .container .column .accordion {
+        #glass #faq .container .column .accordion {
           width: 100%;
           border: none;
           background-color: #271d74;
           color: white;
           text-align: left;
           padding: 15px; }
-        main #faq .container .column .panel {
+        #glass #faq .container .column .panel {
           padding: 0 18px;
           max-height: 0;
           overflow: hidden;
           transition: max-height 0.2s ease-out; }
-  main #tool {
+  #glass #tool {
     width: 100%;
     background-color: #271d74;
     padding: 45px 25px; }
-    main #tool .container {
+    #glass #tool .container {
       color: white; }
-      main #tool .container h4, main #tool .container .h4 {
+      #glass #tool .container h4, #glass #tool .container .h4 {
         text-align: center; }
-      main #tool .container .row {
+      #glass #tool .container .row {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row;
         justify-content: space-around; }
-        main #tool .container .row .tool-item {
+        #glass #tool .container .row .tool-item {
           display: flex;
           justify-content: center;
           align-items: center;
           flex-direction: row;
           justify-content: space-around; }
-          main #tool .container .row .tool-item .tl-item-right a {
+          #glass #tool .container .row .tool-item .tl-item-right a {
             text-decoration: none;
             color: white;
             border: 1px solid black;
             padding: 15px 10px; }
-            main #tool .container .row .tool-item .tl-item-right a:hover {
+            #glass #tool .container .row .tool-item .tl-item-right a:hover {
               background-color: #1e1a3d;
               transition: background-color 0.3s linear; }
-  main #videos {
+  #glass #videos {
     width: 100%;
     background-color: #1e1a3d;
     padding: 45px 25px;
     color: white; }
-    main #videos .container h2, main #videos .container .h2 {
+    #glass #videos .container h2, #glass #videos .container .h2 {
       text-align: center; }
-    main #videos .container .row {
+    #glass #videos .container .row {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: row;
       justify-content: space-around; }
-      main #videos .container .row .vd-item {
+      #glass #videos .container .row .vd-item {
         position: relative;
         text-align: center; }
-        main #videos .container .row .vd-item img {
+        #glass #videos .container .row .vd-item img {
           width: 100%; }
-        main #videos .container .row .vd-item i {
+        #glass #videos .container .row .vd-item i {
           position: absolute;
           top: 75px;
           left: 145px;
           color: #581d74;
           cursor: pointer;
           font-size: 55px; }
-          main #videos .container .row .vd-item i::before {
+          #glass #videos .container .row .vd-item i::before {
             background-color: black; }
-  main #related {
+  #glass #related {
     width: 100%;
     padding: 45px 25px;
     background-color: #EBEBEB; }
-    main #related .container {
+    #glass #related .container {
       color: white; }
-      main #related .container h2, main #related .container .h2 {
+      #glass #related .container h2, #glass #related .container .h2 {
         text-align: center; }
-      main #related .container .row {
+      #glass #related .container .row {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row;
         justify-content: space-around; }
-        main #related .container .row .related-item {
+        #glass #related .container .row .related-item {
           text-align: center; }
-          main #related .container .row .related-item img {
+          #glass #related .container .row .related-item img {
             width: 100%; }
-  main #blog {
+  #glass #blog {
     width: 100%;
     padding: 55px 25px;
     background-color: #1b1734; }
-    main #blog h1, main #blog .h1 {
+    #glass #blog h1, #glass #blog .h1 {
       color: white;
       text-align: center;
       font-weight: 200; }
-    main #blog .column {
+    #glass #blog .column {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column; }
-      main #blog .column .blog-head {
+      #glass #blog .column .blog-head {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row;
         justify-content: space-between;
         padding: 35px; }
-        main #blog .column .blog-head .blog-head-item {
+        #glass #blog .column .blog-head .blog-head-item {
           color: white; }
-          main #blog .column .blog-head .blog-head-item img {
+          #glass #blog .column .blog-head .blog-head-item img {
             width: 100%; }
-          main #blog .column .blog-head .blog-head-item a {
+          #glass #blog .column .blog-head .blog-head-item a {
             color: white;
             font-size: 25px; }
-          main #blog .column .blog-head .blog-head-item p {
+          #glass #blog .column .blog-head .blog-head-item p {
             font-size: 18px; }
-      main #blog .column .blog-body {
+      #glass #blog .column .blog-body {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row;
         justify-content: space-around;
         padding: 45px 35px; }
-        main #blog .column .blog-body .blog-body-item {
+        #glass #blog .column .blog-body .blog-body-item {
           text-align: center;
           color: white;
           padding: 45px 25px;
           background-color: #0f0d1ec5;
           border: 1px solid black; }
-          main #blog .column .blog-body .blog-body-item i {
+          #glass #blog .column .blog-body .blog-body-item i {
             font-size: 55px;
             color: #3400e0; }
-          main #blog .column .blog-body .blog-body-item h4, main #blog .column .blog-body .blog-body-item .h4 {
+          #glass #blog .column .blog-body .blog-body-item h4, #glass #blog .column .blog-body .blog-body-item .h4 {
             font-size: 35px; }
-          main #blog .column .blog-body .blog-body-item span {
+          #glass #blog .column .blog-body .blog-body-item span {
             width: 35px;
             height: 20px;
             background-color: brown; }
-          main #blog .column .blog-body .blog-body-item p {
+          #glass #blog .column .blog-body .blog-body-item p {
             font-size: 20px; }
 
 #glasstable {
@@ -12836,4 +12836,467 @@ main {
             height: 20px;
             background-color: brown; }
           #glasstable #blog .column .blog-body .blog-body-item p {
+            font-size: 20px; }
+
+#mirror {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: max-content; }
+  #mirror #cs-select-glass {
+    width: 100%;
+    background-color: #271d74;
+    color: white;
+    padding: 35px 15px; }
+    #mirror #cs-select-glass .column {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      align-items: center; }
+      #mirror #cs-select-glass .column .select-shape {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; }
+        #mirror #cs-select-glass .column .select-shape .shape-head {
+          background-color: #1e1a3d;
+          text-align: center;
+          padding: 15px;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px; }
+        #mirror #cs-select-glass .column .select-shape .shapes {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: row;
+          justify-content: space-around;
+          padding: 25px 0; }
+          #mirror #cs-select-glass .column .select-shape .shapes .shapes-item {
+            background-color: #1e1a3d;
+            text-align: center;
+            border-radius: 10px;
+            padding: 25px 10px; }
+            #mirror #cs-select-glass .column .select-shape .shapes .shapes-item img {
+              width: 100px;
+              height: 100px; }
+            #mirror #cs-select-glass .column .select-shape .shapes .shapes-item a {
+              text-decoration: none;
+              color: white;
+              padding: 15px 25px;
+              border: 1px solid white;
+              border-radius: 10px; }
+        #mirror #cs-select-glass .column .select-shape a {
+          font-size: 20px;
+          text-decoration: none;
+          color: orange; }
+  #mirror #instockmirror {
+    width: 100%;
+    padding: 45px 25px; }
+    #mirror #instockmirror .container {
+      color: black;
+      text-align: center; }
+      #mirror #instockmirror .container .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        align-items: flex-start; }
+        #mirror #instockmirror .container .row .mirror-item {
+          border-radius: 10px;
+          padding: 15px 25px; }
+          #mirror #instockmirror .container .row .mirror-item img {
+            width: 100%; }
+          #mirror #instockmirror .container .row .mirror-item a {
+            text-decoration: none;
+            color: black;
+            font-size: 25px;
+            background-color: blueviolet;
+            padding: 25px;
+            border-radius: 10px; }
+  #mirror #gymmirror {
+    width: 100%;
+    padding: 45px 25px; }
+    #mirror #gymmirror .container .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: flex-start; }
+      #mirror #gymmirror .container .row .gym-left ol li a {
+        text-decoration: none;
+        color: orange; }
+  #mirror #about {
+    width: 100%;
+    padding: 45px 25px; }
+    #mirror #about .container .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start; }
+      #mirror #about .container .row .about-left img {
+        width: 100%; }
+      #mirror #about .container .row .about-right p {
+        font-size: 17px; }
+  #mirror #idea {
+    width: 100%;
+    padding: 45px 25px; }
+    #mirror #idea .container .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start; }
+      #mirror #idea .container .row .idea-left p {
+        font-size: 17px; }
+      #mirror #idea .container .row .idea-left ul li {
+        padding: 0; }
+        #mirror #idea .container .row .idea-left ul li a {
+          text-decoration: none; }
+      #mirror #idea .container .row .idea-right img {
+        width: 100%; }
+  #mirror #edgetypes {
+    width: 100%;
+    padding: 45px 25px; }
+    #mirror #edgetypes .container .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start; }
+      #mirror #edgetypes .container .row .edgetype-left img {
+        width: 100%; }
+      #mirror #edgetypes .container .row .edgetype-right p {
+        font-size: 17px; }
+  #mirror #safety {
+    width: 100%;
+    padding: 45px 25px; }
+    #mirror #safety .container .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start; }
+      #mirror #safety .container .row .safety-left p {
+        font-size: 17px; }
+      #mirror #safety .container .row .safety-right img {
+        width: 100%; }
+  #mirror #installation {
+    width: 100%;
+    padding: 45px 25px; }
+    #mirror #installation .container .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start; }
+      #mirror #installation .container .row .inst-left h4, #mirror #installation .container .row .inst-left .h4 {
+        color: blueviolet; }
+      #mirror #installation .container .row .inst-left ul li p {
+        padding: 0;
+        margin: 0; }
+      #mirror #installation .container .row .inst-left p {
+        font-size: 17px; }
+      #mirror #installation .container .row .inst-right img {
+        width: 100%; }
+  #mirror #faq {
+    width: 100%;
+    background-color: #1e1a3d;
+    padding: 45px 25px; }
+    #mirror #faq .container {
+      color: white; }
+      #mirror #faq .container h4, #mirror #faq .container .h4 {
+        text-align: center; }
+      #mirror #faq .container .column {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start; }
+        #mirror #faq .container .column .accordion {
+          width: 100%;
+          border: none;
+          background-color: #271d74;
+          color: white;
+          text-align: left;
+          padding: 15px; }
+        #mirror #faq .container .column .panel {
+          padding: 0 18px;
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.2s ease-out; }
+  #mirror #blog {
+    width: 100%;
+    padding: 55px 25px;
+    background-color: #1b1734; }
+    #mirror #blog h1, #mirror #blog .h1 {
+      color: white;
+      text-align: center;
+      font-weight: 200; }
+    #mirror #blog .column {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      #mirror #blog .column .blog-head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 35px; }
+        #mirror #blog .column .blog-head .blog-head-item {
+          color: white; }
+          #mirror #blog .column .blog-head .blog-head-item img {
+            width: 100%; }
+          #mirror #blog .column .blog-head .blog-head-item a {
+            color: white;
+            font-size: 25px; }
+          #mirror #blog .column .blog-head .blog-head-item p {
+            font-size: 18px; }
+      #mirror #blog .column .blog-body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 45px 35px; }
+        #mirror #blog .column .blog-body .blog-body-item {
+          text-align: center;
+          color: white;
+          padding: 45px 25px;
+          background-color: #0f0d1ec5;
+          border: 1px solid black; }
+          #mirror #blog .column .blog-body .blog-body-item i {
+            font-size: 55px;
+            color: #3400e0; }
+          #mirror #blog .column .blog-body .blog-body-item h4, #mirror #blog .column .blog-body .blog-body-item .h4 {
+            font-size: 35px; }
+          #mirror #blog .column .blog-body .blog-body-item span {
+            width: 35px;
+            height: 20px;
+            background-color: brown; }
+          #mirror #blog .column .blog-body .blog-body-item p {
+            font-size: 20px; }
+
+#mirrortable {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: max-content; }
+  #mirrortable #cs-select-glass {
+    width: 100%;
+    padding: 35px 15px; }
+    #mirrortable #cs-select-glass .column {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      align-items: center; }
+      #mirrortable #cs-select-glass .column .select-shape {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; }
+        #mirrortable #cs-select-glass .column .select-shape .shape-head {
+          background-color: #1e1a3d;
+          text-align: center;
+          padding: 15px;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px; }
+          #mirrortable #cs-select-glass .column .select-shape .shape-head h5, #mirrortable #cs-select-glass .column .select-shape .shape-head .h5 {
+            color: white; }
+        #mirrortable #cs-select-glass .column .select-shape .shapes {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: row;
+          justify-content: space-around;
+          padding: 25px 0;
+          color: #1e1a3d; }
+          #mirrortable #cs-select-glass .column .select-shape .shapes .shapes-item {
+            text-align: center;
+            border-radius: 10px;
+            padding: 25px 10px;
+            color: #1e1a3d; }
+            #mirrortable #cs-select-glass .column .select-shape .shapes .shapes-item img {
+              width: 100px;
+              height: 100px; }
+            #mirrortable #cs-select-glass .column .select-shape .shapes .shapes-item a {
+              text-decoration: none;
+              color: #1e1a3d;
+              padding: 15px 25px;
+              border: 1px solid  #1e1a3d;
+              border-radius: 10px; }
+        #mirrortable #cs-select-glass .column .select-shape a {
+          font-size: 20px;
+          text-decoration: none;
+          color: orange; }
+  #mirrortable #about {
+    width: 100%;
+    padding: 45px 25px; }
+    #mirrortable #about .container .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start; }
+      #mirrortable #about .container .row .about-left img {
+        width: 100%; }
+      #mirrortable #about .container .row .about-right p {
+        font-size: 17px; }
+      #mirrortable #about .container .row .about-right ul li a {
+        text-decoration: none; }
+  #mirrortable #where-use {
+    width: 100%;
+    padding: 45px 25px; }
+    #mirrortable #where-use .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between; }
+      #mirrortable #where-use .row .where-use-left img {
+        width: 100%; }
+      #mirrortable #where-use .row .where-use-right p {
+        font-size: 20px;
+        margin: 0; }
+  #mirrortable #how-use {
+    width: 100%;
+    padding: 45px 25px; }
+    #mirrortable #how-use .container p {
+      font-size: 20px; }
+    #mirrortable #how-use .container ol li a {
+      text-decoration: none; }
+    #mirrortable #how-use .container a {
+      text-decoration: none; }
+  #mirrortable #tool {
+    width: 100%;
+    padding: 45px 25px; }
+    #mirrortable #tool .container h4, #mirrortable #tool .container .h4 {
+      text-align: center; }
+    #mirrortable #tool .container .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-evenly; }
+      #mirrortable #tool .container .row .tool-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 25px;
+        text-align: center; }
+        #mirrortable #tool .container .row .tool-item img {
+          width: 150px; }
+        #mirrortable #tool .container .row .tool-item .tl-item-right a {
+          text-decoration: none;
+          border: 1px solid black;
+          border-radius: 10px;
+          padding: 15px 10px; }
+          #mirrortable #tool .container .row .tool-item .tl-item-right a:hover {
+            background-color: #1e1a3d;
+            transition: background-color 0.2s linear; }
+  #mirrortable #brackets {
+    width: 100%;
+    padding: 45px 25px; }
+    #mirrortable #brackets .container .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start; }
+      #mirrortable #brackets .container .row .brackets-left p {
+        font-size: 20px; }
+      #mirrortable #brackets .container .row .brackets-right img {
+        width: 100%; }
+  #mirrortable #installation {
+    width: 100%;
+    padding: 45px 25px; }
+    #mirrortable #installation .container .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start; }
+      #mirrortable #installation .container .row .inst-left img {
+        width: 100%; }
+      #mirrortable #installation .container .row .inst-right p {
+        font-size: 20px; }
+      #mirrortable #installation .container .row .inst-right ul li p {
+        margin: 0;
+        font-size: 18px; }
+        #mirrortable #installation .container .row .inst-right ul li p a {
+          text-decoration: none; }
+  #mirrortable #blog {
+    width: 100%;
+    padding: 55px 25px;
+    background-color: #1b1734; }
+    #mirrortable #blog h1, #mirrortable #blog .h1 {
+      color: white;
+      text-align: center;
+      font-weight: 200; }
+    #mirrortable #blog .column {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      #mirrortable #blog .column .blog-head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 35px; }
+        #mirrortable #blog .column .blog-head .blog-head-item {
+          color: white; }
+          #mirrortable #blog .column .blog-head .blog-head-item img {
+            width: 100%; }
+          #mirrortable #blog .column .blog-head .blog-head-item a {
+            color: white;
+            font-size: 25px; }
+          #mirrortable #blog .column .blog-head .blog-head-item p {
+            font-size: 18px; }
+      #mirrortable #blog .column .blog-body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 45px 35px; }
+        #mirrortable #blog .column .blog-body .blog-body-item {
+          text-align: center;
+          color: white;
+          padding: 45px 25px;
+          background-color: #0f0d1ec5;
+          border: 1px solid black; }
+          #mirrortable #blog .column .blog-body .blog-body-item i {
+            font-size: 55px;
+            color: #3400e0; }
+          #mirrortable #blog .column .blog-body .blog-body-item h4, #mirrortable #blog .column .blog-body .blog-body-item .h4 {
+            font-size: 35px; }
+          #mirrortable #blog .column .blog-body .blog-body-item span {
+            width: 35px;
+            height: 20px;
+            background-color: brown; }
+          #mirrortable #blog .column .blog-body .blog-body-item p {
             font-size: 20px; }

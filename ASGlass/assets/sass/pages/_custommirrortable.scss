@@ -1,12 +1,10 @@
-#glass{
+#mirrortable{
     @include flexbox;
     flex-direction: column;
     width: 100%;
     height: max-content;
     #cs-select-glass{
         width: 100%;
-        background-color: #271d74;
-        color: white;
         padding: 35px 15px;
         .column{
             @include flexbox; 
@@ -21,26 +19,30 @@
                    padding: 15px;
                    border-top-left-radius: 10px;
                    border-top-right-radius: 10px;
+                   h5{
+                       color: white;
+                   }  
                }
                 .shapes{
                     @include flexbox; 
                     flex-direction: row;
                     justify-content: space-around;
                     padding: 25px 0;
+                    color: #1e1a3d;
                     .shapes-item{
-                        background-color: #1e1a3d;
                         text-align: center;
                         border-radius: 10px;
                         padding: 25px 10px;
+                        color: #1e1a3d;
                         img{
                             width: 100px;
                             height: 100px;
                         }
                         a{
-                            text-decoration: none;
-                            color: white;
+                            text-decoration: none;  
+                            color: #1e1a3d;
                             padding: 15px 25px;
-                            border: 1px solid white;
+                            border: 1px solid  #1e1a3d;
                             border-radius: 10px;
                         }
                     }
@@ -53,26 +55,37 @@
             }
         }
     }
-    #about-us{
+    #about{
         width: 100%;
-        padding: 65px 25px;
-        background-color: #1e1a3d;
-        .row{
-            @include flexbox; 
-            flex-direction: row;
-            .about-us-left{
-               color: white;
-            }
-            .about-us-right{
-                img{
-                    width: 100%;
+        padding: 45px 25px;
+        .container{
+            .row{
+                @include flexbox; 
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+                .about-left{
+                    img{
+                        width: 100%;
+                    }
+                }
+                .about-right{
+                    p{
+                        font-size: 17px;
+                    }
+                    ul{
+                        li{
+                            a{
+                                text-decoration: none;
+                            }
+                        }
+                    }
                 }
             }
         }
     }
     #where-use{
         width: 100%;
-        background-color: #271d74;
         padding: 45px 25px;
         .row{
             @include flexbox; 
@@ -84,94 +97,63 @@
                 }
             }
             .where-use-right{
-                color: white;
-            }
-        }
-    }
-    #ordering{
-        width: 100%;
-        padding: 45px 25px;
-        background-color: #1e1a3d;
-        .container{
-            color: white;
-        }
-    }
-    #safety{
-        width: 100%;
-        padding: 45px 25px;
-        background-color: #271d74;
-        .row{
-            @include flexbox; 
-            flex-direction: row;
-            justify-content: space-between;
-            .sft-left{
-                img{
-                    width: 100%;
+                p{
+                    font-size: 20px;
+                    margin: 0;
                 }
             }
-            .sft-right{
-                color:white;
-            }
         }
     }
-    #faq{
+    #how-use{
         width: 100%;
-        background-color: #1e1a3d;
         padding: 45px 25px;
         .container{
-            color: white;
-            h4{
-                text-align: center;
+            p{
+                font-size: 20px;
             }
-            .column{
-                @include flexbox; 
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: flex-start;
-                .accordion{
-                    width: 100%;
-                    border: none;
-                    background-color: #271d74;
-                    color: white;
-                    text-align: left;
-                    padding:  15px;
-                    
+            ol{
+                li{
+                    a{
+                        text-decoration: none;
+                    }
                 }
-                .panel{
-                    padding: 0 18px;
-                    max-height: 0;
-                    overflow: hidden;
-                    transition: max-height 0.2s ease-out;
-                }
+            }
+            a{
+                text-decoration: none;
             }
         }
     }
     #tool{
         width: 100%;
-        background-color: #271d74;
         padding: 45px 25px;
         .container{
-            color: white;
             h4{
                 text-align: center;
             }
             .row{
                 @include flexbox; 
                 flex-direction: row;
-                justify-content: space-around;
+                justify-content: space-evenly;
                 .tool-item{
                     @include flexbox; 
                     flex-direction: row;
                     justify-content: space-around;
+                    border: 1px solid black;
+                    border-radius: 10px;
+                    padding: 25px;
+                    text-align: center;
+                    img{
+                        width: 150px;
+                    }
                     .tl-item-right{
                         a{
                             text-decoration: none;
-                            color: white;
                             border: 1px solid black;
+                            border-radius: 10px;
                             padding: 15px 10px;
                             &:hover{
                                 background-color: #1e1a3d;
-                                transition: background-color 0.3s linear;
+                                transition: background-color 0.2s linear;
                             }
                         }
                     }
@@ -179,58 +161,56 @@
             }
         }
     }
-    #videos{
+    #brackets{
         width: 100%;
-        background-color: #1e1a3d;
         padding: 45px 25px;
-        color: white;
         .container{
-            h2{
-                text-align: center; 
-              
-            }
             .row{
                 @include flexbox; 
                 flex-direction: row;
-                justify-content: space-around;
-                .vd-item{
-                    position: relative;
-                    text-align: center;
+                justify-content: space-between;
+                align-items: flex-start;
+                .brackets-left{
+                    p{
+                        font-size: 20px;
+                    }
+                }
+                .brackets-right{
                     img{
                         width: 100%;
-                    }
-                    i{
-                        position: absolute;
-                        top: 75px;
-                        left: 145px;
-                        color: #581d74;
-                        cursor: pointer;
-                        font-size: 55px;
-                        &::before{
-                            background-color: black;
-                        }
                     }
                 }
             }
         }
     }
-    #related{
+    #installation{
         width: 100%;
         padding: 45px 25px;
-        background-color: #EBEBEB;
         .container{
-            color: white;
-            h2{
-                text-align: center;
-            }
             .row{
                 @include flexbox; 
                 flex-direction: row;
-                justify-content: space-around;
-                .related-item{
-                    text-align: center;
+                justify-content: space-between;
+                align-items: flex-start;
+                .inst-left{
                     img{
                         width: 100%;
+                    }
+                }
+                .inst-right{
+                    p{
+                        font-size: 20px;
+                    }
+                    ul{
+                        li{
+                            p{
+                                margin: 0;
+                                font-size: 18px;
+                                a{
+                                    text-decoration: none;
+                                }
+                            }
+                        }
                     }
                 }
             }

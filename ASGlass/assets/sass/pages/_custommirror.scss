@@ -1,4 +1,4 @@
-#glass{
+#mirror{
     @include flexbox;
     flex-direction: column;
     width: 100%;
@@ -53,64 +53,183 @@
             }
         }
     }
-    #about-us{
-        width: 100%;
-        padding: 65px 25px;
-        background-color: #1e1a3d;
-        .row{
-            @include flexbox; 
-            flex-direction: row;
-            .about-us-left{
-               color: white;
-            }
-            .about-us-right{
-                img{
-                    width: 100%;
-                }
-            }
-        }
-    }
-    #where-use{
-        width: 100%;
-        background-color: #271d74;
-        padding: 45px 25px;
-        .row{
-            @include flexbox; 
-            flex-direction: row;
-            justify-content: space-between;
-            .where-use-left{
-                img{
-                    width: 100%;
-                }
-            }
-            .where-use-right{
-                color: white;
-            }
-        }
-    }
-    #ordering{
+    #instockmirror{
         width: 100%;
         padding: 45px 25px;
-        background-color: #1e1a3d;
         .container{
-            color: white;
+            color: black;
+            text-align: center;
+            .row{
+                @include flexbox; 
+                flex-direction: row;
+                align-items: flex-start;
+                .mirror-item{
+                    border-radius: 10px;
+                    padding: 15px 25px;
+                    img{
+                        width: 100%;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: black;
+                        font-size: 25px;
+                        background-color: blueviolet;
+                        padding: 25px;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+    }
+    #gymmirror{
+        width: 100%;
+        padding: 45px 25px;
+        .container{
+            .row{
+                @include flexbox; 
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: flex-start;
+                .gym-left{
+                    ol{
+                        li{
+                            a{
+                                text-decoration: none;
+                                color: orange;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #about{
+        width: 100%;
+        padding: 45px 25px;
+        .container{
+            .row{
+                @include flexbox; 
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+                .about-left{
+                    img{
+                        width: 100%;
+                    }
+                }
+                .about-right{
+                    p{
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+    #idea{
+        width: 100%;
+        padding: 45px 25px;
+        .container{
+            .row{
+                @include flexbox; 
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+                .idea-left{
+                    p{
+                        font-size: 17px;
+                    }
+                    ul{
+                        li{
+                            padding: 0;
+                            a{
+                                text-decoration: none;
+                            }
+                          
+                        }
+                    }
+                }
+                .idea-right{
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    #edgetypes{
+        width: 100%;
+        padding: 45px 25px;
+        .container{
+            .row{
+                @include flexbox; 
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+                .edgetype-left{
+                    img{
+                        width: 100%;
+                    }
+                }
+                .edgetype-right{
+                    p{
+                        font-size: 17px;
+                    }
+                }
+            }
         }
     }
     #safety{
         width: 100%;
         padding: 45px 25px;
-        background-color: #271d74;
-        .row{
-            @include flexbox; 
-            flex-direction: row;
-            justify-content: space-between;
-            .sft-left{
-                img{
-                    width: 100%;
+        .container{
+            .row{
+                @include flexbox; 
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+                .safety-left{
+                    p{
+                        font-size: 17px;
+                    }
+                }
+                .safety-right{
+                    img{
+                        width: 100%;
+                    }
                 }
             }
-            .sft-right{
-                color:white;
+        }
+    }
+    #installation{
+        width: 100%;
+        padding: 45px 25px;
+        .container{
+            .row{
+                @include flexbox; 
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+                .inst-left{
+                    h4{
+                        color: blueviolet;
+                    }
+                    ul{
+                        li{
+                            p{
+                                padding: 0;
+                                margin: 0;
+                            }
+                        }
+                    }
+                    p{
+                        font-size: 17px;
+                    }
+                }
+                .inst-right{
+                    img{
+                        width: 100%;
+                    }
+                }
             }
         }
     }
@@ -142,96 +261,6 @@
                     max-height: 0;
                     overflow: hidden;
                     transition: max-height 0.2s ease-out;
-                }
-            }
-        }
-    }
-    #tool{
-        width: 100%;
-        background-color: #271d74;
-        padding: 45px 25px;
-        .container{
-            color: white;
-            h4{
-                text-align: center;
-            }
-            .row{
-                @include flexbox; 
-                flex-direction: row;
-                justify-content: space-around;
-                .tool-item{
-                    @include flexbox; 
-                    flex-direction: row;
-                    justify-content: space-around;
-                    .tl-item-right{
-                        a{
-                            text-decoration: none;
-                            color: white;
-                            border: 1px solid black;
-                            padding: 15px 10px;
-                            &:hover{
-                                background-color: #1e1a3d;
-                                transition: background-color 0.3s linear;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-    #videos{
-        width: 100%;
-        background-color: #1e1a3d;
-        padding: 45px 25px;
-        color: white;
-        .container{
-            h2{
-                text-align: center; 
-              
-            }
-            .row{
-                @include flexbox; 
-                flex-direction: row;
-                justify-content: space-around;
-                .vd-item{
-                    position: relative;
-                    text-align: center;
-                    img{
-                        width: 100%;
-                    }
-                    i{
-                        position: absolute;
-                        top: 75px;
-                        left: 145px;
-                        color: #581d74;
-                        cursor: pointer;
-                        font-size: 55px;
-                        &::before{
-                            background-color: black;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    #related{
-        width: 100%;
-        padding: 45px 25px;
-        background-color: #EBEBEB;
-        .container{
-            color: white;
-            h2{
-                text-align: center;
-            }
-            .row{
-                @include flexbox; 
-                flex-direction: row;
-                justify-content: space-around;
-                .related-item{
-                    text-align: center;
-                    img{
-                        width: 100%;
-                    }
                 }
             }
         }
