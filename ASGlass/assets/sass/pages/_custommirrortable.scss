@@ -5,60 +5,66 @@
     height: max-content;
     #cs-select-glass{
         width: 100%;
-        padding: 35px 15px;
-        .column{
-            @include flexbox; 
-            flex-direction: column;
-            align-items: center;
-            .select-shape{
+        .container{
+            padding: 45px 25px;
+            .column{
                 @include flexbox; 
                 flex-direction: column;
-               .shape-head{
-                   background-color: #1e1a3d;
-                   text-align: center;
-                   padding: 15px;
-                   border-top-left-radius: 10px;
-                   border-top-right-radius: 10px;
-                   h5{
-                       color: white;
-                   }  
-               }
-                .shapes{
+                align-items: center;
+                p{
+                    font-size: 20px;
+                }
+                .select-shape{
                     @include flexbox; 
-                    flex-direction: row;
-                    justify-content: space-around;
-                    padding: 25px 0;
-                    color: #1e1a3d;
-                    .shapes-item{
-                        text-align: center;
-                        border-radius: 10px;
-                        padding: 25px 10px;
+                    flex-direction: column;
+                   .shape-head{
+                       background-color: #0A6AB7;
+                       text-align: center;
+                       padding: 15px;
+                       border-top-left-radius: 10px;
+                       border-top-right-radius: 10px;
+                       h5{
+                           color: white;
+                       }  
+                   }
+                    .shapes{
+                        @include flexbox; 
+                        flex-direction: row;
+                        justify-content: space-around;
+                        padding: 25px 0;
                         color: #1e1a3d;
-                        img{
-                            width: 100px;
-                            height: 100px;
-                        }
-                        a{
-                            text-decoration: none;  
-                            color: #1e1a3d;
-                            padding: 15px 25px;
-                            border: 1px solid  #1e1a3d;
+                        .shapes-item{
+                            text-align: center;
                             border-radius: 10px;
+                            padding: 25px 10px;
+                            color: #1e1a3d;
+                            img{
+                                width: 100px;
+                                height: 100px;
+                            }
+                            a{
+                                text-decoration: none;  
+                                color: #1e1a3d;
+                                padding: 15px 25px;
+                                border: 1px solid  #1e1a3d;
+                                border-radius: 10px;
+                            }
                         }
                     }
-                }
-                a{
-                   font-size: 20px;
-                   text-decoration: none;
-                   color: orange;
+                    a{
+                       font-size: 20px;
+                       text-decoration: none;
+                       color: orange;
+                    }
                 }
             }
         }
+        
     }
     #about{
         width: 100%;
-        padding: 45px 25px;
         .container{
+            padding: 45px 25px;
             .row{
                 @include flexbox; 
                 flex-direction: row;
@@ -71,7 +77,7 @@
                 }
                 .about-right{
                     p{
-                        font-size: 17px;
+                        font-size: 20px;
                     }
                     ul{
                         li{
@@ -86,28 +92,31 @@
     }
     #where-use{
         width: 100%;
-        padding: 45px 25px;
-        .row{
-            @include flexbox; 
-            flex-direction: row;
-            justify-content: space-between;
-            .where-use-left{
-                img{
-                    width: 100%;
+        .container{
+            padding: 45px 25px;
+            .row{
+                @include flexbox; 
+                flex-direction: row;
+                justify-content: space-between;
+                .where-use-left{
+                    img{
+                        width: 100%;
+                    }
                 }
-            }
-            .where-use-right{
-                p{
-                    font-size: 20px;
-                    margin: 0;
+                .where-use-right{
+                    p{
+                        font-size: 20px;
+                        margin: 0;
+                    }
                 }
             }
         }
+      
     }
     #how-use{
         width: 100%;
-        padding: 45px 25px;
         .container{
+            padding: 45px 25px;
             p{
                 font-size: 20px;
             }
@@ -125,8 +134,8 @@
     }
     #tool{
         width: 100%;
-        padding: 45px 25px;
         .container{
+            padding: 45px 25px;
             h4{
                 text-align: center;
             }
@@ -138,8 +147,6 @@
                     @include flexbox; 
                     flex-direction: row;
                     justify-content: space-around;
-                    border: 1px solid black;
-                    border-radius: 10px;
                     padding: 25px;
                     text-align: center;
                     img{
@@ -149,11 +156,12 @@
                         a{
                             text-decoration: none;
                             border: 1px solid black;
-                            border-radius: 10px;
+                            border-radius: 3px;
+                            color: black;
                             padding: 15px 10px;
                             &:hover{
-                                background-color: #1e1a3d;
-                                transition: background-color 0.2s linear;
+                                background-color: #0A6AB7;
+                                transition: background-color 0.5s linear;
                             }
                         }
                     }
@@ -163,8 +171,8 @@
     }
     #brackets{
         width: 100%;
-        padding: 45px 25px;
         .container{
+            padding: 45px 25px;
             .row{
                 @include flexbox; 
                 flex-direction: row;
@@ -185,8 +193,8 @@
     }
     #installation{
         width: 100%;
-        padding: 45px 25px;
         .container{
+            padding: 45px 25px;
             .row{
                 @include flexbox; 
                 flex-direction: row;
@@ -218,63 +226,67 @@
     }
     #blog{
         width: 100%;
-        padding: 55px 25px;
-        background-color: #1b1734;
-       h1{
-           color: white; 
-           text-align: center; 
-           font-weight: 200;
-       }
-        .column{
-            @include flexbox; 
-            flex-direction: column;
-            .blog-head{
-                @include flexbox; 
-                flex-direction: row;
-                justify-content: space-between;
-                padding: 35px;
-                .blog-head-item{
-                    color: white;
-                    img{
-                        width: 100%;
-                    }
-                    a{
-                        color: white;
-                        font-size: 25px;
-                    }
-                    p{
-                        font-size: 18px;
-                    }
-                }
+        .container{
+            padding: 45px 25px;
+            h1{
+                text-align: center; 
             }
-            .blog-body{
-                @include flexbox;
-                flex-direction: row;
-                justify-content: space-around;
-                padding: 45px 35px;
-                .blog-body-item{
-                    text-align: center;
-                    color: white;
-                    padding: 45px 25px;
-                    background-color: #0f0d1ec5;
-                    border: 1px solid black;
-                    i{
-                        font-size: 55px;
-                        color: #3400e0;
-                    }
-                    h4{
-                        font-size: 35px;
-                    }
-                    span{
-                        width: 35px;
-                        height: 20px;
-                        background-color: brown;
-                    }
-                    p{
-                        font-size: 20px;
-                    }
-                }
-            }
+             .column{
+                 @include flexbox; 
+                 flex-direction: column;
+                 .blog-head{
+                     @include flexbox; 
+                     flex-direction: row;
+                     justify-content: space-between;
+                     padding: 35px;
+                     .blog-head-item{
+                         img{
+                             width: 100%;
+                         }
+                         a{
+                             font-size: 25px;
+                         }
+                         p{
+                             font-size: 18px;
+                         }
+                     }
+                 }
+                 .blog-body{
+                     @include flexbox;
+                     flex-direction: row;
+                     justify-content: space-around;
+                     padding: 45px 35px;
+                     .blog-body-item{
+                         text-align: center;
+                         padding: 45px 25px;
+                         cursor: pointer;
+                         i{
+                             font-size: 55px;
+                             color: #0A6AB7;
+                         }
+                         h4{
+                             font-size: 35px;
+                         }
+                         span{
+                             width: 35px;
+                             height: 20px;
+                             background-color: brown;
+                         }
+                         p{
+                             font-size: 20px;
+                         }
+                     }
+                 }
+             }
         }
+   
     }
 }
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .container{
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.164);
+    }
+  }

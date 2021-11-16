@@ -1,6 +1,6 @@
 footer{
     width: 100%;
-    background-color: #0f0d1e;
+    background-color: transparent;
     padding: 100px 0;
     .column{
         @include flexbox; 
@@ -14,7 +14,7 @@ footer{
             padding: 35px 15px;
             top: -200px;
             .foot-head-left{
-              background-color: #5b35d5;
+              background-color: #0A6AB7;
               background-repeat: no-repeat;
               padding: 42px;
               color: white;
@@ -34,8 +34,7 @@ footer{
             @include flexbox; 
             flex-direction: row;
             align-items: flex-start;
-            color: white;
-            border-bottom: 1px solid #5b35d5;
+            border-bottom: 1px solid #0A6AB7;
             padding: 55px 0;
             ul{
                 @include flexbox;
@@ -47,7 +46,6 @@ footer{
                     list-style: none;
                     padding: 15px 0;
                     a{
-                        color: white;
                         text-decoration: none;
                     }
                 }
@@ -59,14 +57,9 @@ footer{
             align-items: flex-start;
             justify-content: space-between;
             padding: 25px 0;
-            .foot-ft-left{
-                p{
-                    color: white;
-                }
-            }
             .foot-ft-right{
                 a{
-                    color: white;
+                    color: orange;
                     text-decoration: none;
                 }
             }

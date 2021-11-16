@@ -1,0 +1,28 @@
+#service{
+    @include flexbox;
+    flex-direction: row;
+    justify-content: space-evenly;
+    #srv-menu{
+        width: 100%;
+        .container{
+            padding: 35px;
+            .row{
+                @include flexbox; 
+                flex-direction: column;
+                justify-content: space-between;
+                ul{
+                    @include flexbox; 
+                    flex-direction: column;
+                    align-items: flex-start;
+                    li{
+                        list-style: none;
+                        a{
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

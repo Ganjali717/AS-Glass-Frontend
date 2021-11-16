@@ -2,9 +2,7 @@
 
 header{
     width: 100%;
-    background-color: #0f0d1e;
     #header-page{
-        background-color: #5b35d5;
           padding: 5px;
           .row{
               @include flexbox; 
@@ -44,7 +42,6 @@ header{
                 display: none;
                 .bi-list{
                     font-size: 30px;
-                    color: white;
                 }
             }
             .logo{
@@ -54,8 +51,9 @@ header{
                         height: 80px;
                     }
                     i{
-                        color: white;
                         font-size: 22px;
+                        color: #0A6AB7;
+                        cursor: pointer;
                     }
                 }
             .input-group{
@@ -77,9 +75,11 @@ header{
                         background-color: rgba(128, 128, 128, 0.096);
                         border-radius: 8px;
                         padding: 2px 5px;
+                        cursor: pointer;
                     }
                     .cart-count{
                         position: absolute;
+                        cursor: pointer;
                         font-size: 15px;
                         padding: 3px;
                         background-color: #FF781E;
@@ -176,9 +176,9 @@ header{
                 list-style: none;
                 padding: 25px 50px;
                 &>a{
-                   color: white;
                    text-decoration: none !important;
                    font-size: 14px;
+                   color: #0f0d1e;
                    font-weight: 600;
                    &:hover{
                        color: #076CB4;
@@ -187,7 +187,7 @@ header{
                    }
                 }
                 &:hover{
-                    background-color: rgba(0, 0, 0, 0.048);
+                    background-color: rgba(185, 185, 185, 0.384);
                     .menu-detail{
                         visibility: visible;
                         opacity: 1;
@@ -225,8 +225,7 @@ header{
                     padding: 18px 35px;
                     top: 75px;
                     left: -135px;
-                    z-index: 9;
-                    background-color: white;
+                    z-index: auto;
                    .row{
                        @include flexbox; 
                        width: 100%;
@@ -659,9 +658,14 @@ header{
     }
     .glass-breadcrumb{
         .container{
+            padding: 15px 25px;
            .row{
                p{
                    color: white;
+                   a{
+                       text-decoration: none;
+                       color: #1b1734;
+                   }
                }
            }
         }
@@ -695,6 +699,7 @@ header{
                         width: 80px;
                         height: 60px;
                     }
+                   
                 }
                 .responsive-search{
                     display: block;
@@ -726,4 +731,20 @@ header{
 //      }
 //     }
 // }
+
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    #menu{
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.082);
+    }
+    .menu-detail{
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.932);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+  }
 

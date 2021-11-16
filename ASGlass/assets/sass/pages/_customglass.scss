@@ -5,121 +5,132 @@
     height: max-content;
     #cs-select-glass{
         width: 100%;
-        background-color: #271d74;
-        color: white;
-        padding: 35px 15px;
-        .column{
-            @include flexbox; 
-            flex-direction: column;
-            align-items: center;
-            .select-shape{
+        .container{
+            padding: 35px 15px;
+            .column{
                 @include flexbox; 
                 flex-direction: column;
-               .shape-head{
-                   background-color: #1e1a3d;
-                   text-align: center;
-                   padding: 15px;
-                   border-top-left-radius: 10px;
-                   border-top-right-radius: 10px;
-               }
-                .shapes{
+                align-items: center;
+                .select-shape{
                     @include flexbox; 
-                    flex-direction: row;
-                    justify-content: space-around;
-                    padding: 25px 0;
-                    .shapes-item{
-                        background-color: #1e1a3d;
-                        text-align: center;
-                        border-radius: 10px;
-                        padding: 25px 10px;
-                        img{
-                            width: 100px;
-                            height: 100px;
-                        }
-                        a{
-                            text-decoration: none;
-                            color: white;
-                            padding: 15px 25px;
-                            border: 1px solid white;
+                    flex-direction: column;
+                   .shape-head{
+                       background-color: #0A6AB7;
+                       text-align: center;
+                       padding: 15px;
+                       border-top-left-radius: 10px;
+                       border-top-right-radius: 10px;
+                   }
+                    .shapes{
+                        @include flexbox; 
+                        flex-direction: row;
+                        justify-content: space-around;
+                        padding: 25px 0;
+                        .shapes-item{
+                            text-align: center;
                             border-radius: 10px;
+                            padding: 25px 10px;
+                            img{
+                                width: 100px;
+                                height: 100px;
+                            }
+                            a{
+                                text-decoration: none;
+                                color: black;
+                                padding: 15px 25px;
+                                border: 1px solid black;
+                                border-radius: 10px;
+                                &:hover{
+                                    background-color: #0A6AB7;
+                                    transition: background-color 0.5s linear;
+                                }
+                            }
                         }
                     }
-                }
-                a{
-                   font-size: 20px;
-                   text-decoration: none;
-                   color: orange;
+                    a{
+                       font-size: 20px;
+                       text-decoration: none;
+                       color: orange;
+                    }
                 }
             }
         }
+        
     }
     #about-us{
         width: 100%;
-        padding: 65px 25px;
-        background-color: #1e1a3d;
-        .row{
-            @include flexbox; 
-            flex-direction: row;
-            .about-us-left{
-               color: white;
-            }
-            .about-us-right{
-                img{
-                    width: 100%;
+        .container{
+            padding: 45px 25px;
+            .row{
+                @include flexbox; 
+                flex-direction: row;
+                .about-us-right{
+                    img{
+                        width: 100%;
+                    }
                 }
             }
         }
+        
     }
     #where-use{
         width: 100%;
-        background-color: #271d74;
-        padding: 45px 25px;
-        .row{
-            @include flexbox; 
-            flex-direction: row;
-            justify-content: space-between;
-            .where-use-left{
-                img{
-                    width: 100%;
+        .container{
+            padding: 45px 25px;
+            .row{
+                @include flexbox; 
+                flex-direction: row;
+                justify-content: space-between;
+                .where-use-left{
+                    img{
+                        width: 100%;
+                    }
+                }
+                .where-use-right{
+                    p{
+                        font-size: 20px;
+                    }
                 }
             }
-            .where-use-right{
-                color: white;
-            }
         }
+        
     }
     #ordering{
         width: 100%;
-        padding: 45px 25px;
-        background-color: #1e1a3d;
         .container{
-            color: white;
+            padding: 45px 25px;
+            p{
+                font-size: 20px;
+            }
         }
     }
     #safety{
         width: 100%;
-        padding: 45px 25px;
-        background-color: #271d74;
-        .row{
-            @include flexbox; 
-            flex-direction: row;
-            justify-content: space-between;
-            .sft-left{
-                img{
-                    width: 100%;
+        .container{
+             padding: 45px 25px;
+             .row{
+                @include flexbox; 
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+                .sft-left{
+                    img{
+                        width: 100%;
+                    }
+                }
+                .sft-right{
+                    p{
+                        font-size: 20px;
+                    }
                 }
             }
-            .sft-right{
-                color:white;
-            }
         }
+       
     }
     #faq{
         width: 100%;
-        background-color: #1e1a3d;
-        padding: 45px 25px;
         .container{
-            color: white;
+            padding: 45px 25px;
             h4{
                 text-align: center;
             }
@@ -131,8 +142,7 @@
                 .accordion{
                     width: 100%;
                     border: none;
-                    background-color: #271d74;
-                    color: white;
+                    background-color: #0A6AB7;
                     text-align: left;
                     padding:  15px;
                     
@@ -140,6 +150,7 @@
                 .panel{
                     padding: 0 18px;
                     max-height: 0;
+                    margin-top: 15px;
                     overflow: hidden;
                     transition: max-height 0.2s ease-out;
                 }
@@ -148,12 +159,13 @@
     }
     #tool{
         width: 100%;
-        background-color: #271d74;
-        padding: 45px 25px;
         .container{
-            color: white;
+            padding: 45px 25px;
             h4{
                 text-align: center;
+            }
+            p{
+                font-size: 20px;
             }
             .row{
                 @include flexbox; 
@@ -166,12 +178,12 @@
                     .tl-item-right{
                         a{
                             text-decoration: none;
-                            color: white;
+                            color: black;
                             border: 1px solid black;
                             padding: 15px 10px;
                             &:hover{
-                                background-color: #1e1a3d;
-                                transition: background-color 0.3s linear;
+                                background-color: #0A6AB7;
+                                transition: background-color 0.5s linear;
                             }
                         }
                     }
@@ -181,10 +193,8 @@
     }
     #videos{
         width: 100%;
-        background-color: #1e1a3d;
-        padding: 45px 25px;
-        color: white;
         .container{
+            padding: 45px 25px;
             h2{
                 text-align: center; 
               
@@ -203,7 +213,7 @@
                         position: absolute;
                         top: 75px;
                         left: 145px;
-                        color: #581d74;
+                        color: #0A6AB7;
                         cursor: pointer;
                         font-size: 55px;
                         &::before{
@@ -216,10 +226,8 @@
     }
     #related{
         width: 100%;
-        padding: 45px 25px;
-        background-color: #EBEBEB;
         .container{
-            color: white;
+            padding: 45px 25px;
             h2{
                 text-align: center;
             }
@@ -238,63 +246,60 @@
     }
     #blog{
         width: 100%;
-        padding: 55px 25px;
-        background-color: #1b1734;
-       h1{
-           color: white; 
-           text-align: center; 
-           font-weight: 200;
-       }
-        .column{
-            @include flexbox; 
-            flex-direction: column;
-            .blog-head{
-                @include flexbox; 
-                flex-direction: row;
-                justify-content: space-between;
-                padding: 35px;
-                .blog-head-item{
-                    color: white;
-                    img{
-                        width: 100%;
-                    }
-                    a{
-                        color: white;
-                        font-size: 25px;
-                    }
-                    p{
-                        font-size: 18px;
-                    }
-                }
-            }
-            .blog-body{
-                @include flexbox;
-                flex-direction: row;
-                justify-content: space-around;
-                padding: 45px 35px;
-                .blog-body-item{
-                    text-align: center;
-                    color: white;
-                    padding: 45px 25px;
-                    background-color: #0f0d1ec5;
-                    border: 1px solid black;
-                    i{
-                        font-size: 55px;
-                        color: #3400e0;
-                    }
-                    h4{
-                        font-size: 35px;
-                    }
-                    span{
-                        width: 35px;
-                        height: 20px;
-                        background-color: brown;
-                    }
-                    p{
-                        font-size: 20px;
-                    }
-                }
-            }
+       .container{
+        padding: 45px 25px;
+        h1{
+            text-align: center; 
         }
+         .column{
+             @include flexbox; 
+             flex-direction: column;
+             .blog-head{
+                 @include flexbox; 
+                 flex-direction: row;
+                 justify-content: space-between;
+                 padding: 35px;
+                 .blog-head-item{
+                     img{
+                         width: 100%;
+                     }
+                     a{
+                         font-size: 25px;
+                     }
+                     p{
+                         font-size: 18px;
+                     }
+                 }
+             }
+             .blog-body{
+                 @include flexbox;
+                 flex-direction: row;
+                 justify-content: space-around;
+                 padding: 45px 35px;
+                 
+                 .blog-body-item{
+                     text-align: center;
+                     cursor: pointer;
+                     padding: 45px 25px;
+                     i{
+                         font-size: 55px;
+                         color: #0A6AB7;
+                     }
+                     h4{
+                         font-size: 35px;
+                     }
+                     span{
+                         width: 35px;
+                         height: 20px;
+                         background-color: brown;
+                     }
+                     p{
+                         font-size: 20px;
+                     }
+                 }
+             }
+         }
+       }
+      
     }
 }
