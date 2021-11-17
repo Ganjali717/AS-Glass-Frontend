@@ -36,6 +36,14 @@ footer{
             align-items: flex-start;
             border-bottom: 1px solid #0A6AB7;
             padding: 55px 0;
+            img{
+                width: 150px;
+                height: 100px;
+                display: inline-block;
+            }
+            h3{
+                display: inline-block;
+            }
             ul{
                 @include flexbox;
                 flex-direction: column;
@@ -47,6 +55,7 @@ footer{
                     padding: 15px 0;
                     a{
                         text-decoration: none;
+                        color: #0f0d1e;
                     }
                 }
             }

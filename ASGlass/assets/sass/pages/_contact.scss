@@ -1,0 +1,46 @@
+#contact{
+    width: 100%;
+    #con-head{
+        padding: 45px 25px;
+    }
+    #con-body{
+        padding: 85px 25px;
+        .container{
+            .row{
+                @include flexbox;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+                .con-form{
+                  form{
+                      label{
+                          display: inline-block;
+                          i{
+                              color: red;
+                              font-size: 10px;
+                          }
+                      }
+                      input{
+                          width: 100%;
+                          padding: 5px;
+                          border: 1px solid rgba(0, 0, 0, 0.089);
+                      }
+                      textarea{
+                          width: 100%;
+                          border: 1px solid rgba(0, 0, 0, 0.089);
+                      }
+                      input[type=checkbox]{
+                          display: inline;
+                      }
+                      input[type=submit]{
+                          background-color: #0A6AB7;
+                          border: none;
+                          cursor: pointer;
+                          padding: 10px;
+                      }
+                  }
+                }
+            }
+        }
+    }
+}

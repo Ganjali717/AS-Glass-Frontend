@@ -7,6 +7,7 @@
         width: 100%;
         .container{
             padding: 35px 15px;
+            background-color: none;
             .column{
                 @include flexbox; 
                 flex-direction: column;

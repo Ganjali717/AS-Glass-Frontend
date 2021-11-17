@@ -9,8 +9,12 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    
 </head>
-<body>
+<body onload="loadfun()" class="body">
+    <div id="loading"></div>
+    <a id="backtop" onclick="topFunction()"><i class="bi bi-arrow-up-circle-fill"></i></a>
+
     <header>
         <div id="header-page">
             <div class="container">
@@ -98,7 +102,7 @@
            <ul>
                <li>
                    <a href="">ŞÜŞƏ</a>
-                   <div class="menu-detail col-12">
+                   <div class="menu-detail">
                     <div class="container">
                         <div class="row">
                             <div class="menu-first-column col-3">
@@ -137,7 +141,7 @@
                 
                 <li>
                    <a href="">ŞÜŞƏ STOLLAR</a>
-                   <div class="second-menu-detail col-12">
+                   <div class="menu-detail">
                     <div class="container">
                         <div class="row">
                             <div class="menu-first-column col-3">
@@ -168,7 +172,7 @@
                 </li>
                <li>
                    <a href="">GÜZGÜ</a>
-                   <div class="third-menu-detail col-12">
+                   <div class="menu-detail">
                     <div class="container">
                         <div class="row">
                             <div class="menu-first-column col-3">
@@ -212,7 +216,7 @@
                 </li>
                <li>
                    <a href="">ŞÜŞƏ RƏFLƏR</a>
-                   <div class="fourth-menu-detail col-12">
+                   <div class="menu-detail">
                     <div class="container">
                         <div class="row">
                             <div class="menu-first-column col-3">
@@ -246,38 +250,82 @@
                <li class="pro"><a href="">PRO ÜÇÜN</a></li>
            </ul>
         </nav>
+        <div class="glass-breadcrumb">
+            <div class="container">
+                <div class="row">
+                    <p><a href="">Home</a><i class="bi bi-arrow-right-short"></i> <a href="">Custom glass</a></p>
+                </div>
+            </div>
+        </div>
     </header>
     
     <main id="service">
        <section id="srv-menu">
            <div class="container">
                <div class="row">
-                       <h3>CUSTOMER SERVICE</h3>
-                       <br>
+                    <div class="sr-left col-3">
+                          <h3>CUSTOMER SERVICE</h3>
                        <ul>
                            <li><a href="">Contact Us</a></li>
                            <li><a href="">FAQs</a></li>
                        </ul>
                        <br>
                        <h3>SHIPPING&RETURNS</h3>
-                       <br>
                        <ul>
                            <li><a href="">Shipping & Handling</a></li>
                            <li><a href="">Return Policy</a></li>
                        </ul>
                        <br>
                        <h3>YOUR ORDER</h3>
-                       <br>
                        <ul>
                            <li><a href="">Order Status</a></li>
                            <li><a href="">Order Cancellation</a></li>
                            <li><a href="">Warranty</a></li>
                        </ul>
+                    </div>
+                     <div class="srv-right col-9">
+                            <h2>Customer Service</h2>
+                            <br>
+                            <ul>
+                                <li> <a href="">Where is my order?</a></li>
+                                <li> <a href="">How do I use my promo code?</a></li>
+                                <li><a href="">What if my promo code is not working?</a></li>
+                                <li><a href="">What is your Return Policy?</a></li>
+                                <li><a href="">Can I ship my order internationally?</a></li>
+                                <li><a href="">What is your cutting tolerance?</a></li>
+                                <li> <a href="">What are your quality standards?</a></li>
+                            </ul>
+                            <br>
+                            <h4>Where is my order?</h4>
+                            <br>
+                            <p>The easiest way to check the status of your order is to go to the <a href="">Order Status</a> page. You will be asked to enter your order number there. You can also call our customer service number at (866) 452-7707.</p>
+                            <br>
+                            <h4>How do I use my promo code?</h4>
+                            <br>
+                            <p>Enter your code at checkout exactly as it appears in the email, printed offer or webpage. Click "Apply" and your discount will be detailed in the payment summary. Only one promotional discount code allowed per order. You can find additional Terms & Conditions detailed on the original offer..</p>
+                            <br>
+                            <h4>What if my promo code is not working?</h4>
+                            <br>
+                            <p>If you tried your promo code and it is not showing a discount, please email us at <a href="">info@dullesglassandmirror.com</a> or call us at (866) 452-7707.</p>
+                            <br>
+                            <h4>What is your Return Policy?</h4>
+                            <br>
+                            <p>We are 100% committed to ensuring that you are pleased with your order. Please review our <a href="">Return Policy</a> here.</p>
+                            <br>
+                            <h4>Can I ship my order internationally?</h4>
+                            <br>
+                            <p>At this time, Dulles Glass & Mirror is only able to ship to the contiguous United States (excluding Alaska and Hawaii). We do not ship internationally.</p>
+                            <br>
+                            <h4>What is your cutting tolerance?</h4>
+                            <br>
+                            <p>The industry-wide accepted tolerance and our cutting tolerance is +/- 1/8".</p>
+                            <br>
+                            <h4>What are your quality standards?</h4>
+                            <br>
+                            <p>All glass contains various types of flaws or blemishes, which may be visible to the naked eye. This is unavoidable - even the finest raw materials contain minor flaws. The federal government mandates that no defects should be visible in the glass when it is viewed horizontally or vertically from 11 feet away under normal lighting. All of our glass meets these standards.</p>
+                     </div>
                </div>
            </div>
-       </section>
-       <section id="cs-service">
-
        </section>
     </main>
     
@@ -369,10 +417,16 @@
 
     <script src="assets/js/main.js"></script>
     <script src="assets/js/slider.js"></script>
+    <script src="assets/js/backtop.js"></script>
     <script src="assets/js/homepage.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="http://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
     <script>
         AOS.init();
+        var load = document.getElementById("loading");
+        function loadfun(){
+            load.style.display = 'none';
+        }
     </script>
 </body>
 </html>

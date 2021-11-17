@@ -19,6 +19,9 @@
 // Mixins
 @import "../sass/mixins/flexbox";
 
+//Helpers
+@import "../sass/helpers/support";
+
 // Components
 @import "../sass/components/header";
 @import "../sass/components/footer";
@@ -31,3 +34,4 @@
 @import "../sass/pages/custommirror";
 @import "../sass/pages/custommirrortable";
 @import "../sass/pages/customservice";
+@import "../sass/pages/contact";
