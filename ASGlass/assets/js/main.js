@@ -1,3 +1,14 @@
+
+//NavbarUser 
+let user = document.querySelector('.bi-person-fill');
+let logcontain = document.querySelector('.login-container');
+
+user.addEventListener('click', function(e){
+    logcontain.classList.toggle("show");
+})
+
+
+
 //Responsive - dropdown menu
 
 let responsdrop = document.querySelector('#respons-first-list');

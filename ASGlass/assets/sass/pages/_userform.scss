@@ -1,0 +1,39 @@
+#userform{
+    width: 100%;
+    #user-login{
+        .container{
+            padding: 85px 25px;
+            .column{
+               @include flexbox; 
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+               .login-head{
+                   h2{
+                       font-size: 35px;
+                   }
+               }
+               .login-body{
+                   text-align: center;
+                   form{
+                       label{
+                           padding: 15px;
+                       }
+                      input{
+                          width: 100%;
+                          padding: 7px;
+                          border: none;
+                      }
+                      input[type=submit]{
+                          background-color: #0A6AB7;
+                      }
+                      a{
+                          text-decoration: none;
+                      }
+                   }
+               }
+            }
+        }
+    }
+  
+}

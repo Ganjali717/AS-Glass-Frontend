@@ -1,0 +1,83 @@
+#customize{
+    width: 100%;
+    #type{
+        padding: 85px 25px;
+        .container{
+            .row{
+                @include flexbox; 
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: space-between;
+                .customize-types{
+                    .glass-type{
+                        border: 1px solid #0A6AB7;
+                        border-radius: 15px;
+                        padding: 25px;
+                        .column{
+                                    @include flexbox; 
+                                    flex-direction: column;
+                                    justify-content: space-between;
+                                    align-items: flex-start;
+                                    .gl-type-item{
+                                        @include flexbox;
+                                        flex-direction: row;
+                                        margin-bottom: 25px;
+                                        width: 100%;
+                                        justify-content: space-between;
+                                        align-items: flex-start;
+                                        padding: 25px 10px;
+                                        background-color: #0a69b763;
+                                        border-radius: 5px;
+                                        cursor: pointer;
+                                        &:hover{
+                                            background-color: #0a69b7dc;
+                                            transition: background-color 0.3s ease-in-out;
+                                        }
+                                        .type-item-left{
+                                            img{
+                                                width: 120px;
+                                            }
+                                        }
+                                    }
+                         }
+                    }
+                }
+            }
+        }
+       
+    }
+
+    #summary{
+        width: 100%;
+        .container{
+            .summary-item{
+                text-align: center;
+                background-color: rgba(240, 248, 255, 0.274);
+                padding: 20px 25px;
+                border-radius: 10px;
+                h5{
+                    font-size: 15px;
+                }
+                ul{
+                    li{
+                        width: 100%;
+                        list-style: none;
+                        @include flexbox; 
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        p{
+                            b{
+                                text-align: right;
+                            }
+                        }
+                    }
+                }
+                input[type=submit]{
+                    width: 100%;
+                    background-color: #0A6AB7;
+                }
+            }
+        }
+    }
+}

@@ -11200,7 +11200,11 @@ textarea.form-control-lg {
   section {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, 0.137); } }
+    background-color: rgba(255, 255, 255, 0.137); }
+  #header-page {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.068); } }
 
 header {
   width: 100%; }
@@ -11257,7 +11261,15 @@ header {
       header #navbar .row .responsive-search {
         display: none; }
       header #navbar .row .header-shop-cart {
-        text-align: right; }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: baseline;
+        align-content: flex-end;
+        position: relative;
+        z-index: 999999; }
         header #navbar .row .header-shop-cart .shop-cart-container {
           position: relative; }
           header #navbar .row .header-shop-cart .shop-cart-container .bi-cart3 {
@@ -11277,6 +11289,33 @@ header {
             height: 26px;
             width: 26px;
             text-align: center; }
+        header #navbar .row .header-shop-cart .login-icon i {
+          font-size: 45px;
+          color: #0A6AB7;
+          cursor: pointer; }
+        header #navbar .row .header-shop-cart .login-container {
+          position: absolute;
+          width: 300px;
+          background-color: rgba(255, 255, 255, 0.815);
+          border-radius: 15px;
+          padding: 15px;
+          z-index: 9999;
+          top: 80px;
+          display: none; }
+          header #navbar .row .header-shop-cart .login-container ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start; }
+            header #navbar .row .header-shop-cart .login-container ul li {
+              list-style: none;
+              padding: 10px; }
+              header #navbar .row .header-shop-cart .login-container ul li a {
+                text-decoration: none; }
+        header #navbar .row .header-shop-cart .show {
+          display: block; }
     header #navbar .overlay {
       width: 100%;
       height: 1000px;
@@ -11476,7 +11515,7 @@ header {
   header .glass-breadcrumb .container {
     padding: 15px 25px; }
     header .glass-breadcrumb .container .row p {
-      color: white; }
+      color: #035894; }
       header .glass-breadcrumb .container .row p a {
         text-decoration: none;
         color: #1b1734; }
@@ -13218,3 +13257,143 @@ body {
             list-style: none; }
             #rnpolicy #policybody .container .row .policy-left ul li a {
               text-decoration: none; }
+
+#userform {
+  width: 100%; }
+  #userform #user-login .container {
+    padding: 85px 25px; }
+    #userform #user-login .container .column {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      #userform #user-login .container .column .login-head h2, #userform #user-login .container .column .login-head .h2 {
+        font-size: 35px; }
+      #userform #user-login .container .column .login-body {
+        text-align: center; }
+        #userform #user-login .container .column .login-body form label {
+          padding: 15px; }
+        #userform #user-login .container .column .login-body form input {
+          width: 100%;
+          padding: 7px;
+          border: none; }
+        #userform #user-login .container .column .login-body form input[type=submit] {
+          background-color: #0A6AB7; }
+        #userform #user-login .container .column .login-body form a {
+          text-decoration: none; }
+
+#registration {
+  width: 100%; }
+  #registration #register {
+    padding: 150px 25px; }
+    #registration #register .container .register-head {
+      text-align: center; }
+      #registration #register .container .register-head h2, #registration #register .container .register-head .h2 {
+        font-size: 35px; }
+    #registration #register .container .register-body form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: flex-start; }
+      #registration #register .container .register-body form .register-left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start; }
+        #registration #register .container .register-body form .register-left label {
+          font-weight: 500;
+          padding: 5px; }
+        #registration #register .container .register-body form .register-left input {
+          width: 100%;
+          padding: 15px;
+          border: none; }
+      #registration #register .container .register-body form .register-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start; }
+        #registration #register .container .register-body form .register-right label {
+          font-weight: 500;
+          padding: 5px; }
+        #registration #register .container .register-body form .register-right input {
+          width: 100%;
+          padding: 15px;
+          border: none; }
+        #registration #register .container .register-body form .register-right input[type=submit] {
+          border: none;
+          background-color: #0A6AB7; }
+          #registration #register .container .register-body form .register-right input[type=submit]:hover {
+            background-color: #458cc7;
+            transition: background-color 0.3s linear; }
+
+#customize {
+  width: 100%; }
+  #customize #type {
+    padding: 85px 25px; }
+    #customize #type .container .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between; }
+      #customize #type .container .row .customize-types .glass-type {
+        border: 1px solid #0A6AB7;
+        border-radius: 15px;
+        padding: 25px; }
+        #customize #type .container .row .customize-types .glass-type .column {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: flex-start; }
+          #customize #type .container .row .customize-types .glass-type .column .gl-type-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            margin-bottom: 25px;
+            width: 100%;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 25px 10px;
+            background-color: #0a69b763;
+            border-radius: 5px;
+            cursor: pointer; }
+            #customize #type .container .row .customize-types .glass-type .column .gl-type-item:hover {
+              background-color: #0a69b7dc;
+              transition: background-color 0.3s ease-in-out; }
+            #customize #type .container .row .customize-types .glass-type .column .gl-type-item .type-item-left img {
+              width: 120px; }
+  #customize #summary {
+    width: 100%; }
+    #customize #summary .container .summary-item {
+      text-align: center;
+      background-color: rgba(240, 248, 255, 0.274);
+      padding: 20px 25px;
+      border-radius: 10px; }
+      #customize #summary .container .summary-item h5, #customize #summary .container .summary-item .h5 {
+        font-size: 15px; }
+      #customize #summary .container .summary-item ul li {
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start; }
+        #customize #summary .container .summary-item ul li p b {
+          text-align: right; }
+      #customize #summary .container .summary-item input[type=submit] {
+        width: 100%;
+        background-color: #0A6AB7; }

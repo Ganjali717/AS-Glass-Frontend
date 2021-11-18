@@ -38,6 +38,7 @@ header{
             flex-direction: row !important;
             justify-content: space-between !important;
             align-items: center;
+            
             .hamburger-menu{
                 display: none;
                 .bi-list{
@@ -66,7 +67,13 @@ header{
                 display: none;
             }
             .header-shop-cart{
-                text-align: right;
+                @include flexbox; 
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: baseline;
+                align-content: flex-end;
+                position: relative;
+                z-index: 999999;
                 .shop-cart-container{
                     position: relative;
                     .bi-cart3{
@@ -89,7 +96,40 @@ header{
                         text-align: center;
                     }
                 }
-                
+                .login-icon{
+                    i{
+                        font-size: 45px;
+                        color: #0A6AB7;
+                        cursor: pointer;
+                    }
+                 
+                }
+                .login-container{
+                    position: absolute;
+                    width: 300px;
+                    background-color: rgba(255, 255, 255, 0.815);
+                    border-radius: 15px;
+                    padding: 15px;
+                    z-index: 9999;
+                    top: 80px;
+                    display: none;
+                    ul{
+                        @include flexbox; 
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        li{
+                            list-style: none;
+                            padding: 10px;
+                            a{
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+                .show{
+                    display: block;
+                }
             }
         }
         .overlay{
@@ -341,7 +381,7 @@ header{
             padding: 15px 25px;
            .row{
                p{
-                   color: white;
+                   color: #035894;
                    a{
                        text-decoration: none;
                        color: #1b1734;
