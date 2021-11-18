@@ -24,14 +24,10 @@
                         padding: 85px;
                         a{
                             text-decoration: none;
-                            color: #0f0d1e;
+                            color: white;
                             padding: 15px 20px;
-                            border: 1px solid white;
+                            background-color: #0A6AB7;
                             border-radius: 5px;
-                            &:hover{
-                                background-color: #0A6AB7;
-                                transition: background-color 0.5s linear;
-                            }
                         }
                     }
                     .slider-right-side{
@@ -123,7 +119,7 @@
                 .card-btn{
                     text-decoration: none;
                     background-color: #0A6AB7;
-                    color: #0f0d1e;
+                    color: white;
                     padding: 15px;
                     &:hover{
                         background-color: rgba(255, 145, 0, 0.678);
@@ -176,7 +172,7 @@
                     border-radius: 10px;
                     a{
                         text-align: center;
-                        color: black;
+                        color: white;
                         text-decoration: none;
                         padding: 10px;
                         background-color: #0A6AB7;
@@ -264,7 +260,7 @@
                     position: absolute;
                     text-decoration: none;
                     color: white;
-                    background-color: #5b35d5;
+                    background-color: #0A6AB7;
                     padding: 15px 25px;
                     bottom: 0;
                     right: 11px;
@@ -331,13 +327,15 @@
             .rvw-head{
                 @include flexbox; 
                 flex-direction: row;
-                align-items: baseline;
+                justify-content: space-between;
+                align-items: flex-start;
                 color: white;
                 border-bottom: 1px solid rgba(209, 209, 209, 0.651);
                 .rvw-head-right{
                     @include flexbox;
-                    text-align: right;
                     flex-direction: row;
+                    align-items: baseline;
+                    justify-content: flex-end;
                     i{
                         font-size: 25px;
                         cursor: pointer;
@@ -354,15 +352,24 @@
                 flex-direction: row;
                 flex-wrap: nowrap;
                 background-image: url(https://assets-global.website-files.com/5fe9c5e…/6012e83…_pattern-logo.png), linear-gradient(
-                    100deg,#0f0d1e, #0A6AB7);
+                    90deg,#0f0d1e, #0A6AB7);
                 padding: 55px 25px;
                 .rvw-item{
-                    border: 1px solid white;
                     padding: 25px;
+                   
+                   .card{
+                    background-color: #0f0d1e67;
                     color: white;
-                    .bi-star-fill{
-                        color: gold;
-                    }
+                    padding: 15px;
+                       .rvw-stars{
+                           @include flexbox; 
+                           flex-direction: row;
+                           align-items: flex-start;
+                           .bi{
+                               color: gold;
+                           }
+                       }
+                   }
                 }
             }
         }

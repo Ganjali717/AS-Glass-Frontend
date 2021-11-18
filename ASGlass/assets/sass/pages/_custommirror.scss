@@ -7,6 +7,7 @@
         width: 100%;
         .container{
             padding: 35px 15px;
+            background-color: none;
             .column{
                 @include flexbox; 
                 flex-direction: column;
@@ -25,7 +26,11 @@
                         @include flexbox; 
                         flex-direction: row;
                         justify-content: space-around;
-                        padding: 25px 0;
+                        padding: 25px 15px;
+                        border: 1px black solid;
+                        border-top: none;
+                        border-bottom-left-radius: 10px;
+                        border-bottom-right-radius: 10px;
                         .shapes-item{
                             text-align: center;
                             border-radius: 10px;
@@ -45,6 +50,29 @@
                                     transition: background-color 0.5s linear;
                                 }
                             }
+                          
+                        }
+                        .measurement{
+                            width: 100%;
+                            @include flexbox; 
+                            flex-direction: column;
+                            justify-content: space-between;
+                            align-items: flex-start;
+                            a{
+                                text-decoration: underline;
+                               color: #0A6AB7;
+                            }
+                           .mt-contain{
+                            @include flexbox; 
+                            flex-direction: row;
+                            justify-content: space-around;
+                            align-items: flex-start;
+                            .mtimg{
+                                img{
+                                    width: 60%;
+                                }
+                            }
+                           }
                         }
                     }
                     a{

@@ -11664,13 +11664,10 @@ body {
             padding: 85px; }
             #home #slider .container .row .myslides .slider-left-side a {
               text-decoration: none;
-              color: #0f0d1e;
+              color: white;
               padding: 15px 20px;
-              border: 1px solid white;
+              background-color: #0A6AB7;
               border-radius: 5px; }
-              #home #slider .container .row .myslides .slider-left-side a:hover {
-                background-color: #0A6AB7;
-                transition: background-color 0.5s linear; }
           #home #slider .container .row .myslides .slider-right-side img {
             width: 100%;
             height: max-content; }
@@ -11745,7 +11742,7 @@ body {
           #home #cards .container .row .card-item .card-btn {
             text-decoration: none;
             background-color: #0A6AB7;
-            color: #0f0d1e;
+            color: white;
             padding: 15px; }
             #home #cards .container .row .card-item .card-btn:hover {
               background-color: rgba(255, 145, 0, 0.678); }
@@ -11790,7 +11787,7 @@ body {
             border-radius: 10px; }
             #home #feature .container .column .feature-item .ft-left a {
               text-align: center;
-              color: black;
+              color: white;
               text-decoration: none;
               padding: 10px;
               background-color: #0A6AB7;
@@ -11860,7 +11857,7 @@ body {
             position: absolute;
             text-decoration: none;
             color: white;
-            background-color: #5b35d5;
+            background-color: #0A6AB7;
             padding: 15px 25px;
             bottom: 0;
             right: 11px; }
@@ -11917,15 +11914,17 @@ body {
           justify-content: center;
           align-items: center;
           flex-direction: row;
-          align-items: baseline;
+          justify-content: space-between;
+          align-items: flex-start;
           color: white;
           border-bottom: 1px solid rgba(209, 209, 209, 0.651); }
           #home #reviews .container .column .rvw-head .rvw-head-right {
             display: flex;
             justify-content: center;
             align-items: center;
-            text-align: right;
-            flex-direction: row; }
+            flex-direction: row;
+            align-items: baseline;
+            justify-content: flex-end; }
             #home #reviews .container .column .rvw-head .rvw-head-right i {
               font-size: 25px;
               cursor: pointer; }
@@ -11938,14 +11937,22 @@ body {
           align-items: center;
           flex-direction: row;
           flex-wrap: nowrap;
-          background-image: url(https://assets-global.website-files.com/5fe9c5e…/6012e83…_pattern-logo.png), linear-gradient(100deg, #0f0d1e, #0A6AB7);
+          background-image: url(https://assets-global.website-files.com/5fe9c5e…/6012e83…_pattern-logo.png), linear-gradient(90deg, #0f0d1e, #0A6AB7);
           padding: 55px 25px; }
           #home #reviews .container .column .rvw-items-sec .rvw-item {
-            border: 1px solid white;
-            padding: 25px;
-            color: white; }
-            #home #reviews .container .column .rvw-items-sec .rvw-item .bi-star-fill {
-              color: gold; }
+            padding: 25px; }
+            #home #reviews .container .column .rvw-items-sec .rvw-item .card {
+              background-color: #0f0d1e67;
+              color: white;
+              padding: 15px; }
+              #home #reviews .container .column .rvw-items-sec .rvw-item .card .rvw-stars {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                align-items: flex-start; }
+                #home #reviews .container .column .rvw-items-sec .rvw-item .card .rvw-stars .bi {
+                  color: gold; }
   #home #instock {
     width: 100%; }
     #home #instock .container {
@@ -12086,7 +12093,11 @@ body {
             align-items: center;
             flex-direction: row;
             justify-content: space-around;
-            padding: 25px 0; }
+            padding: 25px 15px;
+            border: 1px black solid;
+            border-top: none;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px; }
             #glass #cs-select-glass .container .column .select-shape .shapes .shapes-item {
               text-align: center;
               border-radius: 10px;
@@ -12103,6 +12114,26 @@ body {
                 #glass #cs-select-glass .container .column .select-shape .shapes .shapes-item a:hover {
                   background-color: #0A6AB7;
                   transition: background-color 0.5s linear; }
+            #glass #cs-select-glass .container .column .select-shape .shapes .measurement {
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+              justify-content: space-between;
+              align-items: flex-start; }
+              #glass #cs-select-glass .container .column .select-shape .shapes .measurement a {
+                text-decoration: underline;
+                color: #0A6AB7; }
+              #glass #cs-select-glass .container .column .select-shape .shapes .measurement .mt-contain {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: flex-start; }
+                #glass #cs-select-glass .container .column .select-shape .shapes .measurement .mt-contain .mtimg img {
+                  width: 60%; }
           #glass #cs-select-glass .container .column .select-shape a {
             font-size: 20px;
             text-decoration: none;
@@ -12305,7 +12336,8 @@ body {
   #glasstable #cs-select-glass {
     width: 100%; }
     #glasstable #cs-select-glass .container {
-      padding: 35px 15px; }
+      padding: 35px 15px;
+      background-color: none; }
       #glasstable #cs-select-glass .container .column {
         display: flex;
         justify-content: center;
@@ -12329,7 +12361,11 @@ body {
             align-items: center;
             flex-direction: row;
             justify-content: space-around;
-            padding: 25px 0; }
+            padding: 25px 15px;
+            border: 1px black solid;
+            border-top: none;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px; }
             #glasstable #cs-select-glass .container .column .select-shape .shapes .shapes-item {
               text-align: center;
               border-radius: 10px;
@@ -12341,10 +12377,31 @@ body {
                 text-decoration: none;
                 color: black;
                 padding: 15px 25px;
+                border: 1px solid black;
                 border-radius: 10px; }
                 #glasstable #cs-select-glass .container .column .select-shape .shapes .shapes-item a:hover {
                   background-color: #0A6AB7;
                   transition: background-color 0.5s linear; }
+            #glasstable #cs-select-glass .container .column .select-shape .shapes .measurement {
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+              justify-content: space-between;
+              align-items: flex-start; }
+              #glasstable #cs-select-glass .container .column .select-shape .shapes .measurement a {
+                text-decoration: underline;
+                color: #0A6AB7; }
+              #glasstable #cs-select-glass .container .column .select-shape .shapes .measurement .mt-contain {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: flex-start; }
+                #glasstable #cs-select-glass .container .column .select-shape .shapes .measurement .mt-contain .mtimg img {
+                  width: 60%; }
           #glasstable #cs-select-glass .container .column .select-shape a {
             font-size: 20px;
             text-decoration: none;
@@ -12566,7 +12623,8 @@ body {
   #mirror #cs-select-glass {
     width: 100%; }
     #mirror #cs-select-glass .container {
-      padding: 35px 15px; }
+      padding: 35px 15px;
+      background-color: none; }
       #mirror #cs-select-glass .container .column {
         display: flex;
         justify-content: center;
@@ -12590,7 +12648,11 @@ body {
             align-items: center;
             flex-direction: row;
             justify-content: space-around;
-            padding: 25px 0; }
+            padding: 25px 15px;
+            border: 1px black solid;
+            border-top: none;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px; }
             #mirror #cs-select-glass .container .column .select-shape .shapes .shapes-item {
               text-align: center;
               border-radius: 10px;
@@ -12607,6 +12669,26 @@ body {
                 #mirror #cs-select-glass .container .column .select-shape .shapes .shapes-item a:hover {
                   background-color: #0A6AB7;
                   transition: background-color 0.5s linear; }
+            #mirror #cs-select-glass .container .column .select-shape .shapes .measurement {
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+              justify-content: space-between;
+              align-items: flex-start; }
+              #mirror #cs-select-glass .container .column .select-shape .shapes .measurement a {
+                text-decoration: underline;
+                color: #0A6AB7; }
+              #mirror #cs-select-glass .container .column .select-shape .shapes .measurement .mt-contain {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: flex-start; }
+                #mirror #cs-select-glass .container .column .select-shape .shapes .measurement .mt-contain .mtimg img {
+                  width: 60%; }
           #mirror #cs-select-glass .container .column .select-shape a {
             font-size: 20px;
             text-decoration: none;
@@ -12819,15 +12901,14 @@ body {
   #mirrortable #cs-select-glass {
     width: 100%; }
     #mirrortable #cs-select-glass .container {
-      padding: 45px 25px; }
+      padding: 35px 15px;
+      background-color: none; }
       #mirrortable #cs-select-glass .container .column {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         align-items: center; }
-        #mirrortable #cs-select-glass .container .column p {
-          font-size: 20px; }
         #mirrortable #cs-select-glass .container .column .select-shape {
           display: flex;
           justify-content: center;
@@ -12839,30 +12920,53 @@ body {
             padding: 15px;
             border-top-left-radius: 10px;
             border-top-right-radius: 10px; }
-            #mirrortable #cs-select-glass .container .column .select-shape .shape-head h5, #mirrortable #cs-select-glass .container .column .select-shape .shape-head .h5 {
-              color: white; }
           #mirrortable #cs-select-glass .container .column .select-shape .shapes {
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: row;
             justify-content: space-around;
-            padding: 25px 0;
-            color: #1e1a3d; }
+            padding: 25px 15px;
+            border: 1px black solid;
+            border-top: none;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px; }
             #mirrortable #cs-select-glass .container .column .select-shape .shapes .shapes-item {
               text-align: center;
               border-radius: 10px;
-              padding: 25px 10px;
-              color: #1e1a3d; }
+              padding: 25px 10px; }
               #mirrortable #cs-select-glass .container .column .select-shape .shapes .shapes-item img {
                 width: 100px;
                 height: 100px; }
               #mirrortable #cs-select-glass .container .column .select-shape .shapes .shapes-item a {
                 text-decoration: none;
-                color: #1e1a3d;
+                color: black;
                 padding: 15px 25px;
-                border: 1px solid  #1e1a3d;
+                border: 1px solid black;
                 border-radius: 10px; }
+                #mirrortable #cs-select-glass .container .column .select-shape .shapes .shapes-item a:hover {
+                  background-color: #0A6AB7;
+                  transition: background-color 0.5s linear; }
+            #mirrortable #cs-select-glass .container .column .select-shape .shapes .measurement {
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+              justify-content: space-between;
+              align-items: flex-start; }
+              #mirrortable #cs-select-glass .container .column .select-shape .shapes .measurement a {
+                text-decoration: underline;
+                color: #0A6AB7; }
+              #mirrortable #cs-select-glass .container .column .select-shape .shapes .measurement .mt-contain {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: flex-start; }
+                #mirrortable #cs-select-glass .container .column .select-shape .shapes .measurement .mt-contain .mtimg img {
+                  width: 60%; }
           #mirrortable #cs-select-glass .container .column .select-shape a {
             font-size: 20px;
             text-decoration: none;
@@ -13083,3 +13187,34 @@ body {
         border: none;
         cursor: pointer;
         padding: 10px; }
+
+#rnpolicy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between; }
+  #rnpolicy #policyimg .container img {
+    width: 100%; }
+  #rnpolicy #policybody {
+    width: 100%; }
+    #rnpolicy #policybody .container {
+      padding: 85px 25px; }
+      #rnpolicy #policybody .container .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start; }
+        #rnpolicy #policybody .container .row .policy-left ul {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 0; }
+          #rnpolicy #policybody .container .row .policy-left ul li {
+            list-style: none; }
+            #rnpolicy #policybody .container .row .policy-left ul li a {
+              text-decoration: none; }
