@@ -7,7 +7,7 @@ const password = document.getElementById('password');
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-
+    console.log("Salam");
     checkInputs();
 });
 
@@ -17,7 +17,7 @@ function checkInputs() {
     // const password2Value = password2.value.trim();
 
     if (emailValue === '') {
-        setErrorForEmail(email, 'Email cannot blank');
+        setErrorForEmail(email, 'Adinizi qeyd etmek mutleqdir');
     } else if (!isEmail(emailValue)) {
         setErrorForEmail(email, 'Email cannot valid');
     } else {
@@ -25,7 +25,7 @@ function checkInputs() {
     }
 
     if (passwordValue === '') {
-        setErrorForPassword(password, 'Password cannot be blank')
+        setErrorForPassword(password, 'Sifreni qeyd etmek mutleqdir')
     } else {
         setErrorForPassword(password)
     }

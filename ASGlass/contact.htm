@@ -8,7 +8,9 @@
     <title>AS Glass Azerbaijan</title>
     <link href="assets/images/logo/AsGlassLogosu.png" rel="shortcut icon" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 </head>
 
@@ -22,7 +24,7 @@
                         BAYRAM ENDİRİMİ - 45% | 25% İDMAN GÜZGÜLƏRİNƏ <a>SHOP ALL DEALS</a>
                     </div>
                     <div class="header-top-help col-5">
-                        <a>Kömək & Dəstək</a>
+                        <a href="customservice.htm">Kömək & Dəstək</a>
                     </div>
                 </div>
             </div>
@@ -34,10 +36,7 @@
                         <i class="bi bi-list"></i>
                     </div>
                     <div class="logo col-4">
-
-                        <img src="assets/images/logo/asglasslogosu.png" alt="">
-
-                        <i>Alfa Salon Glasses...</i>
+                         <a href="homepage.htm"> <img src="assets/images/logo/asglasslogosu.png" alt=""><i>Alfa Salon Glasses...</i></a>
                     </div>
                     <div class="input-group mb-3 col-5">
                         <input type="text" class="form-control" placeholder="Axtar" aria-label="Recipient's username"
@@ -50,12 +49,25 @@
                     <div class="responsive-search col-2">
                         <i class="bi bi-search"></i>
                     </div>
-                    <div class="header-shop-cart col-2">
-                        <div class="shop-cart-container">
-                            <i class="bi bi-cart3"></i>
-                            <span class="cart-count">1</span>
+                    <div class="header-shop-cart col-4">
+                        <div class="shop-cart-container col-2">
+                            <a href="cart.htm"> 
+                                <i class="bi bi-cart3"></i>
+                                <span class="cart-count">1</span>
+                            </a>
+                        </div>
+                        <div class="login-icon col-2">
+                            <i class="bi bi-person-fill"></i>
+
+                        </div>
+                        <div class="login-container">
+                            <ul>
+                                <li><a href="login.htm">Daxil ol</a></li>
+                                <li><a href="registration.htm">Qeydiyyatdan kec</a></li>
+                            </ul>
                         </div>
                     </div>
+
                 </div>
             </div>
             <div class="overlay" id="overlay-menu">
@@ -101,8 +113,10 @@
         </div>
         <nav class="col-12" id="menu">
             <ul>
+                <li><a href="homepage.htm">ANA SƏHİFƏ</a></li>
+                <li><a href="about.htm">HAQQIMIZDA</a></li>
                 <li>
-                    <a href="">ŞÜŞƏ</a>
+                    <a href="customglass.htm">ŞÜŞƏ</a>
                     <div class="menu-detail">
                         <div class="container">
                             <div class="row">
@@ -149,46 +163,9 @@
                         </div>
                     </div>
                 </li>
-
+                
                 <li>
-                    <a href="">ŞÜŞƏ STOLLAR</a>
-                    <div class="menu-detail">
-                        <div class="container">
-                            <div class="row">
-                                <div class="menu-first-column col-3">
-                                    <p>XÜSUSİYYƏTLİ STOL ÜSTLƏRİ</p>
-                                    <ul class="first-list">
-                                        <li><img src="assets/images/icons/glass-table.png" alt=""><a href="">ŞÜŞƏLİ
-                                                MASALAR</a></li>
-                                        <li><img src="assets/images/icons/mirror-table.png" alt=""><a href="">ŞÜŞƏLİ
-                                                VERANDA MASASI</a></li>
-                                        <br>
-                                        <p>AKSESUARLAR</p>
-                                        <li><img src="assets/images/icons/mirror-bufer.png" alt=""><a href="">STOL
-                                                ÜSTLƏRİNİN BUMPERLERİ</a></li>
-                                        <li><img src="assets/images/icons/glass-cleaner.png" alt=""><a href="">ŞÜŞƏ
-                                                TƏMİZLƏYİCİLƏR</a></li>
-                                    </ul>
-                                </div>
-                                <div class="menu-second-column col-3">
-                                    <p>HAZIRDA OLAN STOL ÜSTÜ ŞÜŞƏLƏR</p>
-                                    <ul class="second-list">
-                                        <li><img src="assets/images/icons/circle-mirror.png" alt=""><a href="">YUMRU
-                                                ŞÜŞƏ</a></li>
-                                        <li><img src="assets/images/icons/glass.png" alt=""><a href="">DÜZBUCAQ ŞÜŞƏ</a>
-                                        </li>
-
-                                    </ul>
-                                </div>
-                                <div class="list-image col-3">
-                                    <img src="assets/images/technica/dewme.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <a href="">GÜZGÜ</a>
+                    <a href="custommirror.htm">GÜZGÜ</a>
                     <div class="menu-detail">
                         <div class="container">
                             <div class="row">
@@ -243,7 +220,7 @@
                     </div>
                 </li>
                 <li>
-                    <a href="">ŞÜŞƏ RƏFLƏR</a>
+                    <a href="customglasshelve.htm">ŞÜŞƏ RƏFLƏR</a>
                     <div class="menu-detail">
                         <div class="container">
                             <div class="row">
@@ -280,8 +257,8 @@
                         </div>
                     </div>
                 </li>
-                <li><a href="">ÜMUMİ MƏHSULLAR</a></li>
-                <li><a href="">ƏLAQƏ</a></li>
+                <li><a href="shop.htm">ÜMUMİ MƏHSULLAR</a></li>
+                <li><a href="contact.htm">ƏLAQƏ</a></li>
                 <li class="pro"><a href="">PRO ÜÇÜN</a></li>
             </ul>
         </nav>
@@ -473,6 +450,8 @@
     <script src="assets/js/slider.js"></script>
     <script src="assets/js/homepage.js"></script>
     <script src="assets/js/backtop.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

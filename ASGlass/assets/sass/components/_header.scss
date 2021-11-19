@@ -24,6 +24,7 @@ header{
                   &>a{
                       color: white;
                       cursor: pointer;
+                      text-decoration: none;
                   }
               }
           }
@@ -47,7 +48,9 @@ header{
             }
             .logo{
                 padding: 15px;
-                    img{
+                a{
+                    text-decoration: none;
+                     img{
                         width: 120px;
                         height: 80px;
                     }
@@ -56,6 +59,8 @@ header{
                         color: #0A6AB7;
                         cursor: pointer;
                     }
+                }
+                   
                 }
             .input-group{
                 width: 30% !important;
@@ -232,10 +237,6 @@ header{
                 &:hover{
                     background-color: rgba(185, 185, 185, 0.384);
                     .menu-detail{
-                        visibility: visible;
-                        opacity: 1;
-                    }
-                    .second-menu-detail{
                         visibility: visible;
                         opacity: 1;
                     }
