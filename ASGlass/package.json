@@ -6,6 +6,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
     "@splidejs/splide": "^3.3.1",
+    "get-google-fonts": "^1.2.2",
     "node-sass": "^6.0.1"
   },
   "devDependencies": {},

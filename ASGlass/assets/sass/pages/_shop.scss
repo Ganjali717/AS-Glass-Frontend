@@ -1,0 +1,82 @@
+#shop{
+    width: 100%;
+    .container{
+        padding: 85px 25px;
+        .row{
+            @include flexbox; 
+            flex-direction: row;
+            align-items: flex-start;
+            .shop-left{
+                .inner-page-sidebar{
+                    @include flexbox; 
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: baseline;
+                    .single-block{
+                        @include flexbox; 
+                        flex-direction: column;
+                        align-items: center;
+                        border: 1px solid #0A6AB7;
+                        border-top-left-radius: 10px;
+                        border-top-right-radius: 10px;
+                        margin-bottom: 15px;
+                        width: 100%;
+                        .sidebar-title{
+                            background-color: #0A6AB7;
+                            padding: 15px 35px;
+                            width: 100%;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                        }
+                        .sidebar-menu--shop{
+                            @include flexbox; 
+                            flex-direction: column;
+                            align-items: flex-start;
+                            padding: 0;
+                            li{
+                                list-style: none;
+                                padding: 10px;
+                                border-bottom: 1px solid #0A6AB7;
+                               a{
+                                   text-decoration: none;
+                                   color: black;
+                               }
+                            }
+                        }
+                        input{
+                            padding: 15px;
+                        }
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .shop-right{
+               .shop-toolbar{
+                   background-color: #0A6AB7;
+                   border-top-left-radius: 10px;
+                   border-top-right-radius: 10px;
+                   height: max-content;
+                   padding: 10px 25px;
+                   .row{
+                       @include flexbox; 
+                       flex-direction: row;
+                       align-items: center;
+                       .toolbar-item{
+                           @include flexbox; 
+                           flex-direction: row;
+                           justify-content: space-between;
+                           .toolbar-status{
+                               width: 100%;
+                           }
+                           span{
+                               width: 90px;
+                           }
+                       }
+                   }
+               }
+            }
+        }
+    }
+}

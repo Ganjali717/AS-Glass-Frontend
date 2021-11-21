@@ -1,0 +1,52 @@
+#orderstatus{
+    width: 100%;
+    #statusinput{
+        padding: 85px 25px;
+        .container{
+            .row{
+                @include flexbox;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: flex-start;
+                .order-status-left{
+                    ul{
+                        @include flexbox; 
+                        flex-direction: column;
+                        align-items: flex-start;
+                        padding: 0;
+                        li{
+                            list-style: none;
+                            a{
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+                .order-status-right{
+                    @include flexbox; 
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    form{
+                        width: 60%;
+                        label{
+                            font-size: 25px;
+                        }
+                        input{
+                            width: 100%;
+                        }
+                        input[type=text]{
+                          padding: 10px;
+                          border: none;
+                        }
+                        input[type=submit]{
+                            border: none;
+                            background-color: #0A6AB7;
+                            padding: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

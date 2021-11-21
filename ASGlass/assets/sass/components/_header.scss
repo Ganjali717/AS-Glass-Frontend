@@ -12,7 +12,6 @@ header{
               padding: 5px;
               .header-deals{
                   text-align: center;
-                  color: white;
                       &>a{
                           cursor: pointer;
                           text-decoration: underline;
@@ -22,9 +21,12 @@ header{
               .header-top-help{
                   text-align: right;
                   &>a{
-                      color: white;
+                      color: #132531;
                       cursor: pointer;
                       text-decoration: none;
+                      &:hover{
+                          color: #FF781E;
+                      }
                   }
               }
           }
@@ -55,8 +57,9 @@ header{
                         height: 80px;
                     }
                     i{
-                        font-size: 22px;
-                        color: #0A6AB7;
+                        font-family: 'M PLUS 1', sans-serif;
+                        font-size: 25px;
+                        color: #000000be;
                         cursor: pointer;
                     }
                 }
@@ -112,7 +115,7 @@ header{
                 .login-container{
                     position: absolute;
                     width: 300px;
-                    background-color: rgba(255, 255, 255, 0.815);
+                    background-color: rgba(255, 255, 255, 0.918);
                     border-radius: 15px;
                     padding: 15px;
                     z-index: 9999;
@@ -128,6 +131,11 @@ header{
                             padding: 10px;
                             a{
                                 text-decoration: none;
+                                color: #0f0d1e;
+                                font-size: 17px;
+                                i{
+                                    margin-left: 15px;
+                                }
                             }
                         }
                     }
@@ -207,7 +215,6 @@ header{
         
     }
     #menu{
-        width: 100%;
         border-top: 1px solid rgba(0, 0, 0, 0.185);
         border-bottom: 1px solid rgba(0, 0, 0, 0.185);
         position: relative;
@@ -378,10 +385,12 @@ header{
       
     }
     .glass-breadcrumb{
+        border-bottom: 1px solid rgba(0, 0, 0, 0.199);
         .container{
             padding: 15px 25px;
            .row{
                p{
+                   margin: 0;
                    color: #035894;
                    a{
                        text-decoration: none;

@@ -1,0 +1,81 @@
+#about{
+    width: 100%;
+    #about-us{
+        padding: 85px 25px;
+        .container{
+            .row{
+                @include flexbox; 
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: flex-start;
+                .about-us-left{
+                    color: black;
+                }
+                .about-us-right{
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    #blog{
+        width: 100%;
+        padding: 45px 25px;
+       .container{
+       
+        h1{
+            text-align: center; 
+        }
+         .column{
+             @include flexbox; 
+             flex-direction: column;
+             .blog-head{
+                 @include flexbox; 
+                 flex-direction: row;
+                 justify-content: space-between;
+                 padding: 35px;
+                 .blog-head-item{
+                     img{
+                         width: 100%;
+                     }
+                     a{
+                         font-size: 25px;
+                     }
+                     p{
+                         font-size: 18px;
+                     }
+                 }
+             }
+             .blog-body{
+                 @include flexbox;
+                 flex-direction: row;
+                 justify-content: space-around;
+                 padding: 45px 35px;
+                 
+                 .blog-body-item{
+                     text-align: center;
+                     cursor: pointer;
+                     padding: 45px 25px;
+                     i{
+                         font-size: 55px;
+                         color: #0A6AB7;
+                     }
+                     h4{
+                         font-size: 35px;
+                     }
+                     span{
+                         width: 35px;
+                         height: 20px;
+                         background-color: brown;
+                     }
+                     p{
+                         font-size: 20px;
+                     }
+                 }
+             }
+         }
+       }
+      
+    }
+}

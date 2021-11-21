@@ -15,8 +15,6 @@
                 margin: 0;
                 padding: 0;
                 .myslides{
-                    display: none;
-                    flex-direction: row;
                     height: max-content;
                     margin: 0;
                     padding: 0;
@@ -36,12 +34,18 @@
                             height: max-content;
                         }
                     }
+                    .sl-left{
+                        float: left;
+                    }
+                    .sl-right{
+                        float: right;
+                    }
                 }
                 .faded{
                     -webkit-animation-name: faded;
-                    -webkit-animation-duration: 3s;
+                    -webkit-animation-duration: 2s;
                     animation-name: faded;
-                    animation-duration: 3s;
+                    animation-duration: 2s;
                 }
                 .prev{
                     cursor: pointer;
@@ -99,17 +103,20 @@
     }
     #cards{
         width: 100%;
+        padding: 55px 25px;
         .container{
-            padding: 55px 25px;
+         
             .row{
             @include flexbox; 
             flex-direction: row;
             justify-content: space-around;
             align-items: center;
             .card-item{
-                border-radius: 5px;
+                background-image: url(../../assets/images/products/home-customglass.jpg);
+                border-radius: 10px;
                 position: relative;
                 text-align: center;
+                border: none;
                 padding: 15px;
                 height: 395px;
                 &>img{
@@ -121,8 +128,10 @@
                     background-color: #0A6AB7;
                     color: white;
                     padding: 15px;
+                    border-radius: 5px;
                     &:hover{
                         background-color: rgba(255, 145, 0, 0.678);
+                        transition: background-color 0.5s ease-in-out;
                     }
                 }
             }
@@ -132,8 +141,9 @@
     }
     #department{
         width: 100%;
+        padding: 35px 15px;
         .container{
-            padding: 35px 15px;
+           
              .row{
                 @include flexbox; 
                 flex-direction: row;
@@ -152,9 +162,9 @@
     }
     #feature{
         width: 100%;
-       
+        padding: 25px 15px; 
         .container{
-             padding: 25px 15px; 
+            
              .column{
             @include flexbox; 
             flex-direction: column;
@@ -196,9 +206,9 @@
     #accessories{
         width: 100%;
         height: max-content;
-        
+         padding: 45px 25px;
         .container{
-            padding: 45px 25px;
+           
              .row{
             @include flexbox; 
             flex-direction: row;
@@ -227,9 +237,9 @@
     }
     #scnd-card{
         width: 100%;
-        
+          padding: 25px 35px;
         .container{
-            padding: 25px 35px;
+          
               .row{
             @include flexbox; 
             flex-direction: row;
@@ -275,11 +285,9 @@
       
         height: max-content;
         text-align: center;
+        padding: 55px 25px;
         .container{
-            padding: 55px 25px;
-             h3{
-            font-weight: 100;
-               }
+          
         .row{
             @include flexbox; 
             flex-direction: row;
@@ -318,8 +326,9 @@
     }
     #reviews{
         width: 100%;
+        padding: 55px 25px;
         .container{
-            padding: 55px 25px;
+          
             .column{
             @include flexbox; 
             width: 100%;
@@ -378,9 +387,9 @@
     }
     #instock{
         width: 100%;
-       
+         padding: 65px 25px;
         .container{
-                padding: 65px 25px;
+              
               .row{
             @include flexbox;
             flex-direction: row;
@@ -416,8 +425,9 @@
     }
     #advertising{
         width: 100%;
+        padding: 55px 25px;
         .container{
-            padding: 55px 25px;
+            
             .adv-item{
             width: 100%;
             @include flexbox; 
@@ -439,8 +449,9 @@
     }
     #blog{
         width: 100%;
-       .container{
         padding: 45px 25px;
+       .container{
+       
         h1{
             text-align: center; 
         }
@@ -507,3 +518,5 @@
     from {opacity: .3}
     to {opacity: 1}
   }
+
+

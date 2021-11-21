@@ -29,12 +29,16 @@
 
 // Pages 
 @import "../sass/pages/homepage";
-@import "../sass/pages/customglass";
-@import "../sass/pages/custommirror";
-@import "../sass/pages/customglassshelve";
-@import "../sass/pages/customservice";
+@import "../sass/pages/glass";
+@import "../sass/pages/mirror";
+@import "../sass/pages/glassshelve";
+@import "../sass/pages/service";
 @import "../sass/pages/contact";
 @import "../sass/pages/returnpolicy";
 @import "../sass/pages/login";
 @import "../sass/pages/registration";
-@import "../sass/pages/customize"
+@import "../sass/pages/customize"; 
+@import "../sass/pages/about";
+@import "../sass/pages/shop";
+@import "../sass/pages/orderstatus";
+@import "../sass/pages/ordercancel";

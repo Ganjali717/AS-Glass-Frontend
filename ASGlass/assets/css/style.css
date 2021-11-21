@@ -11219,17 +11219,18 @@ header {
       align-items: center;
       padding: 5px; }
       header #header-page .row .header-deals {
-        text-align: center;
-        color: white; }
+        text-align: center; }
         header #header-page .row .header-deals > a {
           cursor: pointer;
           text-decoration: underline; }
       header #header-page .row .header-top-help {
         text-align: right; }
         header #header-page .row .header-top-help > a {
-          color: white;
+          color: #132531;
           cursor: pointer;
           text-decoration: none; }
+          header #header-page .row .header-top-help > a:hover {
+            color: #FF781E; }
   header #navbar {
     display: flex;
     justify-content: center;
@@ -11254,8 +11255,9 @@ header {
             width: 120px;
             height: 80px; }
           header #navbar .row .logo a i {
-            font-size: 22px;
-            color: #0A6AB7;
+            font-family: 'M PLUS 1', sans-serif;
+            font-size: 25px;
+            color: #000000be;
             cursor: pointer; }
       header #navbar .row .input-group {
         width: 30% !important; }
@@ -11299,7 +11301,7 @@ header {
         header #navbar .row .header-shop-cart .login-container {
           position: absolute;
           width: 300px;
-          background-color: rgba(255, 255, 255, 0.815);
+          background-color: rgba(255, 255, 255, 0.918);
           border-radius: 15px;
           padding: 15px;
           z-index: 9999;
@@ -11316,7 +11318,11 @@ header {
               list-style: none;
               padding: 10px; }
               header #navbar .row .header-shop-cart .login-container ul li a {
-                text-decoration: none; }
+                text-decoration: none;
+                color: #0f0d1e;
+                font-size: 17px; }
+                header #navbar .row .header-shop-cart .login-container ul li a i {
+                  margin-left: 15px; }
         header #navbar .row .header-shop-cart .show {
           display: block; }
     header #navbar .overlay {
@@ -11376,7 +11382,6 @@ header {
         height: max-content;
         transition: display 2s linear; }
   header #menu {
-    width: 100%;
     border-top: 1px solid rgba(0, 0, 0, 0.185);
     border-bottom: 1px solid rgba(0, 0, 0, 0.185);
     position: relative;
@@ -11512,13 +11517,16 @@ header {
               border-radius: 15px;
               width: 320px;
               height: 250px; }
-  header .glass-breadcrumb .container {
-    padding: 15px 25px; }
-    header .glass-breadcrumb .container .row p {
-      color: #035894; }
-      header .glass-breadcrumb .container .row p a {
-        text-decoration: none;
-        color: #1b1734; }
+  header .glass-breadcrumb {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.199); }
+    header .glass-breadcrumb .container {
+      padding: 15px 25px; }
+      header .glass-breadcrumb .container .row p {
+        margin: 0;
+        color: #035894; }
+        header .glass-breadcrumb .container .row p a {
+          text-decoration: none;
+          color: #1b1734; }
 
 @media only screen and (max-width: 768px) {
   header #header-page .row {
@@ -11664,7 +11672,6 @@ body {
     z-index: 99;
     font-size: 18px;
     border: none;
-    outline: none;
     background-color: #0A6AB7;
     transition: background-color 0.5s linear;
     color: white;
@@ -11694,8 +11701,6 @@ body {
         margin: 0;
         padding: 0; }
         #home #slider .container .row .myslides {
-          display: none;
-          flex-direction: row;
           height: max-content;
           margin: 0;
           padding: 0; }
@@ -11710,11 +11715,15 @@ body {
           #home #slider .container .row .myslides .slider-right-side img {
             width: 100%;
             height: max-content; }
+          #home #slider .container .row .myslides .sl-left {
+            float: left; }
+          #home #slider .container .row .myslides .sl-right {
+            float: right; }
         #home #slider .container .row .faded {
           -webkit-animation-name: faded;
-          -webkit-animation-duration: 3s;
+          -webkit-animation-duration: 2s;
           animation-name: faded;
-          animation-duration: 3s; }
+          animation-duration: 2s; }
         #home #slider .container .row .prev {
           cursor: pointer;
           position: absolute;
@@ -11759,331 +11768,323 @@ body {
             #home #slider .container .row .dots-sec .dot .active, #home #slider .container .row .dots-sec .dot:hover {
               background-color: #0A6AB7; }
   #home #cards {
-    width: 100%; }
-    #home #cards .container {
-      padding: 55px 25px; }
-      #home #cards .container .row {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center; }
-        #home #cards .container .row .card-item {
-          border-radius: 5px;
-          position: relative;
-          text-align: center;
-          padding: 15px;
-          height: 395px; }
-          #home #cards .container .row .card-item > img {
-            width: 250px;
-            height: 150px; }
-          #home #cards .container .row .card-item .card-btn {
-            text-decoration: none;
-            background-color: #0A6AB7;
-            color: white;
-            padding: 15px; }
-            #home #cards .container .row .card-item .card-btn:hover {
-              background-color: rgba(255, 145, 0, 0.678); }
-  #home #department {
-    width: 100%; }
-    #home #department .container {
-      padding: 35px 15px; }
-      #home #department .container .row {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between; }
-        #home #department .container .row .department-item {
-          cursor: pointer; }
-          #home #department .container .row .department-item img {
-            width: 150px;
-            height: 150px; }
-  #home #feature {
-    width: 100%; }
-    #home #feature .container {
-      padding: 25px 15px; }
-      #home #feature .container .column {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center; }
-        #home #feature .container .column .feature-item {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-direction: row;
-          justify-content: space-around;
-          padding: 25px 35px;
-          border-radius: 15px; }
-          #home #feature .container .column .feature-item .ft-left {
-            text-align: left;
-            padding: 35px 25px;
-            border-radius: 10px; }
-            #home #feature .container .column .feature-item .ft-left a {
-              text-align: center;
-              color: white;
-              text-decoration: none;
-              padding: 10px;
-              background-color: #0A6AB7;
-              border-radius: 5px; }
-          #home #feature .container .column .feature-item .ft-right {
-            padding: 35px 25px; }
-            #home #feature .container .column .feature-item .ft-right img {
-              margin: 0;
-              width: 580px;
-              height: 320px;
-              border-radius: 5px; }
-  #home #accessories {
     width: 100%;
-    height: max-content; }
-    #home #accessories .container {
-      padding: 45px 25px; }
-      #home #accessories .container .row {
+    padding: 55px 25px; }
+    #home #cards .container .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center; }
+      #home #cards .container .row .card-item {
+        background-image: url(../../assets/images/products/home-customglass.jpg);
+        border-radius: 10px;
+        position: relative;
+        text-align: center;
+        border: none;
+        padding: 15px;
+        height: 395px; }
+        #home #cards .container .row .card-item > img {
+          width: 250px;
+          height: 150px; }
+        #home #cards .container .row .card-item .card-btn {
+          text-decoration: none;
+          background-color: #0A6AB7;
+          color: white;
+          padding: 15px;
+          border-radius: 5px; }
+          #home #cards .container .row .card-item .card-btn:hover {
+            background-color: rgba(255, 145, 0, 0.678);
+            transition: background-color 0.5s ease-in-out; }
+  #home #department {
+    width: 100%;
+    padding: 35px 15px; }
+    #home #department .container .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      #home #department .container .row .department-item {
+        cursor: pointer; }
+        #home #department .container .row .department-item img {
+          width: 150px;
+          height: 150px; }
+  #home #feature {
+    width: 100%;
+    padding: 25px 15px; }
+    #home #feature .container .column {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center; }
+      #home #feature .container .column .feature-item {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row;
         justify-content: space-around;
-        align-items: center; }
-        #home #accessories .container .row .acs-items {
-          height: max-content;
-          border-radius: 5px;
-          padding: 25px 35px;
-          text-align: center; }
-          #home #accessories .container .row .acs-items img {
-            width: 250px;
-            height: 130px; }
-          #home #accessories .container .row .acs-items .acs-btn {
-            width: 100%;
+        padding: 25px 35px;
+        border-radius: 15px; }
+        #home #feature .container .column .feature-item .ft-left {
+          text-align: left;
+          padding: 35px 25px;
+          border-radius: 10px; }
+          #home #feature .container .column .feature-item .ft-left a {
+            text-align: center;
+            color: white;
+            text-decoration: none;
             padding: 10px;
             background-color: #0A6AB7;
-            text-decoration: none;
-            color: white; }
+            border-radius: 5px; }
+        #home #feature .container .column .feature-item .ft-right {
+          padding: 35px 25px; }
+          #home #feature .container .column .feature-item .ft-right img {
+            margin: 0;
+            width: 580px;
+            height: 320px;
+            border-radius: 5px; }
+  #home #accessories {
+    width: 100%;
+    height: max-content;
+    padding: 45px 25px; }
+    #home #accessories .container .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center; }
+      #home #accessories .container .row .acs-items {
+        height: max-content;
+        border-radius: 5px;
+        padding: 25px 35px;
+        text-align: center; }
+        #home #accessories .container .row .acs-items img {
+          width: 250px;
+          height: 130px; }
+        #home #accessories .container .row .acs-items .acs-btn {
+          width: 100%;
+          padding: 10px;
+          background-color: #0A6AB7;
+          text-decoration: none;
+          color: white; }
   #home #scnd-card {
-    width: 100%; }
-    #home #scnd-card .container {
-      padding: 25px 35px; }
-      #home #scnd-card .container .row {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        justify-content: space-around; }
-        #home #scnd-card .container .row .scnd-card-item {
-          position: relative; }
-          #home #scnd-card .container .row .scnd-card-item h2, #home #scnd-card .container .row .scnd-card-item .h2 {
-            background-color: #076CB4;
-            padding: 25px;
-            color: white;
-            background-image: url(https://assets-global.website-files.com/5fe9c5e…/6012e83…_pattern-logo.png), linear-gradient(100deg, #0A6AB7, #0f0d1e); }
-          #home #scnd-card .container .row .scnd-card-item img {
-            width: 100%;
-            height: 250px; }
-          #home #scnd-card .container .row .scnd-card-item .scnd-card-btn-left {
-            position: absolute;
-            text-decoration: none;
-            color: white;
-            background-color: #0A6AB7;
-            padding: 15px 25px;
-            bottom: 0;
-            left: 11px; }
-          #home #scnd-card .container .row .scnd-card-item .scnd-card-btn-right {
-            position: absolute;
-            text-decoration: none;
-            color: white;
-            background-color: #0A6AB7;
-            padding: 15px 25px;
-            bottom: 0;
-            right: 11px; }
+    width: 100%;
+    padding: 25px 35px; }
+    #home #scnd-card .container .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-around; }
+      #home #scnd-card .container .row .scnd-card-item {
+        position: relative; }
+        #home #scnd-card .container .row .scnd-card-item h2, #home #scnd-card .container .row .scnd-card-item .h2 {
+          background-color: #076CB4;
+          padding: 25px;
+          color: white;
+          background-image: url(https://assets-global.website-files.com/5fe9c5e…/6012e83…_pattern-logo.png), linear-gradient(100deg, #0A6AB7, #0f0d1e); }
+        #home #scnd-card .container .row .scnd-card-item img {
+          width: 100%;
+          height: 250px; }
+        #home #scnd-card .container .row .scnd-card-item .scnd-card-btn-left {
+          position: absolute;
+          text-decoration: none;
+          color: white;
+          background-color: #0A6AB7;
+          padding: 15px 25px;
+          bottom: 0;
+          left: 11px; }
+        #home #scnd-card .container .row .scnd-card-item .scnd-card-btn-right {
+          position: absolute;
+          text-decoration: none;
+          color: white;
+          background-color: #0A6AB7;
+          padding: 15px 25px;
+          bottom: 0;
+          right: 11px; }
   #home #categories {
     width: 100%;
     height: max-content;
-    text-align: center; }
-    #home #categories .container {
-      padding: 55px 25px; }
-      #home #categories .container h3, #home #categories .container .h3 {
-        font-weight: 100; }
-      #home #categories .container .row {
+    text-align: center;
+    padding: 55px 25px; }
+    #home #categories .container .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: flex-start; }
+      #home #categories .container .row .ctg-item {
+        padding: 25px;
+        background-color: #0A6AB7; }
+        #home #categories .container .row .ctg-item ul {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: flex-start;
+          margin: 0;
+          padding: 0; }
+          #home #categories .container .row .ctg-item ul li {
+            list-style: none;
+            padding: 5px 0; }
+            #home #categories .container .row .ctg-item ul li::before {
+              content: "\00BB"; }
+            #home #categories .container .row .ctg-item ul li a {
+              text-decoration: none;
+              color: white;
+              padding: 0 5px; }
+              #home #categories .container .row .ctg-item ul li a:hover {
+                border-bottom: 1px solid black; }
+  #home #reviews {
+    width: 100%;
+    padding: 55px 25px; }
+    #home #reviews .container .column {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      flex-direction: column; }
+      #home #reviews .container .column .rvw-head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        color: white;
+        border-bottom: 1px solid rgba(209, 209, 209, 0.651); }
+        #home #reviews .container .column .rvw-head .rvw-head-right {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: row;
+          align-items: baseline;
+          justify-content: flex-end; }
+          #home #reviews .container .column .rvw-head .rvw-head-right i {
+            font-size: 25px;
+            cursor: pointer; }
+          #home #reviews .container .column .rvw-head .rvw-head-right p {
+            margin: 0;
+            padding: 0; }
+      #home #reviews .container .column .rvw-items-sec {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        background-image: url(https://assets-global.website-files.com/5fe9c5e…/6012e83…_pattern-logo.png), linear-gradient(90deg, #0f0d1e, #0A6AB7);
+        padding: 55px 25px; }
+        #home #reviews .container .column .rvw-items-sec .rvw-item {
+          padding: 25px; }
+          #home #reviews .container .column .rvw-items-sec .rvw-item .card {
+            background-color: #0f0d1e67;
+            color: white;
+            padding: 15px; }
+            #home #reviews .container .column .rvw-items-sec .rvw-item .card .rvw-stars {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: row;
+              align-items: flex-start; }
+              #home #reviews .container .column .rvw-items-sec .rvw-item .card .rvw-stars .bi {
+                color: gold; }
+  #home #instock {
+    width: 100%;
+    padding: 65px 25px; }
+    #home #instock .container .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 25px; }
+      #home #instock .container .row .instock-left {
+        position: relative; }
+        #home #instock .container .row .instock-left img {
+          width: 100%;
+          height: 550px; }
+        #home #instock .container .row .instock-left a {
+          position: absolute;
+          bottom: 15px;
+          right: 10px;
+          text-decoration: none;
+          background-color: #0A6AB7;
+          color: white;
+          font-size: 15px;
+          padding: 25px 15px; }
+      #home #instock .container .row .instock-right img {
+        width: 100%;
+        height: 550px; }
+  #home #advertising {
+    width: 100%;
+    padding: 55px 25px; }
+    #home #advertising .container .adv-item {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      background-image: url(https://assets-global.website-files.com/5fe9c5e…/6012e83…_pattern-logo.png), linear-gradient(100deg, #0A6AB7, #0f0d1e);
+      padding: 35px 25px;
+      color: #0f0d1e; }
+      #home #advertising .container .adv-item h1, #home #advertising .container .adv-item .h1 {
+        font-size: 65px; }
+      #home #advertising .container .adv-item .adv-txt {
+        color: white; }
+  #home #blog {
+    width: 100%;
+    padding: 45px 25px; }
+    #home #blog .container h1, #home #blog .container .h1 {
+      text-align: center; }
+    #home #blog .container .column {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      #home #blog .container .column .blog-head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 35px; }
+        #home #blog .container .column .blog-head .blog-head-item img {
+          width: 100%; }
+        #home #blog .container .column .blog-head .blog-head-item a {
+          font-size: 25px; }
+        #home #blog .container .column .blog-head .blog-head-item p {
+          font-size: 18px; }
+      #home #blog .container .column .blog-body {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row;
         justify-content: space-around;
-        align-items: flex-start; }
-        #home #categories .container .row .ctg-item {
-          padding: 25px;
-          background-color: #0A6AB7; }
-          #home #categories .container .row .ctg-item ul {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin: 0;
-            padding: 0; }
-            #home #categories .container .row .ctg-item ul li {
-              list-style: none;
-              padding: 5px 0; }
-              #home #categories .container .row .ctg-item ul li::before {
-                content: "\00BB"; }
-              #home #categories .container .row .ctg-item ul li a {
-                text-decoration: none;
-                color: white;
-                padding: 0 5px; }
-                #home #categories .container .row .ctg-item ul li a:hover {
-                  border-bottom: 1px solid black; }
-  #home #reviews {
-    width: 100%; }
-    #home #reviews .container {
-      padding: 55px 25px; }
-      #home #reviews .container .column {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        flex-direction: column; }
-        #home #reviews .container .column .rvw-head {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-direction: row;
-          justify-content: space-between;
-          align-items: flex-start;
-          color: white;
-          border-bottom: 1px solid rgba(209, 209, 209, 0.651); }
-          #home #reviews .container .column .rvw-head .rvw-head-right {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: row;
-            align-items: baseline;
-            justify-content: flex-end; }
-            #home #reviews .container .column .rvw-head .rvw-head-right i {
-              font-size: 25px;
-              cursor: pointer; }
-            #home #reviews .container .column .rvw-head .rvw-head-right p {
-              margin: 0;
-              padding: 0; }
-        #home #reviews .container .column .rvw-items-sec {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-direction: row;
-          flex-wrap: nowrap;
-          background-image: url(https://assets-global.website-files.com/5fe9c5e…/6012e83…_pattern-logo.png), linear-gradient(90deg, #0f0d1e, #0A6AB7);
-          padding: 55px 25px; }
-          #home #reviews .container .column .rvw-items-sec .rvw-item {
-            padding: 25px; }
-            #home #reviews .container .column .rvw-items-sec .rvw-item .card {
-              background-color: #0f0d1e67;
-              color: white;
-              padding: 15px; }
-              #home #reviews .container .column .rvw-items-sec .rvw-item .card .rvw-stars {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: row;
-                align-items: flex-start; }
-                #home #reviews .container .column .rvw-items-sec .rvw-item .card .rvw-stars .bi {
-                  color: gold; }
-  #home #instock {
-    width: 100%; }
-    #home #instock .container {
-      padding: 65px 25px; }
-      #home #instock .container .row {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 25px; }
-        #home #instock .container .row .instock-left {
-          position: relative; }
-          #home #instock .container .row .instock-left img {
-            width: 100%;
-            height: 550px; }
-          #home #instock .container .row .instock-left a {
-            position: absolute;
-            bottom: 15px;
-            right: 10px;
-            text-decoration: none;
-            background-color: #0A6AB7;
-            color: white;
-            font-size: 15px;
-            padding: 25px 15px; }
-        #home #instock .container .row .instock-right img {
-          width: 100%;
-          height: 550px; }
-  #home #advertising {
-    width: 100%; }
-    #home #advertising .container {
-      padding: 55px 25px; }
-      #home #advertising .container .adv-item {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        background-image: url(https://assets-global.website-files.com/5fe9c5e…/6012e83…_pattern-logo.png), linear-gradient(100deg, #0A6AB7, #0f0d1e);
-        padding: 35px 25px;
-        color: #0f0d1e; }
-        #home #advertising .container .adv-item h1, #home #advertising .container .adv-item .h1 {
-          font-size: 65px; }
-        #home #advertising .container .adv-item .adv-txt {
-          color: white; }
-  #home #blog {
-    width: 100%; }
-    #home #blog .container {
-      padding: 45px 25px; }
-      #home #blog .container h1, #home #blog .container .h1 {
-        text-align: center; }
-      #home #blog .container .column {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column; }
-        #home #blog .container .column .blog-head {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-direction: row;
-          justify-content: space-between;
-          padding: 35px; }
-          #home #blog .container .column .blog-head .blog-head-item img {
-            width: 100%; }
-          #home #blog .container .column .blog-head .blog-head-item a {
-            font-size: 25px; }
-          #home #blog .container .column .blog-head .blog-head-item p {
-            font-size: 18px; }
-        #home #blog .container .column .blog-body {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-direction: row;
-          justify-content: space-around;
-          padding: 45px 35px; }
-          #home #blog .container .column .blog-body .blog-body-item {
-            text-align: center;
-            cursor: pointer;
-            padding: 45px 25px; }
-            #home #blog .container .column .blog-body .blog-body-item i {
-              font-size: 55px;
-              color: #0A6AB7; }
-            #home #blog .container .column .blog-body .blog-body-item h4, #home #blog .container .column .blog-body .blog-body-item .h4 {
-              font-size: 35px; }
-            #home #blog .container .column .blog-body .blog-body-item span {
-              width: 35px;
-              height: 20px;
-              background-color: brown; }
-            #home #blog .container .column .blog-body .blog-body-item p {
-              font-size: 20px; }
+        padding: 45px 35px; }
+        #home #blog .container .column .blog-body .blog-body-item {
+          text-align: center;
+          cursor: pointer;
+          padding: 45px 25px; }
+          #home #blog .container .column .blog-body .blog-body-item i {
+            font-size: 55px;
+            color: #0A6AB7; }
+          #home #blog .container .column .blog-body .blog-body-item h4, #home #blog .container .column .blog-body .blog-body-item .h4 {
+            font-size: 35px; }
+          #home #blog .container .column .blog-body .blog-body-item span {
+            width: 35px;
+            height: 20px;
+            background-color: brown; }
+          #home #blog .container .column .blog-body .blog-body-item p {
+            font-size: 20px; }
 
 @-webkit-keyframes faded {
   from {
@@ -12365,293 +12366,6 @@ body {
             #glass #blog .container .column .blog-body .blog-body-item p {
               font-size: 20px; }
 
-#glasstable {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  height: max-content; }
-  #glasstable #cs-select-glass {
-    width: 100%; }
-    #glasstable #cs-select-glass .container {
-      padding: 35px 15px;
-      background-color: none; }
-      #glasstable #cs-select-glass .container .column {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        align-items: center; }
-        #glasstable #cs-select-glass .container .column .select-shape {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-direction: column; }
-          #glasstable #cs-select-glass .container .column .select-shape .shape-head {
-            background-color: #0A6AB7;
-            text-align: center;
-            padding: 15px;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px; }
-          #glasstable #cs-select-glass .container .column .select-shape .shapes {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: row;
-            justify-content: space-around;
-            padding: 25px 15px;
-            border: 1px black solid;
-            border-top: none;
-            border-bottom-left-radius: 10px;
-            border-bottom-right-radius: 10px; }
-            #glasstable #cs-select-glass .container .column .select-shape .shapes .shapes-item {
-              text-align: center;
-              border-radius: 10px;
-              padding: 25px 10px; }
-              #glasstable #cs-select-glass .container .column .select-shape .shapes .shapes-item img {
-                width: 100px;
-                height: 100px; }
-              #glasstable #cs-select-glass .container .column .select-shape .shapes .shapes-item a {
-                text-decoration: none;
-                color: black;
-                padding: 15px 25px;
-                border: 1px solid black;
-                border-radius: 10px; }
-                #glasstable #cs-select-glass .container .column .select-shape .shapes .shapes-item a:hover {
-                  background-color: #0A6AB7;
-                  transition: background-color 0.5s linear; }
-            #glasstable #cs-select-glass .container .column .select-shape .shapes .measurement {
-              width: 100%;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              flex-direction: column;
-              justify-content: space-between;
-              align-items: flex-start; }
-              #glasstable #cs-select-glass .container .column .select-shape .shapes .measurement a {
-                text-decoration: underline;
-                color: #0A6AB7; }
-              #glasstable #cs-select-glass .container .column .select-shape .shapes .measurement .mt-contain {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: row;
-                justify-content: space-around;
-                align-items: flex-start; }
-                #glasstable #cs-select-glass .container .column .select-shape .shapes .measurement .mt-contain .mtimg img {
-                  width: 60%; }
-          #glasstable #cs-select-glass .container .column .select-shape a {
-            font-size: 20px;
-            text-decoration: none;
-            color: orange; }
-  #glasstable #collection {
-    width: 100%; }
-    #glasstable #collection .container {
-      padding: 45px 25px;
-      text-align: center; }
-      #glasstable #collection .container .row {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        justify-content: space-around; }
-        #glasstable #collection .container .row .collection-item {
-          border-radius: 5px;
-          padding: 35px 15px; }
-          #glasstable #collection .container .row .collection-item img {
-            width: 100%; }
-          #glasstable #collection .container .row .collection-item a {
-            text-decoration: none;
-            padding: 15px 65px;
-            border: 1px solid black;
-            border-radius: 5px;
-            color: #1b1734; }
-            #glasstable #collection .container .row .collection-item a:hover {
-              background-color: #0A6AB7;
-              transition: background-color 0.5s ease-in-out; }
-  #glasstable #shopping {
-    width: 100%; }
-    #glasstable #shopping .container {
-      color: black;
-      padding: 45px 25px;
-      padding: 25px; }
-      #glasstable #shopping .container h2, #glasstable #shopping .container .h2 {
-        text-align: center; }
-      #glasstable #shopping .container img {
-        width: 90%;
-        margin: 0 65px; }
-      #glasstable #shopping .container ul li::marker {
-        color: blue; }
-      #glasstable #shopping .container ul li a {
-        text-decoration: none;
-        color: orange; }
-  #glasstable #related {
-    width: 100%; }
-    #glasstable #related .container {
-      padding: 45px 25px; }
-      #glasstable #related .container h2, #glasstable #related .container .h2 {
-        text-align: center; }
-      #glasstable #related .container .row {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        justify-content: space-around; }
-        #glasstable #related .container .row .related-item {
-          text-align: center; }
-          #glasstable #related .container .row .related-item img {
-            width: 100%; }
-  #glasstable #edge-finishes {
-    width: 100%; }
-    #glasstable #edge-finishes .container {
-      color: black;
-      padding: 45px 25px; }
-      #glasstable #edge-finishes .container h2, #glasstable #edge-finishes .container .h2 {
-        text-align: center; }
-      #glasstable #edge-finishes .container .row {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        justify-content: space-around; }
-        #glasstable #edge-finishes .container .row .finishes-item img {
-          width: 100%; }
-  #glasstable #thickness {
-    width: 100%; }
-    #glasstable #thickness .container {
-      text-align: center;
-      padding: 45px 25px; }
-      #glasstable #thickness .container .row {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        justify-content: space-around; }
-        #glasstable #thickness .container .row .thick-left {
-          position: relative; }
-          #glasstable #thickness .container .row .thick-left img {
-            width: 100%;
-            height: 400px; }
-          #glasstable #thickness .container .row .thick-left i {
-            position: absolute;
-            top: 150px;
-            left: 240px;
-            font-size: 55px;
-            color: #0A6AB7; }
-        #glasstable #thickness .container .row .thick-right table {
-          height: max-content;
-          text-align: left; }
-  #glasstable #tempered {
-    width: 100%; }
-    #glasstable #tempered .container {
-      padding: 45px 25px; }
-      #glasstable #tempered .container h2, #glasstable #tempered .container .h2 {
-        text-align: center; }
-      #glasstable #tempered .container .row {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        justify-content: space-around; }
-        #glasstable #tempered .container .row .temp-right {
-          position: relative; }
-          #glasstable #tempered .container .row .temp-right img {
-            width: 100%; }
-          #glasstable #tempered .container .row .temp-right i {
-            position: absolute;
-            top: 130px;
-            left: 220px;
-            color: #0A6AB7;
-            font-size: 85px; }
-  #glasstable #gltbfinish {
-    width: 100%; }
-    #glasstable #gltbfinish .container {
-      text-align: center;
-      padding: 45px 25px; }
-      #glasstable #gltbfinish .container .row {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: flex-start; }
-        #glasstable #gltbfinish .container .row .gl-tb-item {
-          text-align: left; }
-          #glasstable #gltbfinish .container .row .gl-tb-item img {
-            width: 100%; }
-  #glasstable #faq {
-    width: 100%; }
-    #glasstable #faq .container {
-      padding: 45px 25px; }
-      #glasstable #faq .container h4, #glasstable #faq .container .h4 {
-        text-align: center; }
-      #glasstable #faq .container .column {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start; }
-        #glasstable #faq .container .column .accordion {
-          width: 100%;
-          border: none;
-          background-color: #0A6AB7;
-          text-align: left;
-          padding: 15px; }
-        #glasstable #faq .container .column .panel {
-          padding: 0 18px;
-          max-height: 0;
-          margin-top: 15px;
-          overflow: hidden;
-          transition: max-height 0.2s ease-out; }
-  #glasstable #blog {
-    width: 100%; }
-    #glasstable #blog .container {
-      padding: 45px 25px; }
-      #glasstable #blog .container h1, #glasstable #blog .container .h1 {
-        text-align: center; }
-      #glasstable #blog .container .column {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column; }
-        #glasstable #blog .container .column .blog-head {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-direction: row;
-          justify-content: space-between;
-          padding: 35px; }
-          #glasstable #blog .container .column .blog-head .blog-head-item img {
-            width: 100%; }
-          #glasstable #blog .container .column .blog-head .blog-head-item a {
-            font-size: 25px; }
-          #glasstable #blog .container .column .blog-head .blog-head-item p {
-            font-size: 18px; }
-        #glasstable #blog .container .column .blog-body {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-direction: row;
-          justify-content: space-around;
-          padding: 45px 35px; }
-          #glasstable #blog .container .column .blog-body .blog-body-item {
-            text-align: center;
-            cursor: pointer;
-            padding: 45px 25px; }
-            #glasstable #blog .container .column .blog-body .blog-body-item i {
-              font-size: 55px;
-              color: #0A6AB7; }
-            #glasstable #blog .container .column .blog-body .blog-body-item h4, #glasstable #blog .container .column .blog-body .blog-body-item .h4 {
-              font-size: 35px; }
-            #glasstable #blog .container .column .blog-body .blog-body-item span {
-              width: 35px;
-              height: 20px;
-              background-color: brown; }
-            #glasstable #blog .container .column .blog-body .blog-body-item p {
-              font-size: 20px; }
-
 #mirror {
   display: flex;
   justify-content: center;
@@ -12930,36 +12644,36 @@ body {
             #mirror #blog .container .column .blog-body .blog-body-item p {
               font-size: 20px; }
 
-#mirrortable {
+#glassshelve {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 100%;
   height: max-content; }
-  #mirrortable #cs-select-glass {
+  #glassshelve #cs-select-glass {
     width: 100%; }
-    #mirrortable #cs-select-glass .container {
+    #glassshelve #cs-select-glass .container {
       padding: 35px 15px;
       background-color: none; }
-      #mirrortable #cs-select-glass .container .column {
+      #glassshelve #cs-select-glass .container .column {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         align-items: center; }
-        #mirrortable #cs-select-glass .container .column .select-shape {
+        #glassshelve #cs-select-glass .container .column .select-shape {
           display: flex;
           justify-content: center;
           align-items: center;
           flex-direction: column; }
-          #mirrortable #cs-select-glass .container .column .select-shape .shape-head {
+          #glassshelve #cs-select-glass .container .column .select-shape .shape-head {
             background-color: #0A6AB7;
             text-align: center;
             padding: 15px;
             border-top-left-radius: 10px;
             border-top-right-radius: 10px; }
-          #mirrortable #cs-select-glass .container .column .select-shape .shapes {
+          #glassshelve #cs-select-glass .container .column .select-shape .shapes {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -12970,23 +12684,23 @@ body {
             border-top: none;
             border-bottom-left-radius: 10px;
             border-bottom-right-radius: 10px; }
-            #mirrortable #cs-select-glass .container .column .select-shape .shapes .shapes-item {
+            #glassshelve #cs-select-glass .container .column .select-shape .shapes .shapes-item {
               text-align: center;
               border-radius: 10px;
               padding: 25px 10px; }
-              #mirrortable #cs-select-glass .container .column .select-shape .shapes .shapes-item img {
+              #glassshelve #cs-select-glass .container .column .select-shape .shapes .shapes-item img {
                 width: 100px;
                 height: 100px; }
-              #mirrortable #cs-select-glass .container .column .select-shape .shapes .shapes-item a {
+              #glassshelve #cs-select-glass .container .column .select-shape .shapes .shapes-item a {
                 text-decoration: none;
                 color: black;
                 padding: 15px 25px;
                 border: 1px solid black;
                 border-radius: 10px; }
-                #mirrortable #cs-select-glass .container .column .select-shape .shapes .shapes-item a:hover {
+                #glassshelve #cs-select-glass .container .column .select-shape .shapes .shapes-item a:hover {
                   background-color: #0A6AB7;
                   transition: background-color 0.5s linear; }
-            #mirrortable #cs-select-glass .container .column .select-shape .shapes .measurement {
+            #glassshelve #cs-select-glass .container .column .select-shape .shapes .measurement {
               width: 100%;
               display: flex;
               justify-content: center;
@@ -12994,77 +12708,77 @@ body {
               flex-direction: column;
               justify-content: space-between;
               align-items: flex-start; }
-              #mirrortable #cs-select-glass .container .column .select-shape .shapes .measurement a {
+              #glassshelve #cs-select-glass .container .column .select-shape .shapes .measurement a {
                 text-decoration: underline;
                 color: #0A6AB7; }
-              #mirrortable #cs-select-glass .container .column .select-shape .shapes .measurement .mt-contain {
+              #glassshelve #cs-select-glass .container .column .select-shape .shapes .measurement .mt-contain {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 flex-direction: row;
                 justify-content: space-around;
                 align-items: flex-start; }
-                #mirrortable #cs-select-glass .container .column .select-shape .shapes .measurement .mt-contain .mtimg img {
+                #glassshelve #cs-select-glass .container .column .select-shape .shapes .measurement .mt-contain .mtimg img {
                   width: 60%; }
-          #mirrortable #cs-select-glass .container .column .select-shape a {
+          #glassshelve #cs-select-glass .container .column .select-shape a {
             font-size: 20px;
             text-decoration: none;
             color: orange; }
-  #mirrortable #about {
+  #glassshelve #about {
     width: 100%; }
-    #mirrortable #about .container {
+    #glassshelve #about .container {
       padding: 45px 25px; }
-      #mirrortable #about .container .row {
+      #glassshelve #about .container .row {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start; }
-        #mirrortable #about .container .row .about-left img {
+        #glassshelve #about .container .row .about-left img {
           width: 100%; }
-        #mirrortable #about .container .row .about-right p {
+        #glassshelve #about .container .row .about-right p {
           font-size: 20px; }
-        #mirrortable #about .container .row .about-right ul li a {
+        #glassshelve #about .container .row .about-right ul li a {
           text-decoration: none; }
-  #mirrortable #where-use {
+  #glassshelve #where-use {
     width: 100%; }
-    #mirrortable #where-use .container {
+    #glassshelve #where-use .container {
       padding: 45px 25px; }
-      #mirrortable #where-use .container .row {
+      #glassshelve #where-use .container .row {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row;
         justify-content: space-between; }
-        #mirrortable #where-use .container .row .where-use-left img {
+        #glassshelve #where-use .container .row .where-use-left img {
           width: 100%; }
-        #mirrortable #where-use .container .row .where-use-right p {
+        #glassshelve #where-use .container .row .where-use-right p {
           font-size: 20px;
           margin: 0; }
-  #mirrortable #how-use {
+  #glassshelve #how-use {
     width: 100%; }
-    #mirrortable #how-use .container {
+    #glassshelve #how-use .container {
       padding: 45px 25px; }
-      #mirrortable #how-use .container p {
+      #glassshelve #how-use .container p {
         font-size: 20px; }
-      #mirrortable #how-use .container ol li a {
+      #glassshelve #how-use .container ol li a {
         text-decoration: none; }
-      #mirrortable #how-use .container a {
+      #glassshelve #how-use .container a {
         text-decoration: none; }
-  #mirrortable #tool {
+  #glassshelve #tool {
     width: 100%; }
-    #mirrortable #tool .container {
+    #glassshelve #tool .container {
       padding: 45px 25px; }
-      #mirrortable #tool .container h4, #mirrortable #tool .container .h4 {
+      #glassshelve #tool .container h4, #glassshelve #tool .container .h4 {
         text-align: center; }
-      #mirrortable #tool .container .row {
+      #glassshelve #tool .container .row {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row;
         justify-content: space-evenly; }
-        #mirrortable #tool .container .row .tool-item {
+        #glassshelve #tool .container .row .tool-item {
           display: flex;
           justify-content: center;
           align-items: center;
@@ -13072,97 +12786,97 @@ body {
           justify-content: space-around;
           padding: 25px;
           text-align: center; }
-          #mirrortable #tool .container .row .tool-item img {
+          #glassshelve #tool .container .row .tool-item img {
             width: 150px; }
-          #mirrortable #tool .container .row .tool-item .tl-item-right a {
+          #glassshelve #tool .container .row .tool-item .tl-item-right a {
             text-decoration: none;
             border: 1px solid black;
             border-radius: 3px;
             color: black;
             padding: 15px 10px; }
-            #mirrortable #tool .container .row .tool-item .tl-item-right a:hover {
+            #glassshelve #tool .container .row .tool-item .tl-item-right a:hover {
               background-color: #0A6AB7;
               transition: background-color 0.5s linear; }
-  #mirrortable #brackets {
+  #glassshelve #brackets {
     width: 100%; }
-    #mirrortable #brackets .container {
+    #glassshelve #brackets .container {
       padding: 45px 25px; }
-      #mirrortable #brackets .container .row {
+      #glassshelve #brackets .container .row {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start; }
-        #mirrortable #brackets .container .row .brackets-left p {
+        #glassshelve #brackets .container .row .brackets-left p {
           font-size: 20px; }
-        #mirrortable #brackets .container .row .brackets-right img {
+        #glassshelve #brackets .container .row .brackets-right img {
           width: 100%; }
-  #mirrortable #installation {
+  #glassshelve #installation {
     width: 100%; }
-    #mirrortable #installation .container {
+    #glassshelve #installation .container {
       padding: 45px 25px; }
-      #mirrortable #installation .container .row {
+      #glassshelve #installation .container .row {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start; }
-        #mirrortable #installation .container .row .inst-left img {
+        #glassshelve #installation .container .row .inst-left img {
           width: 100%; }
-        #mirrortable #installation .container .row .inst-right p {
+        #glassshelve #installation .container .row .inst-right p {
           font-size: 20px; }
-        #mirrortable #installation .container .row .inst-right ul li p {
+        #glassshelve #installation .container .row .inst-right ul li p {
           margin: 0;
           font-size: 18px; }
-          #mirrortable #installation .container .row .inst-right ul li p a {
+          #glassshelve #installation .container .row .inst-right ul li p a {
             text-decoration: none; }
-  #mirrortable #blog {
+  #glassshelve #blog {
     width: 100%; }
-    #mirrortable #blog .container {
+    #glassshelve #blog .container {
       padding: 45px 25px; }
-      #mirrortable #blog .container h1, #mirrortable #blog .container .h1 {
+      #glassshelve #blog .container h1, #glassshelve #blog .container .h1 {
         text-align: center; }
-      #mirrortable #blog .container .column {
+      #glassshelve #blog .container .column {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column; }
-        #mirrortable #blog .container .column .blog-head {
+        #glassshelve #blog .container .column .blog-head {
           display: flex;
           justify-content: center;
           align-items: center;
           flex-direction: row;
           justify-content: space-between;
           padding: 35px; }
-          #mirrortable #blog .container .column .blog-head .blog-head-item img {
+          #glassshelve #blog .container .column .blog-head .blog-head-item img {
             width: 100%; }
-          #mirrortable #blog .container .column .blog-head .blog-head-item a {
+          #glassshelve #blog .container .column .blog-head .blog-head-item a {
             font-size: 25px; }
-          #mirrortable #blog .container .column .blog-head .blog-head-item p {
+          #glassshelve #blog .container .column .blog-head .blog-head-item p {
             font-size: 18px; }
-        #mirrortable #blog .container .column .blog-body {
+        #glassshelve #blog .container .column .blog-body {
           display: flex;
           justify-content: center;
           align-items: center;
           flex-direction: row;
           justify-content: space-around;
           padding: 45px 35px; }
-          #mirrortable #blog .container .column .blog-body .blog-body-item {
+          #glassshelve #blog .container .column .blog-body .blog-body-item {
             text-align: center;
             padding: 45px 25px;
             cursor: pointer; }
-            #mirrortable #blog .container .column .blog-body .blog-body-item i {
+            #glassshelve #blog .container .column .blog-body .blog-body-item i {
               font-size: 55px;
               color: #0A6AB7; }
-            #mirrortable #blog .container .column .blog-body .blog-body-item h4, #mirrortable #blog .container .column .blog-body .blog-body-item .h4 {
+            #glassshelve #blog .container .column .blog-body .blog-body-item h4, #glassshelve #blog .container .column .blog-body .blog-body-item .h4 {
               font-size: 35px; }
-            #mirrortable #blog .container .column .blog-body .blog-body-item span {
+            #glassshelve #blog .container .column .blog-body .blog-body-item span {
               width: 35px;
               height: 20px;
               background-color: brown; }
-            #mirrortable #blog .container .column .blog-body .blog-body-item p {
+            #glassshelve #blog .container .column .blog-body .blog-body-item p {
               font-size: 20px; }
 
 #service {
@@ -13170,7 +12884,8 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  align-items: flex-start; }
   #service #srv-menu {
     width: 100%; }
     #service #srv-menu .container {
@@ -13537,3 +13252,212 @@ body {
           text-decoration: none;
           background-color: orange;
           padding: 10px 20px; }
+
+#about {
+  width: 100%; }
+  #about #about-us {
+    padding: 85px 25px; }
+    #about #about-us .container .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: flex-start; }
+      #about #about-us .container .row .about-us-left {
+        color: black; }
+      #about #about-us .container .row .about-us-right img {
+        width: 100%; }
+  #about #blog {
+    width: 100%;
+    padding: 45px 25px; }
+    #about #blog .container h1, #about #blog .container .h1 {
+      text-align: center; }
+    #about #blog .container .column {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      #about #blog .container .column .blog-head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 35px; }
+        #about #blog .container .column .blog-head .blog-head-item img {
+          width: 100%; }
+        #about #blog .container .column .blog-head .blog-head-item a {
+          font-size: 25px; }
+        #about #blog .container .column .blog-head .blog-head-item p {
+          font-size: 18px; }
+      #about #blog .container .column .blog-body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 45px 35px; }
+        #about #blog .container .column .blog-body .blog-body-item {
+          text-align: center;
+          cursor: pointer;
+          padding: 45px 25px; }
+          #about #blog .container .column .blog-body .blog-body-item i {
+            font-size: 55px;
+            color: #0A6AB7; }
+          #about #blog .container .column .blog-body .blog-body-item h4, #about #blog .container .column .blog-body .blog-body-item .h4 {
+            font-size: 35px; }
+          #about #blog .container .column .blog-body .blog-body-item span {
+            width: 35px;
+            height: 20px;
+            background-color: brown; }
+          #about #blog .container .column .blog-body .blog-body-item p {
+            font-size: 20px; }
+
+#shop {
+  width: 100%; }
+  #shop .container {
+    padding: 85px 25px; }
+    #shop .container .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      align-items: flex-start; }
+      #shop .container .row .shop-left .inner-page-sidebar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: baseline; }
+        #shop .container .row .shop-left .inner-page-sidebar .single-block {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          align-items: center;
+          border: 1px solid #0A6AB7;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          margin-bottom: 15px;
+          width: 100%; }
+          #shop .container .row .shop-left .inner-page-sidebar .single-block .sidebar-title {
+            background-color: #0A6AB7;
+            padding: 15px 35px;
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px; }
+          #shop .container .row .shop-left .inner-page-sidebar .single-block .sidebar-menu--shop {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0; }
+            #shop .container .row .shop-left .inner-page-sidebar .single-block .sidebar-menu--shop li {
+              list-style: none;
+              padding: 10px;
+              border-bottom: 1px solid #0A6AB7; }
+              #shop .container .row .shop-left .inner-page-sidebar .single-block .sidebar-menu--shop li a {
+                text-decoration: none;
+                color: black; }
+          #shop .container .row .shop-left .inner-page-sidebar .single-block input {
+            padding: 15px; }
+          #shop .container .row .shop-left .inner-page-sidebar .single-block img {
+            width: 100%; }
+      #shop .container .row .shop-right .shop-toolbar {
+        background-color: #0A6AB7;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        height: max-content;
+        padding: 10px 25px; }
+        #shop .container .row .shop-right .shop-toolbar .row {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: row;
+          align-items: center; }
+          #shop .container .row .shop-right .shop-toolbar .row .toolbar-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-between; }
+            #shop .container .row .shop-right .shop-toolbar .row .toolbar-item .toolbar-status {
+              width: 100%; }
+            #shop .container .row .shop-right .shop-toolbar .row .toolbar-item span {
+              width: 90px; }
+
+#orderstatus {
+  width: 100%; }
+  #orderstatus #statusinput {
+    padding: 85px 25px; }
+    #orderstatus #statusinput .container .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: flex-start; }
+      #orderstatus #statusinput .container .row .order-status-left ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0; }
+        #orderstatus #statusinput .container .row .order-status-left ul li {
+          list-style: none; }
+          #orderstatus #statusinput .container .row .order-status-left ul li a {
+            text-decoration: none; }
+      #orderstatus #statusinput .container .row .order-status-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start; }
+        #orderstatus #statusinput .container .row .order-status-right form {
+          width: 60%; }
+          #orderstatus #statusinput .container .row .order-status-right form label {
+            font-size: 25px; }
+          #orderstatus #statusinput .container .row .order-status-right form input {
+            width: 100%; }
+          #orderstatus #statusinput .container .row .order-status-right form input[type=text] {
+            padding: 10px;
+            border: none; }
+          #orderstatus #statusinput .container .row .order-status-right form input[type=submit] {
+            border: none;
+            background-color: #0A6AB7;
+            padding: 10px; }
+
+#cancellation {
+  width: 100%; }
+  #cancellation #order-cancel {
+    padding: 85px 25px; }
+    #cancellation #order-cancel .container .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: flex-start; }
+      #cancellation #order-cancel .container .row .cancel-left ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0; }
+        #cancellation #order-cancel .container .row .cancel-left ul li {
+          list-style: none; }
+          #cancellation #order-cancel .container .row .cancel-left ul li a {
+            text-decoration: none; }
+      #cancellation #order-cancel .container .row .cancel-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start; }
