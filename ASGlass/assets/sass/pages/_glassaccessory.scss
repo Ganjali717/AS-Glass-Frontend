@@ -1,0 +1,78 @@
+#glaccess{
+    width: 100%;
+    @include flexbox;
+     flex-direction: column;
+     justify-content: space-between;
+     #glacchead{
+         width: 100%;
+        padding: 45px 25px;
+        .container{
+            .column{
+                @include flexbox; 
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+     }
+     #glaccsort{
+         width: 100%;
+         padding: 45px 25px;
+         .container{
+             text-align: center;
+             .access-toolbar{
+                 width: 100%;
+                 select{
+                     width: 70%;
+                     margin:0 auto ;
+                 }
+             }
+         }
+     }
+     #glaccbody{
+         width: 100%;
+         padding: 100px 25px;
+         .container{
+             .row{
+                 @include flexbox; 
+                 justify-content: space-between;
+                 align-items: center;
+                 flex-wrap: wrap;
+                 .acc-item{
+                    flex: 0 1 calc(25% - 1em);
+                     padding: 25px;
+                     margin-top: 25px;
+                     text-align: center;
+                     background-color: rgba(255, 255, 255, 0.212);
+                     border-radius: 10px;
+                    img{
+                        width: 100%;
+                    }
+                    a{
+                        text-decoration: none;
+                        cursor: pointer;
+                        color: black;
+                        font-size: 20px;
+                    }
+                    small{
+                        color: #0A6AB7;
+                    }
+                    p{
+                        color: black;
+                        font-size: 25px;
+                    }
+                    .acc-item-btn{
+                        padding: 15px;
+                        border-radius: 10px;
+                        background-color: #0A6AB7;
+                        color: white;
+                        &:hover{
+                            background-color: #18588b;
+                            transition: background-color 0.3s linear;
+                        }
+                    }
+                 }
+             }
+         }
+     }
+}

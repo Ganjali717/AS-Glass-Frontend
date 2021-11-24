@@ -1,0 +1,130 @@
+#accessdetail{
+    width: 100%;
+    #accdetail-head{
+        width: 100%;
+        padding: 45px 25px;
+        .container{
+            .row{
+                @include flexbox; 
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+                .accdetail-head-left{
+                    img{
+                        width: 100%;
+                    }
+                }
+                .accdetail-head-right{
+                    @include flexbox; 
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    select{
+                        border: none;
+                        width: 50px;
+                    }
+                    .accdetail-btn{
+                        text-decoration: none;
+                       padding: 15px 25px;
+                       color: white;
+                       background-color: #0A6AB7;
+                    }
+                }
+            }
+        }
+    }
+    #accdetail-body{
+        padding: 85px 45px;
+        .container{
+            .column{
+                @include flexbox;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+            }
+        }
+    }
+    #advertising{
+        width: 100%;
+        padding: 55px 25px;
+        .container{
+            
+            .adv-item{
+            width: 100%;
+            @include flexbox; 
+            flex-direction: row;
+           background-image: url(https://assets-global.website-files.com/5fe9c5e…/6012e83…_pattern-logo.png), linear-gradient(
+                100deg, #0A6AB7, #0f0d1e);
+            padding: 35px 25px;
+            
+             color: #0f0d1e;
+            h1{
+                font-size: 65px;
+            }
+            .adv-txt{
+               color: white;
+            }
+        }
+        }
+        
+    }
+    #blog{
+        width: 100%;
+        padding: 45px 25px;
+       .container{
+       
+        h1{
+            text-align: center; 
+        }
+         .column{
+             @include flexbox; 
+             flex-direction: column;
+             .blog-head{
+                 @include flexbox; 
+                 flex-direction: row;
+                 justify-content: space-between;
+                 padding: 35px;
+                 .blog-head-item{
+                     img{
+                         width: 100%;
+                     }
+                     a{
+                         font-size: 25px;
+                     }
+                     p{
+                         font-size: 18px;
+                     }
+                 }
+             }
+             .blog-body{
+                 @include flexbox;
+                 flex-direction: row;
+                 justify-content: space-around;
+                 padding: 45px 35px;
+                 
+                 .blog-body-item{
+                     text-align: center;
+                     cursor: pointer;
+                     padding: 45px 25px;
+                     i{
+                         font-size: 55px;
+                         color: #0A6AB7;
+                     }
+                     h4{
+                         font-size: 35px;
+                     }
+                     span{
+                         width: 35px;
+                         height: 20px;
+                         background-color: brown;
+                     }
+                     p{
+                         font-size: 20px;
+                     }
+                 }
+             }
+         }
+       }
+      
+    }
+}

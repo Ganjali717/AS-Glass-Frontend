@@ -57,7 +57,7 @@ header{
                         height: 80px;
                     }
                     i{
-                        font-family: 'M PLUS 1', sans-serif;
+                        font-weight: 350;
                         font-size: 25px;
                         color: #000000be;
                         cursor: pointer;
@@ -226,6 +226,8 @@ header{
             align-items: center;
             position: relative;
             margin-bottom: 0;
+           
+
             &>li{
               
                 list-style: none;
@@ -394,7 +396,14 @@ header{
                    color: #035894;
                    a{
                        text-decoration: none;
-                       color: #1b1734;
+                       color: black;
+                       &:hover{
+                           color: #035894;
+                           transition: color 0.3s linear;
+                       }
+                   }
+                   i{
+                       font-size: 18px;
                    }
                }
            }
@@ -463,11 +472,4 @@ header{
 // }
 
 
-@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-    #menu{
-      -webkit-backdrop-filter: blur(10px);
-      backdrop-filter: blur(10px);
-      background-color: rgba(255, 255, 255, 0.082);
-    }
-  }
 

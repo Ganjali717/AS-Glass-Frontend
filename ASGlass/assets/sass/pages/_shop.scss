@@ -76,6 +76,49 @@
                        }
                    }
                }
+               .shop-items{
+                   .row{
+                    @include flexbox; 
+                    justify-content: space-around;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    .shop-item{
+                        flex: 0 1 calc(30% - 1em);
+                        padding: 25px;
+                        margin-top: 25px;
+                        text-align: center;
+                        background-color: rgba(255, 255, 255, 0.137);
+                        border-radius: 10px;
+                        img{
+                            width: 100%;
+                        }
+                        a{
+                            text-decoration: none;
+                            cursor: pointer;
+                            color: black;
+                            font-size: 20px;
+                        }
+                        small{
+                            color: #0A6AB7;
+                        }
+                        p{
+                            color: black;
+                            font-size: 25px;
+                        }
+                        .shop-btn{
+                            padding: 15px;
+                            border-radius: 10px;
+                            background-color: #0A6AB7;
+                            color: white;
+                            &:hover{
+                                background-color: #18588b;
+                                transition: background-color 0.3s linear;
+                            }
+                        }
+                    }
+
+                   }
+               }
             }
         }
     }

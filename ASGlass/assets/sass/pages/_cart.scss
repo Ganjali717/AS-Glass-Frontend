@@ -1,0 +1,87 @@
+#cart{
+    width: 100%;
+    @include flexbox;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    #cart-body{
+        width: 100%;
+        padding: 105px 25px;
+        .container{
+            .shop-cont{
+                color: white;
+                padding: 15px 25px;
+                text-decoration: none;
+                background-color: #0A6AB7;
+                
+            }
+            .row{
+                @include flexbox;
+                flex-direction: row;
+                align-items: flex-start;
+                .cart-left{
+                    @include flexbox; 
+                    flex-direction: column;
+                    align-items: flex-start;
+                    h4{
+                        width: 100%;
+                        padding: 15px;
+                        background-color: rgba(240, 248, 255, 0.521);
+                    }
+                     .cart-left-body{
+                         @include flexbox; 
+                         flex-direction: column;
+                         .cart-item{
+                             @include flexbox;
+                             flex-direction: row;
+                             align-items: flex-start;
+                             justify-content: space-around;
+                             margin-top: 10px;
+                             padding: 10px;
+                             border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+                             .cart-item-img{
+                                img{
+                                    width: 100%;
+                                }
+                             }
+                         }
+                     }
+                  }
+                  .cart-right{
+                      h4{
+                          width: 100%;
+                          padding: 15px;
+                          background-color: rgba(240, 248, 255, 0.521);
+                      }
+                      .cart-right-body{
+                          width: 100%;
+                          ul{
+                              padding: 0;
+                              list-style: none;
+                              li{
+                                  margin-bottom: 25px;
+                                  span{
+                                      float: right;
+                                  }
+                                  a{
+                                      background-color: #0A6AB7;
+                                      color: white;
+                                      padding: 15px 130px;
+                                      text-decoration: none;
+                                  }
+                                  b{
+                                      
+                                      font-size: 25px;
+                                  }
+                                  .pr-right{
+                                      float: right;
+                                  }
+                              }
+                          }
+                      }
+                  } 
+            }
+        }
+       
+    }
+}
