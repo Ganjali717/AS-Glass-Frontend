@@ -26,10 +26,10 @@
             <div class="container">
                 <div class="row">
                     <div class="header-deals col-5">
-                        BAYRAM ENDİRİMİ - 45% | 25% İDMAN GÜZGÜLƏRİNƏ <a>SHOP ALL DEALS</a>
+                        Tel: 050 593 40 40 | Email: <a>ganjali.imanov@gmail.com</a>
                     </div>
                     <div class="header-top-help col-5">
-                        <a href="customservice.htm">Kömək & Dəstək</a>
+                        <a asp-action="index" asp-controller="service">Kömək & Dəstək</a>
                     </div>
                 </div>
             </div>
@@ -41,35 +41,40 @@
                         <i class="bi bi-list"></i>
                     </div>
                     <div class="logo col-4">
-                        <a href="homepage.htm"> <img src="assets/images/logo/asglasslogosu.png" alt=""><i>Alfa Salon
-                                Glasses...</i></a>
+                        <a asp-action="index" asp-controller="home">
+                            <img src="assets/images/logo/asglasslogosu.png" alt=""><i>
+                                Alfa Salon
+                                Glasses...
+                            </i>
+                        </a>
                     </div>
                     <div class="input-group mb-3 col-5">
                         <input type="text" class="form-control" placeholder="Axtar" aria-label="Recipient's username"
-                            aria-describedby="basic-addon2">
+                               aria-describedby="basic-addon2">
                         <div class="input-group-append">
-                            <button class="btn btn-outline-primary" type="button"><i
-                                    class="bi bi-search text-white"></i></button>
+                            <button class="btn btn-outline-primary" type="button">
+                                <i class="bi bi-search text-white"></i>
+                            </button>
                         </div>
                     </div>
-                    <div class="responsive-search col-2">
-                        <i class="bi bi-search"></i>
-                    </div>
+                  
                     <div class="header-shop-cart col-4">
+                        <div class="responsive-search col-2">
+                            <i class="bi bi-search"></i>
+                        </div>
                         <div class="shop-cart-container col-2">
-                            <a href="cart.htm">
+                            <a asp-action="index" asp-controller="card">
                                 <i class="bi bi-cart3"></i>
                                 <span class="cart-count">1</span>
                             </a>
                         </div>
                         <div class="login-icon col-2">
                             <i class="bi bi-person-fill"></i>
-
                         </div>
                         <div class="login-container">
                             <ul>
-                                <li><a href="login.htm">Daxil ol<i class="bi bi-box-arrow-in-right"></i></a></li>
-                                <li><a href="registration.htm">Qeydiyyatdan kec</a></li>
+                                <li><a asp-action="login" asp-controller="account">Daxil ol<i class="bi bi-box-arrow-in-right"></i></a></li>
+                                <li><a asp-action="register" asp-controller="account">Qeydiyyatdan kec</a></li>
                             </ul>
                         </div>
                     </div>
@@ -111,7 +116,7 @@
                     </ul>
                     <br>
                     <div class="overlay-book">
-                        <a href="log-in.html">Log in</a>
+                        <a asp-action="login" asp-controller="account">Log in</a>
                         <a href="" id="overlay-book-btn">Book a demo</a>
                     </div>
                 </div>
@@ -119,47 +124,78 @@
         </div>
         <nav class="col-12" id="menu">
             <ul>
-                <li><a href="homepage.htm">ANA SƏHİFƏ</a></li>
-                <li><a href="about.htm">HAQQIMIZDA</a></li>
+                <li><a asp-action="index" asp-controller="home">ANA SƏHİFƏ</a></li>
+                <li><a asp-action="index" asp-controller="about">HAQQIMIZDA</a></li>
                 <li>
-                    <a href="customglass.htm">ŞÜŞƏ</a>
+                    <a asp-action="index" asp-controller="glass">ŞÜŞƏ</a>
                     <div class="menu-detail">
                         <div class="container">
                             <div class="row">
                                 <div class="menu-first-column col-3">
                                     <p>ŞÜŞƏ NÖVLƏRİ</p>
                                     <ul class="first-list">
-                                        <li><img src="assets/images/icons/glass.png" alt=""><a href="">SADƏ ŞÜŞƏ</a>
+                                        <li>
+                                            <img src="assets/images/icons/glass.png" alt=""><a href="">SADƏ ŞÜŞƏ</a>
                                         </li>
-                                        <li><img src="assets/images/icons/combo-mirror-2.png" alt=""><a href="">FƏRQLİ
-                                                KƏSİM</a></li>
-                                        <li><img src="assets/images/icons/glass.png" alt=""><a href="">BİŞMİŞ ŞÜŞƏ</a>
+                                        <li>
+                                            <img src="assets/images/icons/combo-mirror-2.png" alt=""><a href="">
+                                                FƏRQLİ
+                                                KƏSİM
+                                            </a>
                                         </li>
-                                        <li><img src="assets/images/icons/faska-mirror.png" alt=""><a href="">FASKA
-                                                ŞÜŞƏ</a></li>
+                                        <li>
+                                            <img src="assets/images/icons/glass.png" alt=""><a href="">BİŞMİŞ ŞÜŞƏ</a>
+                                        </li>
+                                        <li>
+                                            <img src="assets/images/icons/faska-mirror.png" alt=""><a href="">
+                                                FASKA
+                                                ŞÜŞƏ
+                                            </a>
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="menu-second-column col-3">
                                     <p>XÜSUSİ ŞÜŞƏLƏR</p>
                                     <ul class="second-list">
                                         <li><img src="assets/images/icons/glass.png" alt=""><a href="">AĞ ŞÜŞƏ</a></li>
-                                        <li><img src="assets/images/icons/grey-glass.png" alt=""><a href="">BOZ ŞÜŞƏ</a>
+                                        <li>
+                                            <img src="assets/images/icons/grey-glass.png" alt=""><a href="">BOZ ŞÜŞƏ</a>
                                         </li>
-                                        <li><img src="assets/images/icons/brown-glass.png" alt=""><a href="">QƏHVƏYİ
-                                                ŞÜŞƏ</a></li>
-                                        <li><img src="assets/images/icons/glass.png" alt=""><a href="">LAMİNASİYALI
-                                                ŞÜŞƏ</a></li>
-                                        <li><img src="assets/images/icons/glass.png" alt=""><a href="">YANĞINADÖZÜMLÜ
-                                                ŞÜŞƏ</a></li>
+                                        <li>
+                                            <img src="assets/images/icons/brown-glass.png" alt=""><a href="">
+                                                QƏHVƏYİ
+                                                ŞÜŞƏ
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <img src="assets/images/icons/glass.png" alt=""><a href="">
+                                                LAMİNASİYALI
+                                                ŞÜŞƏ
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <img src="assets/images/icons/glass.png" alt=""><a href="">
+                                                YANĞINADÖZÜMLÜ
+                                                ŞÜŞƏ
+                                            </a>
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="third-menu-column col-3">
                                     <p>ŞÜŞƏ TƏMİZLƏYİCİLƏR</p>
                                     <ul class="third-list">
-                                        <li><img src="assets/images/icons/glass-cleaner.png" alt=""><a href="">ŞÜŞƏ
-                                                TƏMİZLƏYİCİ VASİTƏLƏR</a></li>
-                                        <li><img src="assets/images/icons/nano-cleaner.png" alt=""><a href="">NANO
-                                                TƏMİZLƏYİCİ VASİTƏ</a></li>
+                                        <li>
+                                            <img src="assets/images/icons/glass-cleaner.png" alt=""><a href="">
+                                                ŞÜŞƏ
+                                                TƏMİZLƏYİCİ VASİTƏLƏR
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <img src="assets/images/icons/nano-cleaner.png" alt=""><a href="">
+                                                NANO
+                                                TƏMİZLƏYİCİ VASİTƏ
+                                            </a>
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="list-image col-3">
@@ -171,25 +207,45 @@
                 </li>
 
                 <li>
-                    <a href="custommirror.htm">GÜZGÜ</a>
+                    <a asp-action="index" asp-controller="mirror">GÜZGÜ</a>
                     <div class="menu-detail">
                         <div class="container">
                             <div class="row">
                                 <div class="menu-first-column col-3">
                                     <p>XÜSUSİ GÜZGÜLƏR</p>
                                     <ul class="first-list">
-                                        <li><img src="assets/images/icons/combo-mirror-2.png" alt=""><a href="">XÜSUSİ
-                                                GÜZGÜLƏR</a></li>
-                                        <li><img src="assets/images/icons/faska-mirror.png" alt=""><a href="">FASKALI
-                                                GÜZGÜ</a></li>
-                                        <li><img src="assets/images/icons/glass.png" alt=""><a href="">SADƏ KƏSİM
-                                                GÜZGÜ</a></li>
+                                        <li>
+                                            <img src="assets/images/icons/combo-mirror-2.png" alt=""><a href="">
+                                                XÜSUSİ
+                                                GÜZGÜLƏR
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <img src="assets/images/icons/faska-mirror.png" alt=""><a href="">
+                                                FASKALI
+                                                GÜZGÜ
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <img src="assets/images/icons/glass.png" alt=""><a href="">
+                                                SADƏ KƏSİM
+                                                GÜZGÜ
+                                            </a>
+                                        </li>
                                         <br>
                                         <p>RƏNGLİ GÜZGÜLƏR</p>
-                                        <li><img src="assets/images/icons/grey-glass.png" alt=""><a href="">BOZ
-                                                GÜZGÜ</a></li>
-                                        <li><img src="assets/images/icons/brown-glass.png" alt=""><a href="">QƏHVƏYİ
-                                                GÜZGÜ</a></li>
+                                        <li>
+                                            <img src="assets/images/icons/grey-glass.png" alt=""><a href="">
+                                                BOZ
+                                                GÜZGÜ
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <img src="assets/images/icons/brown-glass.png" alt=""><a href="">
+                                                QƏHVƏYİ
+                                                GÜZGÜ
+                                            </a>
+                                        </li>
                                     </ul>
 
 
@@ -197,23 +253,47 @@
                                 <div class="menu-second-column col-3">
                                     <p>IN-STOCK GÜZGÜ</p>
                                     <ul class="second-list">
-                                        <li><img src="assets/images/icons/circle-mirror.png" alt=""><a href="">ROUND
-                                                MIRRORS</a></li>
-                                        <li><img src="assets/images/icons/oval-mirror.png" alt=""><a href="">OVAL
-                                                MIRRORS</a></li>
-                                        <li><img src="assets/images/icons/glass.png" alt=""><a href="">RECTANGLE
-                                                MIRRORS</a></li>
-                                        <li><img src="assets/images/icons/gym-mirror.png" alt=""><a href="">GYM
-                                                MIRRORS</a></li>
+                                        <li>
+                                            <img src="assets/images/icons/circle-mirror.png" alt=""><a href="">
+                                                ROUND
+                                                MIRRORS
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <img src="assets/images/icons/oval-mirror.png" alt=""><a href="">
+                                                OVAL
+                                                MIRRORS
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <img src="assets/images/icons/glass.png" alt=""><a href="">
+                                                RECTANGLE
+                                                MIRRORS
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <img src="assets/images/icons/gym-mirror.png" alt=""><a href="">
+                                                GYM
+                                                MIRRORS
+                                            </a>
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="third-menu-column col-3">
                                     <p>GÜZGÜ AKSESUARLARI</p>
                                     <ul class="third-list">
-                                        <li><img src="assets/images/icons/mirror-clips.png" alt=""><a href="">GÜZGÜ
-                                                KLİPLƏRİ</a></li>
-                                        <li><img src="assets/images/icons/mirror-adhesives.png" alt=""><a href="">GÜZGÜ
-                                                YAPIŞTIRICILARI</a></li>
+                                        <li>
+                                            <img src="assets/images/icons/mirror-clips.png" alt=""><a href="">
+                                                GÜZGÜ
+                                                KLİPLƏRİ
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <img src="assets/images/icons/mirror-adhesives.png" alt=""><a href="">
+                                                GÜZGÜ
+                                                YAPIŞTIRICILARI
+                                            </a>
+                                        </li>
                                         <li><img src="assets/images/icons/j-bars.png" alt=""><a href="">J NİKEL</a></li>
                                         <li><img src="assets/images/icons/l-bars.png" alt=""><a href="">L NİKEL</a></li>
                                     </ul>
@@ -226,34 +306,53 @@
                     </div>
                 </li>
                 <li>
-                    <a href="customglasshelve.htm">ŞÜŞƏ RƏFLƏR</a>
+                    <a asp-action="index" asp-controller="glassshelve">ŞÜŞƏ RƏFLƏR</a>
                     <div class="menu-detail">
                         <div class="container">
                             <div class="row">
                                 <div class="menu-first-column col-3">
                                     <p>GLASS SHELVES</p>
                                     <ul class="first-list">
-                                        <li><img src="assets/images/icons/mirror-shelves.png" alt=""><a href="">GÜZGÜ
-                                                RƏFLƏR</a></li>
-                                        <li><img src="assets/images/icons/quarter-glass.png" alt=""><a href="">KÜNC
-                                                GÜZGÜ RƏFLƏR</a></li>
+                                        <li>
+                                            <img src="assets/images/icons/mirror-shelves.png" alt=""><a href="">
+                                                GÜZGÜ
+                                                RƏFLƏR
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <img src="assets/images/icons/quarter-glass.png" alt=""><a href="">
+                                                KÜNC
+                                                GÜZGÜ RƏFLƏR
+                                            </a>
+                                        </li>
                                         <br>
                                         <p>DƏMİR MƏMULATI</p>
-                                        <li><img src="assets/images/icons/shelf-brackets.png" alt=""><a
-                                                href="">TUTACAQ</a></li>
+                                        <li>
+                                            <img src="assets/images/icons/shelf-brackets.png" alt=""><a href="">TUTACAQ</a>
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="menu-second-column col-3">
                                     <p>IN-STOCK RƏFLƏR</p>
                                     <ul class="second-list">
-                                        <li><img src="assets/images/icons/triangle-glass.png" alt=""><a href="">ÜÇ-KÜNC
-                                                GÜZGÜ RƏFİ</a></li>
-                                        <li><img src="assets/images/icons/mirror-shelves.png" alt=""><a
-                                                href="">DÖRDBUCAQLI GÜZGÜ RƏFİ</a></li>
-                                        <li><img src="assets/images/icons/pentagon-glass.png" alt=""><a
-                                                href="">BEŞBUCAQLI GÜZGÜ RƏFİ</a></li>
-                                        <li><img src="assets/images/icons/quarter-glass.png" alt=""><a href="">DÖRBƏK
-                                                DİRƏKLİ ŞÜŞƏ RƏFLƏR</a></li>
+                                        <li>
+                                            <img src="assets/images/icons/triangle-glass.png" alt=""><a href="">
+                                                ÜÇ-KÜNC
+                                                GÜZGÜ RƏFİ
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <img src="assets/images/icons/mirror-shelves.png" alt=""><a href="">DÖRDBUCAQLI GÜZGÜ RƏFİ</a>
+                                        </li>
+                                        <li>
+                                            <img src="assets/images/icons/pentagon-glass.png" alt=""><a href="">BEŞBUCAQLI GÜZGÜ RƏFİ</a>
+                                        </li>
+                                        <li>
+                                            <img src="assets/images/icons/quarter-glass.png" alt=""><a href="">
+                                                DÖRBƏK
+                                                DİRƏKLİ ŞÜŞƏ RƏFLƏR
+                                            </a>
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="list-image col-3">
@@ -263,22 +362,11 @@
                         </div>
                     </div>
                 </li>
-                <li><a href="shop.htm">ÜMUMİ MƏHSULLAR</a></li>
-                <li><a href="contact.htm">ƏLAQƏ</a></li>
+                <li><a asp-action="index" asp-controller="shop">ÜMUMİ MƏHSULLAR</a></li>
+                <li><a asp-action="index" asp-controller="contact">ƏLAQƏ</a></li>
                 <li class="pro"><a href="">PRO ÜÇÜN</a></li>
             </ul>
         </nav>
-        <div class="glass-breadcrumb">
-            <div class="container">
-                <div class="row">
-                    <p>
-                        <a href="">Home</a>
-                        <i class="bi bi-arrow-right-short"></i> 
-                        <a href="">Custom glass</a>
-                    </p>
-                </div>
-            </div>
-        </div>
     </header>
 
     <main id="home">
@@ -291,7 +379,7 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quae asperiores
                                 maxime, nostrum id, ex neque explicabo dolorum rerum enim molestias, aperiam labore
                                 natus distinctio aut praesentium soluta et voluptates.</p>
-                            <br><br>
+                            <br>
                             <a href="">EXPLORE NOW<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                                     fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd"
@@ -314,7 +402,7 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quae asperiores
                                 maxime, nostrum id, ex neque explicabo dolorum rerum enim molestias, aperiam labore
                                 natus distinctio aut praesentium soluta et voluptates.</p>
-                            <br><br>
+                            <br>
                             <a href="">EXPLORE NOW<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                                     fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd"
@@ -331,7 +419,7 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quae asperiores
                                 maxime, nostrum id, ex neque explicabo dolorum rerum enim molestias, aperiam labore
                                 natus distinctio aut praesentium soluta et voluptates.</p>
-                            <br><br>
+                            <br>
                             <a href="">EXPLORE NOW<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                                     fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd"
@@ -362,21 +450,21 @@
         <section id="cards">
             <div class="container">
                 <div class="row">
-                    <div class="card-item col-3" data-aos="fade-right" data-aos-duration="2000">
+                    <div class="card-item col-3">
                         <h3>CUSTOM GLASS</h3>
                         <br>
                         <p>We custom-cut, color and shape to your specifications.</p>
                         <br><br>
                         <a href="" class="card-btn">SHOP NOW</a>
                     </div>
-                    <div class="card-item col-3" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="card-item col-3">
                         <h3>CUSTOM MIRRORS</h3>
                         <br>
                         <p>Customize shape, size and color to your exact needs.</p>
                         <br><br>
                         <a href="" class="card-btn">SHOP NOW</a>
                     </div>
-                    <div class="card-item col-3" data-aos="fade-left" data-aos-duration="2000">
+                    <div class="card-item col-3">
                         <h3>CUSTOM TABLE TOPS</h3>
                         <br>
                         <p>High-quality and customizable glass table tops for any DIY project.</p>
@@ -415,7 +503,7 @@
         <section id="feature">
             <div class="container">
                 <div class="column">
-                    <div class="feature-item col-12" data-aos="fade-right" data-aos-duration="2000">
+                    <div class="feature-item col-12">
                         <div class="ft-left col-5">
                             <h4>GLASS SHOWER DOORS</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, suscipit eaque, illum cum
@@ -435,7 +523,7 @@
                         </div>
                     </div>
                     <br>
-                    <div class="feature-item col-12" data-aos="fade-left" data-aos-duration="2000">
+                    <div class="feature-item col-12">
                         <div class="ft-right col-6">
                             <img src="assets/images/technica/cns2.jpg" alt="">
                         </div>
@@ -462,21 +550,21 @@
         <section id="accessories">
             <div class="container">
                 <div class="row">
-                    <div class="acs-items col-3" data-aos="zoom-in-right" data-aos-duration="2000">
+                    <div class="acs-items col-3">
                         <h4>GLASS GLUE</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, natus.</p>
                         <img src="assets/images/technica/fotosel.jpg" alt="">
                         <br><br>
                         <a href="" class="acs-btn">SHOP NOW</a>
                     </div>
-                    <div class="acs-items col-3" data-aos="zoom-in-down" data-aos-duration="2000">
+                    <div class="acs-items col-3">
                         <h4>GLASS GLUE</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, natus.</p>
                         <img src="assets/images/technica/fotosel.jpg" alt="">
                         <br><br>
                         <a href="" class="acs-btn">SHOP NOW</a>
                     </div>
-                    <div class="acs-items col-3" data-aos="zoom-in-left" data-aos-duration="2000">
+                    <div class="acs-items col-3">
                         <h4>GLASS GLUE</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, natus.</p>
                         <img src="assets/images/technica/fotosel.jpg" alt="">
@@ -490,12 +578,12 @@
         <section id="scnd-card">
             <div class="container">
                 <div class="row">
-                    <div class="scnd-card-item col-5" data-aos="flip-left" data-aos-duration="2000">
+                    <div class="scnd-card-item col-5">
                         <h2>TEMPERED SAFETY GLASS</h2>
                         <img src="assets/images/technica/fotosel.jpg" alt="">
                         <a href="" class="scnd-card-btn-left">SHOP NOW</a>
                     </div>
-                    <div class="scnd-card-item col-5" data-aos="flip-right" data-aos-duration="2000">
+                    <div class="scnd-card-item col-5">
                         <h2>OPAQUE-CLEAR GLASS</h2>
                         <img src="assets/images/technica/fotosel.jpg" alt="">
                         <a href="" class="scnd-card-btn-right">SHOP NOW</a>
@@ -509,7 +597,7 @@
                 <h3>Shop By Product Categories</h3>
                 <br>
                 <div class="row">
-                    <div class="ctg-item col-2" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                    <div class="ctg-item col-2">
                         <h5>Glass Projects</h5>
                         <ul>
                             <li><a href="">Custom Glass</a></li>
@@ -520,7 +608,7 @@
                             <li><a href="">Plastic Desk Buttons</a></li>
                         </ul>
                     </div>
-                    <div class="ctg-item col-2" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                    <div class="ctg-item col-2">
                         <h5>Glass Projects</h5>
                         <ul>
                             <li><a href="">Custom Glass</a></li>
@@ -531,7 +619,7 @@
                             <li><a href="">Plastic Desk Buttons</a></li>
                         </ul>
                     </div>
-                    <div class="ctg-item col-2" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                    <div class="ctg-item col-2">
                         <h5>Glass Projects</h5>
                         <ul>
                             <li><a href="">Custom Glass</a></li>
@@ -542,7 +630,7 @@
                             <li><a href="">Plastic Desk Buttons</a></li>
                         </ul>
                     </div>
-                    <div class="ctg-item col-2" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                    <div class="ctg-item col-2">
                         <h5>Glass Projects</h5>
                         <ul>
                             <li><a href="">Custom Glass</a></li>
@@ -719,13 +807,11 @@
             <div class="container">
 
                 <div class="row">
-                    <div class="instock-left col-7" data-aos="fade-right" data-aos-offset="300"
-                        data-aos-easing="ease-in-sine">
+                    <div class="instock-left col-7">
                         <img src="assets/images/products/custom-mirrors.png" alt="">
                         <a href="">SHOP IN-STOCK MIRRORS</a>
                     </div>
-                    <div class="instock-right col-5" data-aos="fade-left" data-aos-offset="300"
-                        data-aos-easing="ease-in-sine">
+                    <div class="instock-right col-5">
                         <img src="assets/images/products/custom-mirrors-2.png" alt="">
                     </div>
                 </div>
@@ -775,7 +861,7 @@
                             <br>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, magni!</p>
                         </div>
-                        <div class="blog-body-item col-4" data-aos="zoom-out-up" data-aos-duration="2000">
+                        <div class="blog-body-item col-4">
                             <i class="bi bi-currency-dollar"></i>
                             <br>
                             <h4>Customization</h4>
@@ -784,7 +870,7 @@
                             <br>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, magni!</p>
                         </div>
-                        <div class="blog-body-item col-4" data-aos="zoom-out-left" data-aos-duration="2000">
+                        <div class="blog-body-item col-4">
                             <i class="bi bi-truck"></i>
                             <br>
                             <h4>Customization</h4>

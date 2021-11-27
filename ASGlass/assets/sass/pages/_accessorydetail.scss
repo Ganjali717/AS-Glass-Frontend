@@ -128,3 +128,24 @@
       
     }
 }
+
+
+@media only screen and (max-width:774px){
+    #accdetail-head{
+        .container{
+            .row{
+                flex-direction: column !important;
+                .accdetail-head-left{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .accdetail-head-right{
+                  width: 100%;
+                  margin-top: 25px;
+                }
+            }
+        }
+    }
+}
