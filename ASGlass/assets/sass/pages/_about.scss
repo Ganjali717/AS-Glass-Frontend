@@ -24,9 +24,8 @@
     }
     #blog{
         width: 100%;
-        padding: 45px 25px;
        .container{
-       
+        padding: 45px 25px;
         h1{
             text-align: center; 
         }
@@ -37,13 +36,16 @@
                  @include flexbox; 
                  flex-direction: row;
                  justify-content: space-between;
+                 align-items: flex-start;
                  padding: 35px;
                  .blog-head-item{
                      img{
                          width: 100%;
                      }
                      a{
-                         font-size: 25px;
+                         font-size: 28px;
+                         text-decoration: none;
+                         color: #0A6AB7;
                      }
                      p{
                          font-size: 18px;

@@ -361,3 +361,90 @@
       
     }
 }
+
+
+@media only screen and (max-width:772px){
+    #cs-select-glass{
+        .container{
+            .column{
+                .measurement{
+                    .mt-contain{
+                        flex-direction: column !important;
+                        .mtimg{
+                            width: 100%;
+                        }
+                        .mt-right{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #instockmirror{
+        .container{
+            .row{
+                flex-direction: column !important;
+                .mirror-item{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    #gymmirror{
+        .container{
+            .row{
+                flex-direction: column !important;
+                .gym-left{
+                    width: 100%;
+                }
+                .gym-right{
+                    width: 100%;
+                    margin-top: 25px;
+                }
+            }
+        }
+    }
+    #idea{
+        .container{
+            .row{
+                flex-direction:  column !important;
+                .idea-left{
+                    width: 100%;
+                }
+                .idea-right{
+                    width: 100%;
+                    margin-top: 25px;
+                }
+            }
+        }
+    }
+    #edgetypes{
+        .container{
+            .row{
+                flex-direction: column !important;
+                .edgetype-left{
+                    width: 100%;
+                }
+                .edgetype-right{
+                    width: 100%;
+                    margin-top: 25px;
+                }
+            }
+        }
+    }
+    #safety{
+        .container{
+            .row{
+                flex-direction: column !important;
+                .safety-left{
+                    width: 100%;
+                }
+                .safety-right{
+                    width: 100%;
+                    margin-top: 25px;
+                }
+            }
+        }
+    }
+}

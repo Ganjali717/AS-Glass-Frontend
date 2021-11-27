@@ -59,3 +59,17 @@
         }
     }
 }
+
+@media only screen and (max-width:600px){
+    #register{
+        form{
+            flex-direction: column !important;
+            .register-left{
+                width: 100%;
+            }
+            .register-right{
+                width: 100%;
+            }
+        }
+    }
+}

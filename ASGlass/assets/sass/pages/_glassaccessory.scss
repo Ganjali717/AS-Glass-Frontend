@@ -76,3 +76,33 @@
          }
      }
 }
+
+
+@media only screen and (max-width:992px){
+    #glaccess{
+        #glaccbody{
+            .container{
+                .row{
+                    .acc-item{
+                        flex: 0 1 calc(50% - 1em) !important;
+                    }
+                }
+            }
+        }
+    }
+}   
+
+
+@media only screen and (max-width:505px){
+    #glaccess{
+        #glaccbody{
+            .container{
+                .row{
+                    .acc-item{
+                        flex: 0 1 calc(100% - 1em) !important;
+                    }
+                }
+            }
+        }
+    }
+}

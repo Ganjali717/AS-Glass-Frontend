@@ -44,3 +44,23 @@
         }
     }
 }
+
+
+@media only screen and (max-width:1400px){
+    #contact{
+        #con-body{
+            .container{
+                .row{
+                    flex-direction: column;
+                    .con-form{
+                        width: 100%;
+                    }
+                    .con-address{
+                        width: 100%;
+                        margin-top: 25px;
+                    }
+                }
+            }
+        }
+    }
+}

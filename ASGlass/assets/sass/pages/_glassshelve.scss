@@ -156,43 +156,6 @@
             }
         }
     }
-    #tool{
-        width: 100%;
-        .container{
-            padding: 45px 25px;
-            h4{
-                text-align: center;
-            }
-            .row{
-                @include flexbox; 
-                flex-direction: row;
-                justify-content: space-evenly;
-                .tool-item{
-                    @include flexbox; 
-                    flex-direction: row;
-                    justify-content: space-around;
-                    padding: 25px;
-                    text-align: center;
-                    img{
-                        width: 150px;
-                    }
-                    .tl-item-right{
-                        a{
-                            text-decoration: none;
-                            border: 1px solid black;
-                            border-radius: 3px;
-                            color: black;
-                            padding: 15px 10px;
-                            &:hover{
-                                background-color: #0A6AB7;
-                                transition: background-color 0.5s linear;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
     #brackets{
         width: 100%;
         .container{
@@ -304,5 +267,51 @@
              }
         }
    
+    }
+}
+
+
+@media only screen and (max-width:774px){
+    #about{
+        .container{
+            .row{
+                flex-direction: column !important;
+                .about-left{
+                    width: 100%;
+                }
+                .about-right{
+                    width: 100%;
+                    margin-top: 25px;
+                }
+            }
+        }
+    }
+    #brackets{
+        .container{
+            .row{
+                flex-direction: column !important;
+                .brackets-left{
+                    width: 100%;
+                }
+                .brackets-right{
+                    width: 100%;
+                    margin-top: 25px;
+                }
+            }
+        }
+    }
+    #installation{
+        .container{
+            .row{
+                flex-direction: column !important;
+                .inst-left{
+                    width: 100%;
+                }
+                .inst-right{
+                    width: 100%;
+                    margin-top: 25px;
+                }
+            }
+        }
     }
 }

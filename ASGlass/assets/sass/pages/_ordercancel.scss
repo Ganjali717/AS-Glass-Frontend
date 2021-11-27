@@ -1,5 +1,46 @@
 #cancellation{
     width: 100%;
+    #cancelover{
+        .cancel-overlay{
+            text-align: center;
+           .cancel-overlay-head{
+               padding: 5px;
+               background-color: #0A6AB7;
+               a{
+                text-decoration: none;
+                color: black;
+               }
+           }
+           .cancel-overlay-body{
+               overflow: hidden;
+               max-height: 0;
+               transition: max-height 0.5s linear;
+               background-color: rgba(240, 255, 255, 0.363);
+             
+               h3{
+                   color: #0A6AB7;
+               }
+               ul{
+                  @include flexbox; 
+                  flex-direction: column;
+                  align-items: flex-start;
+                  list-style: none;
+                  li{
+                      a{
+                          text-decoration: none;
+                          color: black;
+                      }
+                  }
+               }
+               &.active{
+                   overflow: visible;
+                   max-height: max-content;
+                   padding: 15px;
+                   transition: max-height 0.5s linear;
+               }
+           }
+        }
+    }
     #order-cancel{
         padding: 85px 25px;
         .container{
@@ -29,6 +70,21 @@
                     align-items: flex-start;
                 }
             }
+        }
+    }
+}
+
+
+
+
+@media only screen and (max-width:774px){
+    #order-cancel{
+        .container{
+           .row{
+               .cancel-left{
+                   display: none !important;
+               }
+           }
         }
     }
 }
