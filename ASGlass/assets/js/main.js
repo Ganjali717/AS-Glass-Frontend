@@ -46,7 +46,6 @@ hamburgermenu.addEventListener('click', function(){
 
 
 
-
 //Cards-love
 const workersimg = Array.from(document.querySelectorAll('.workers-img .worker'));
 const workerscomment = Array.from(document.querySelectorAll('.workers-comments .workers-comments-item'));
@@ -94,7 +93,7 @@ const footsubmit = document.querySelector('.footer-submit');
 // });
 
 
-formfooter.addEventListener('submit', function(e){
+/*formfooter.addEventListener('submit', function(e){
     e.preventDefault();
      if(inputfooter.value.length !== 0){
         textError.classList.add('d-none');
@@ -102,7 +101,7 @@ formfooter.addEventListener('submit', function(e){
      else{
         textError.classList.remove('d-none');
      }
-});
+});*/
 
 // formfooter.addEventListener('submit', function (event) {
 //     event.preventDefault();

@@ -123,3 +123,92 @@
         }
     }
 }
+
+@media only screen and (max-width:1200px){
+    #shop{
+        .container{
+            .row{
+                .shop-right{
+                    .shop-items{
+                        .row{
+                            .shop-item{
+                                a{
+                                    padding: 5px !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:992px){
+    #shop{
+        .container{
+            .row{
+                .shop-left{
+                    display: none !important;
+                }
+                .shop-right{
+                    .shop-toolbar{
+                        .row{
+                            flex-direction: column !important;
+                            align-items: flex-start !important;
+                            .toolbar-item{
+                                width: 100%;
+                                margin-bottom: 15px;
+                            }
+                        }
+                    }
+                    .shop-items{
+                        .row{
+                            .shop-item{
+                                flex: 0 1 calc(50% - 1em) !important;
+                                padding: 15px;
+                                .shop-btn{
+                                    padding: 1px !important;
+                                    background-color: transparent !important;
+                                    color: orange ;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:500px){
+    #shop{
+        .container{
+            .row{
+                .shop-right{
+                    .shop-toolbar{
+                        .row{
+                            flex-direction: column !important;
+                            align-items: flex-start !important;
+                            .toolbar-item{
+                                width: 100%;
+                                margin-bottom: 15px;
+                            }
+                        }
+                    }
+                    .shop-items{
+                        .row{
+                            .shop-item{
+                                flex: 0 1 calc(100% - 1em) !important;
+                                a{
+                                    padding: 1px !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

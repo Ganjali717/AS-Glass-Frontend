@@ -12,9 +12,10 @@
                }
            }
            .cancel-overlay-body{
-               overflow: hidden;
-               max-height: 0;
-               transition: max-height 0.5s linear;
+               opacity: 0;
+               height: 0;
+               transition: height 1s ease, opacity 1s ease;
+
                background-color: rgba(240, 255, 255, 0.363);
              
                h3{
@@ -33,10 +34,11 @@
                   }
                }
                &.active{
-                   overflow: visible;
-                   max-height: max-content;
+                   opacity: 1;
+                   height: 400px;
                    padding: 15px;
-                   transition: max-height 0.5s linear;
+                   transition: height 1s ease, opacity 1s ease;
+
                }
            }
         }
@@ -68,6 +70,11 @@
 
 }
 
+@media only screen and (min-width:774px){
+    #cancelover{
+        display: none;
+    }
+}
 
 @media only screen and (max-width:774px){
     #service{
@@ -83,5 +90,8 @@
                 }
             }
         }
+    }
+    #cancelover{
+        display: block;
     }
 }

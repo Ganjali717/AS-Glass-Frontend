@@ -11247,34 +11247,34 @@ header {
     flex-direction: column;
     width: 100%;
     height: max-content; }
-    header #navbar .row {
+    header #navbar .container .row {
       width: 100%;
       flex-direction: row;
       justify-content: space-between;
       align-items: center; }
-      header #navbar .row .hamburger-menu {
+      header #navbar .container .row .hamburger-menu {
         display: none; }
-        header #navbar .row .hamburger-menu .bi-list {
+        header #navbar .container .row .hamburger-menu .bi-list {
           font-size: 30px;
           color: #0f0d1e;
           cursor: pointer; }
-      header #navbar .row .logo {
+      header #navbar .container .row .logo {
         padding: 15px; }
-        header #navbar .row .logo a {
+        header #navbar .container .row .logo a {
           text-decoration: none; }
-          header #navbar .row .logo a img {
+          header #navbar .container .row .logo a img {
             width: 120px;
             height: 80px; }
-          header #navbar .row .logo a i {
+          header #navbar .container .row .logo a i {
             font-weight: 350;
             font-size: 25px;
             color: #000000be;
             cursor: pointer; }
-      header #navbar .row .input-group {
+      header #navbar .container .row .input-group {
         width: 30% !important; }
-        header #navbar .row .input-group .btn {
+        header #navbar .container .row .input-group .btn {
           background-color: #076CB4; }
-      header #navbar .row .header-shop-cart {
+      header #navbar .container .row .header-shop-cart {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -11284,22 +11284,22 @@ header {
         align-content: flex-end;
         position: relative;
         z-index: 999999; }
-        header #navbar .row .header-shop-cart .responsive-search {
+        header #navbar .container .row .header-shop-cart .responsive-search {
           display: none; }
-          header #navbar .row .header-shop-cart .responsive-search i {
+          header #navbar .container .row .header-shop-cart .responsive-search i {
             font-size: 20px;
             cursor: pointer;
             color: #0f0d1e; }
-        header #navbar .row .header-shop-cart .shop-cart-container {
+        header #navbar .container .row .header-shop-cart .shop-cart-container {
           position: relative; }
-          header #navbar .row .header-shop-cart .shop-cart-container .bi-cart3 {
+          header #navbar .container .row .header-shop-cart .shop-cart-container .bi-cart3 {
             font-size: 35px;
             color: #076CB4;
             background-color: rgba(128, 128, 128, 0.096);
             border-radius: 8px;
             padding: 2px 5px;
             cursor: pointer; }
-          header #navbar .row .header-shop-cart .shop-cart-container .cart-count {
+          header #navbar .container .row .header-shop-cart .shop-cart-container .cart-count {
             position: absolute;
             cursor: pointer;
             font-size: 15px;
@@ -11309,11 +11309,11 @@ header {
             height: 26px;
             width: 26px;
             text-align: center; }
-        header #navbar .row .header-shop-cart .login-icon i {
+        header #navbar .container .row .header-shop-cart .login-icon i {
           font-size: 45px;
           color: #0A6AB7;
           cursor: pointer; }
-        header #navbar .row .header-shop-cart .login-container {
+        header #navbar .container .row .header-shop-cart .login-container {
           position: absolute;
           width: 300px;
           background-color: rgba(255, 255, 255, 0.918);
@@ -11322,36 +11322,36 @@ header {
           z-index: 9999;
           top: 80px;
           display: none; }
-          header #navbar .row .header-shop-cart .login-container ul {
+          header #navbar .container .row .header-shop-cart .login-container ul {
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
             justify-content: space-between;
             align-items: flex-start; }
-            header #navbar .row .header-shop-cart .login-container ul li {
+            header #navbar .container .row .header-shop-cart .login-container ul li {
               list-style: none;
               padding: 10px; }
-              header #navbar .row .header-shop-cart .login-container ul li a {
+              header #navbar .container .row .header-shop-cart .login-container ul li a {
                 text-decoration: none;
                 color: #0f0d1e;
                 font-size: 17px; }
-                header #navbar .row .header-shop-cart .login-container ul li a i {
+                header #navbar .container .row .header-shop-cart .login-container ul li a i {
                   margin-left: 15px; }
-        header #navbar .row .header-shop-cart .show {
+        header #navbar .container .row .header-shop-cart .show {
           display: block; }
     header #navbar .overlay {
       width: 100%;
-      height: 1000px;
-      display: none;
-      background-color: #1b1734; }
+      height: 0;
+      transition: height 1s ease;
+      overflow: hidden; }
       header #navbar .overlay .column {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        align-items: flex-start !important;
-        padding: 45px; }
+        align-items: flex-start;
+        padding: 25px; }
         header #navbar .overlay .column > ul {
           display: flex;
           justify-content: center;
@@ -11361,20 +11361,34 @@ header {
           justify-content: space-between;
           align-items: flex-start; }
           header #navbar .overlay .column > ul > li {
-            padding: 15px; }
+            padding: 15px 10px; }
             header #navbar .overlay .column > ul > li > a {
-              color: white;
+              color: black;
+              text-transform: uppercase;
               text-decoration: none; }
             header #navbar .overlay .column > ul > li .responsive-dropdown-first {
-              display: none; }
+              height: 0;
+              opacity: 0;
+              transition: height 1s ease, opacity 1s ease; }
               header #navbar .overlay .column > ul > li .responsive-dropdown-first > ul {
-                list-style: none; }
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                align-items: flex-start;
+                list-style: none;
+                padding: 0; }
                 header #navbar .overlay .column > ul > li .responsive-dropdown-first > ul > li a {
-                  cursor: pointer; }
+                  cursor: pointer;
+                  text-decoration: none; }
             header #navbar .overlay .column > ul > li .responsive-dropdown-second {
-              display: none; }
+              height: 0;
+              opacity: 0;
+              transition: height 1s ease, opacity 1s ease; }
             header #navbar .overlay .column > ul > li .active-respons-drop {
-              display: block; }
+              height: 100px;
+              opacity: 1;
+              transition: height 1s ease, opacity 1s ease; }
         header #navbar .overlay .column .overlay-book {
           width: 100%;
           display: flex;
@@ -11386,16 +11400,18 @@ header {
             color: white;
             padding: 10px 15px;
             border-radius: 4px;
-            background-color: #0f0d1e; }
+            background-color: #0f0d1e;
+            margin-right: 15px; }
           header #navbar .overlay .column .overlay-book > #overlay-book-btn {
             color: white;
             border-radius: 4px;
-            background-color: #5b35d5;
+            background-color: #035894;
             padding: 10px 15px; }
       header #navbar .overlay.active {
         display: block;
-        height: max-content;
-        transition: display 2s linear; }
+        height: 500px;
+        overflow: visible;
+        transition: height 1s ease; }
   header #menu {
     border-top: 1px solid rgba(0, 0, 0, 0.185);
     border-bottom: 1px solid rgba(0, 0, 0, 0.185);
@@ -13155,9 +13171,9 @@ body {
         text-decoration: none;
         color: black; }
     #service #cancelover .cancel-overlay .cancel-overlay-body {
-      overflow: hidden;
-      max-height: 0;
-      transition: max-height 0.5s linear;
+      opacity: 0;
+      height: 0;
+      transition: height 1s ease, opacity 1s ease;
       background-color: rgba(240, 255, 255, 0.363); }
       #service #cancelover .cancel-overlay .cancel-overlay-body h3, #service #cancelover .cancel-overlay .cancel-overlay-body .h3 {
         color: #0A6AB7; }
@@ -13172,10 +13188,10 @@ body {
           text-decoration: none;
           color: black; }
       #service #cancelover .cancel-overlay .cancel-overlay-body.active {
-        overflow: visible;
-        max-height: max-content;
+        opacity: 1;
+        height: 400px;
         padding: 15px;
-        transition: max-height 0.5s linear; }
+        transition: height 1s ease, opacity 1s ease; }
 
 #service #srv-menu {
   width: 100%; }
@@ -13200,11 +13216,17 @@ body {
           #service #srv-menu .container .row ul li a {
             text-decoration: none; }
 
+@media only screen and (min-width: 774px) {
+  #cancelover {
+    display: none; } }
+
 @media only screen and (max-width: 774px) {
   #service #srv-menu .container .row .sr-left {
     display: none !important; }
   #service #srv-menu .container .row .srv-right {
-    width: 100%; } }
+    width: 100%; }
+  #cancelover {
+    display: block; } }
 
 #contact {
   width: 100%; }
@@ -13267,9 +13289,9 @@ body {
           text-decoration: none;
           color: black; }
       #rnpolicy #cancelover .cancel-overlay .cancel-overlay-body {
-        overflow: hidden;
-        max-height: 0;
-        transition: max-height 0.5s linear;
+        opacity: 0;
+        height: 0;
+        transition: height 1s ease, opacity 1s ease;
         background-color: rgba(240, 255, 255, 0.363); }
         #rnpolicy #cancelover .cancel-overlay .cancel-overlay-body h3, #rnpolicy #cancelover .cancel-overlay .cancel-overlay-body .h3 {
           color: #0A6AB7; }
@@ -13284,10 +13306,10 @@ body {
             text-decoration: none;
             color: black; }
         #rnpolicy #cancelover .cancel-overlay .cancel-overlay-body.active {
-          overflow: visible;
-          max-height: max-content;
+          opacity: 1;
+          height: 400px;
           padding: 15px;
-          transition: max-height 0.5s linear; }
+          transition: height 1s ease, opacity 1s ease; }
   #rnpolicy #policybody {
     width: 100%; }
     #rnpolicy #policybody .container {
@@ -13849,38 +13871,73 @@ body {
               background-color: #18588b;
               transition: background-color 0.3s linear; }
 
+@media only screen and (max-width: 1200px) {
+  #shop .container .row .shop-right .shop-items .row .shop-item a {
+    padding: 5px !important; } }
+
+@media only screen and (max-width: 992px) {
+  #shop .container .row .shop-left {
+    display: none !important; }
+  #shop .container .row .shop-right .shop-toolbar .row {
+    flex-direction: column !important;
+    align-items: flex-start !important; }
+    #shop .container .row .shop-right .shop-toolbar .row .toolbar-item {
+      width: 100%;
+      margin-bottom: 15px; }
+  #shop .container .row .shop-right .shop-items .row .shop-item {
+    flex: 0 1 calc(50% - 1em) !important;
+    padding: 15px; }
+    #shop .container .row .shop-right .shop-items .row .shop-item .shop-btn {
+      padding: 1px !important;
+      background-color: transparent !important;
+      color: orange; } }
+
+@media only screen and (max-width: 500px) {
+  #shop .container .row .shop-right .shop-toolbar .row {
+    flex-direction: column !important;
+    align-items: flex-start !important; }
+    #shop .container .row .shop-right .shop-toolbar .row .toolbar-item {
+      width: 100%;
+      margin-bottom: 15px; }
+  #shop .container .row .shop-right .shop-items .row .shop-item {
+    flex: 0 1 calc(100% - 1em) !important; }
+    #shop .container .row .shop-right .shop-items .row .shop-item a {
+      padding: 1px !important; } }
+
 #orderstatus {
   width: 100%; }
-  #orderstatus #cancelover .cancel-overlay {
-    text-align: center; }
-    #orderstatus #cancelover .cancel-overlay .cancel-overlay-head {
-      padding: 5px;
-      background-color: #0A6AB7; }
-      #orderstatus #cancelover .cancel-overlay .cancel-overlay-head a {
-        text-decoration: none;
-        color: black; }
-    #orderstatus #cancelover .cancel-overlay .cancel-overlay-body {
-      overflow: hidden;
-      max-height: 0;
-      transition: max-height 0.5s linear;
-      background-color: rgba(240, 255, 255, 0.363); }
-      #orderstatus #cancelover .cancel-overlay .cancel-overlay-body h3, #orderstatus #cancelover .cancel-overlay .cancel-overlay-body .h3 {
-        color: #0A6AB7; }
-      #orderstatus #cancelover .cancel-overlay .cancel-overlay-body ul {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        align-items: flex-start;
-        list-style: none; }
-        #orderstatus #cancelover .cancel-overlay .cancel-overlay-body ul li a {
+  #orderstatus #cancelover {
+    width: 100%; }
+    #orderstatus #cancelover .cancel-overlay {
+      text-align: center; }
+      #orderstatus #cancelover .cancel-overlay .cancel-overlay-head {
+        padding: 5px;
+        background-color: #0A6AB7; }
+        #orderstatus #cancelover .cancel-overlay .cancel-overlay-head a {
           text-decoration: none;
           color: black; }
-      #orderstatus #cancelover .cancel-overlay .cancel-overlay-body.active {
-        overflow: visible;
-        max-height: max-content;
-        padding: 15px;
-        transition: max-height 0.5s linear; }
+      #orderstatus #cancelover .cancel-overlay .cancel-overlay-body {
+        opacity: 0;
+        height: 0;
+        transition: height 1s ease, opacity 1s ease;
+        background-color: rgba(240, 255, 255, 0.363); }
+        #orderstatus #cancelover .cancel-overlay .cancel-overlay-body h3, #orderstatus #cancelover .cancel-overlay .cancel-overlay-body .h3 {
+          color: #0A6AB7; }
+        #orderstatus #cancelover .cancel-overlay .cancel-overlay-body ul {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          align-items: flex-start;
+          list-style: none; }
+          #orderstatus #cancelover .cancel-overlay .cancel-overlay-body ul li a {
+            text-decoration: none;
+            color: black; }
+        #orderstatus #cancelover .cancel-overlay .cancel-overlay-body.active {
+          opacity: 1;
+          height: 400px;
+          padding: 15px;
+          transition: height 1s ease, opacity 1s ease; }
   #orderstatus #statusinput {
     padding: 85px 25px; }
     #orderstatus #statusinput .container .row {
@@ -13932,36 +13989,38 @@ body {
 
 #cancellation {
   width: 100%; }
-  #cancellation #cancelover .cancel-overlay {
-    text-align: center; }
-    #cancellation #cancelover .cancel-overlay .cancel-overlay-head {
-      padding: 5px;
-      background-color: #0A6AB7; }
-      #cancellation #cancelover .cancel-overlay .cancel-overlay-head a {
-        text-decoration: none;
-        color: black; }
-    #cancellation #cancelover .cancel-overlay .cancel-overlay-body {
-      overflow: hidden;
-      max-height: 0;
-      transition: max-height 0.5s linear;
-      background-color: rgba(240, 255, 255, 0.363); }
-      #cancellation #cancelover .cancel-overlay .cancel-overlay-body h3, #cancellation #cancelover .cancel-overlay .cancel-overlay-body .h3 {
-        color: #0A6AB7; }
-      #cancellation #cancelover .cancel-overlay .cancel-overlay-body ul {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        align-items: flex-start;
-        list-style: none; }
-        #cancellation #cancelover .cancel-overlay .cancel-overlay-body ul li a {
+  #cancellation #cancelover {
+    width: 100%; }
+    #cancellation #cancelover .cancel-overlay {
+      text-align: center; }
+      #cancellation #cancelover .cancel-overlay .cancel-overlay-head {
+        padding: 5px;
+        background-color: #0A6AB7; }
+        #cancellation #cancelover .cancel-overlay .cancel-overlay-head a {
           text-decoration: none;
           color: black; }
-      #cancellation #cancelover .cancel-overlay .cancel-overlay-body.active {
-        overflow: visible;
-        max-height: max-content;
-        padding: 15px;
-        transition: max-height 0.5s linear; }
+      #cancellation #cancelover .cancel-overlay .cancel-overlay-body {
+        opacity: 0;
+        height: 0;
+        transition: height 1s ease, opacity 1s ease;
+        background-color: rgba(240, 255, 255, 0.363); }
+        #cancellation #cancelover .cancel-overlay .cancel-overlay-body h3, #cancellation #cancelover .cancel-overlay .cancel-overlay-body .h3 {
+          color: #0A6AB7; }
+        #cancellation #cancelover .cancel-overlay .cancel-overlay-body ul {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          align-items: flex-start;
+          list-style: none; }
+          #cancellation #cancelover .cancel-overlay .cancel-overlay-body ul li a {
+            text-decoration: none;
+            color: black; }
+        #cancellation #cancelover .cancel-overlay .cancel-overlay-body.active {
+          opacity: 1;
+          height: 400px;
+          padding: 15px;
+          transition: height 1s ease, opacity 1s ease; }
   #cancellation #order-cancel {
     padding: 85px 25px; }
     #cancellation #order-cancel .container .row {
